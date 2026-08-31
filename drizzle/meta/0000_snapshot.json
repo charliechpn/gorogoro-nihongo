@@ -1,0 +1,584 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "e40e127e-9ebb-44f9-9f62-b30d058a2621",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "kanji_catalog": {
+      "name": "kanji_catalog",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "character": {
+          "name": "character",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "meaning_pt": {
+          "name": "meaning_pt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "onyomi": {
+          "name": "onyomi",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "kunyomi": {
+          "name": "kunyomi",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "grade": {
+          "name": "grade",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "jlpt_level": {
+          "name": "jlpt_level",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "full_words_json": {
+          "name": "full_words_json",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'[]'"
+        }
+      },
+      "indexes": {
+        "idx_kanji_catalog_character": {
+          "name": "idx_kanji_catalog_character",
+          "columns": [
+            "character"
+          ],
+          "isUnique": true
+        },
+        "idx_kanji_catalog_jlpt": {
+          "name": "idx_kanji_catalog_jlpt",
+          "columns": [
+            "jlpt_level",
+            "id"
+          ],
+          "isUnique": false
+        },
+        "idx_kanji_catalog_grade": {
+          "name": "idx_kanji_catalog_grade",
+          "columns": [
+            "grade",
+            "id"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "chk_kanji_catalog_grade": {
+          "name": "chk_kanji_catalog_grade",
+          "value": "\"kanji_catalog\".\"grade\" BETWEEN 1 AND 6"
+        }
+      }
+    },
+    "kanji_practice_answers": {
+      "name": "kanji_practice_answers",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "session_id": {
+          "name": "session_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "learner_id": {
+          "name": "learner_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "turn": {
+          "name": "turn",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "kanji_id": {
+          "name": "kanji_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "result": {
+          "name": "result",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "copies_before": {
+          "name": "copies_before",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "copies_after": {
+          "name": "copies_after",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "streak_before": {
+          "name": "streak_before",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "streak_after": {
+          "name": "streak_after",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "answered_at": {
+          "name": "answered_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "indexes": {
+        "idx_kanji_answers_session_turn": {
+          "name": "idx_kanji_answers_session_turn",
+          "columns": [
+            "session_id",
+            "turn"
+          ],
+          "isUnique": true
+        },
+        "idx_kanji_answers_learner_date": {
+          "name": "idx_kanji_answers_learner_date",
+          "columns": [
+            "learner_id",
+            "answered_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "kanji_practice_answers_session_id_kanji_practice_sessions_id_fk": {
+          "name": "kanji_practice_answers_session_id_kanji_practice_sessions_id_fk",
+          "tableFrom": "kanji_practice_answers",
+          "tableTo": "kanji_practice_sessions",
+          "columnsFrom": [
+            "session_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "kanji_practice_answers_kanji_id_kanji_catalog_id_fk": {
+          "name": "kanji_practice_answers_kanji_id_kanji_catalog_id_fk",
+          "tableFrom": "kanji_practice_answers",
+          "tableTo": "kanji_catalog",
+          "columnsFrom": [
+            "kanji_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "chk_kanji_answers_result": {
+          "name": "chk_kanji_answers_result",
+          "value": "\"kanji_practice_answers\".\"result\" IN ('correct', 'wrong')"
+        }
+      }
+    },
+    "kanji_practice_sessions": {
+      "name": "kanji_practice_sessions",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "learner_id": {
+          "name": "learner_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "grouping": {
+          "name": "grouping",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "level": {
+          "name": "level",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "selected_ids_json": {
+          "name": "selected_ids_json",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "selected_count": {
+          "name": "selected_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "turn": {
+          "name": "turn",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "current_kanji_id": {
+          "name": "current_kanji_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'active'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "indexes": {
+        "idx_kanji_sessions_learner_status": {
+          "name": "idx_kanji_sessions_learner_status",
+          "columns": [
+            "learner_id",
+            "status",
+            "updated_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "kanji_practice_sessions_current_kanji_id_kanji_catalog_id_fk": {
+          "name": "kanji_practice_sessions_current_kanji_id_kanji_catalog_id_fk",
+          "tableFrom": "kanji_practice_sessions",
+          "tableTo": "kanji_catalog",
+          "columnsFrom": [
+            "current_kanji_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "chk_kanji_sessions_grouping": {
+          "name": "chk_kanji_sessions_grouping",
+          "value": "\"kanji_practice_sessions\".\"grouping\" IN ('jlpt', 'grade')"
+        },
+        "chk_kanji_sessions_status": {
+          "name": "chk_kanji_sessions_status",
+          "value": "\"kanji_practice_sessions\".\"status\" IN ('active', 'completed', 'abandoned')"
+        },
+        "chk_kanji_sessions_selected_count": {
+          "name": "chk_kanji_sessions_selected_count",
+          "value": "\"kanji_practice_sessions\".\"selected_count\" >= 3"
+        }
+      }
+    },
+    "kanji_session_cooldowns": {
+      "name": "kanji_session_cooldowns",
+      "columns": {
+        "session_id": {
+          "name": "session_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "kanji_id": {
+          "name": "kanji_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "blocked_until_turn": {
+          "name": "blocked_until_turn",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "idx_kanji_cooldowns_session_turn": {
+          "name": "idx_kanji_cooldowns_session_turn",
+          "columns": [
+            "session_id",
+            "blocked_until_turn"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "kanji_session_cooldowns_session_id_kanji_practice_sessions_id_fk": {
+          "name": "kanji_session_cooldowns_session_id_kanji_practice_sessions_id_fk",
+          "tableFrom": "kanji_session_cooldowns",
+          "tableTo": "kanji_practice_sessions",
+          "columnsFrom": [
+            "session_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "kanji_session_cooldowns_kanji_id_kanji_catalog_id_fk": {
+          "name": "kanji_session_cooldowns_kanji_id_kanji_catalog_id_fk",
+          "tableFrom": "kanji_session_cooldowns",
+          "tableTo": "kanji_catalog",
+          "columnsFrom": [
+            "kanji_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "kanji_session_cooldowns_session_id_kanji_id_pk": {
+          "columns": [
+            "session_id",
+            "kanji_id"
+          ],
+          "name": "kanji_session_cooldowns_session_id_kanji_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "learner_kanji_progress": {
+      "name": "learner_kanji_progress",
+      "columns": {
+        "learner_id": {
+          "name": "learner_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "kanji_id": {
+          "name": "kanji_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "copies": {
+          "name": "copies",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 3
+        },
+        "last_result": {
+          "name": "last_result",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "streak": {
+          "name": "streak",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "correct_count": {
+          "name": "correct_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "wrong_count": {
+          "name": "wrong_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "first_seen_at": {
+          "name": "first_seen_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_seen_at": {
+          "name": "last_seen_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "indexes": {
+        "idx_learner_kanji_progress_learner": {
+          "name": "idx_learner_kanji_progress_learner",
+          "columns": [
+            "learner_id",
+            "updated_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "learner_kanji_progress_kanji_id_kanji_catalog_id_fk": {
+          "name": "learner_kanji_progress_kanji_id_kanji_catalog_id_fk",
+          "tableFrom": "learner_kanji_progress",
+          "tableTo": "kanji_catalog",
+          "columnsFrom": [
+            "kanji_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "learner_kanji_progress_learner_id_kanji_id_pk": {
+          "columns": [
+            "learner_id",
+            "kanji_id"
+          ],
+          "name": "learner_kanji_progress_learner_id_kanji_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "chk_learner_kanji_progress_copies": {
+          "name": "chk_learner_kanji_progress_copies",
+          "value": "\"learner_kanji_progress\".\"copies\" BETWEEN 1 AND 8"
+        },
+        "chk_learner_kanji_progress_streak": {
+          "name": "chk_learner_kanji_progress_streak",
+          "value": "\"learner_kanji_progress\".\"streak\" BETWEEN 0 AND 1"
+        },
+        "chk_learner_kanji_progress_result": {
+          "name": "chk_learner_kanji_progress_result",
+          "value": "\"learner_kanji_progress\".\"last_result\" IS NULL OR \"learner_kanji_progress\".\"last_result\" IN ('correct', 'wrong')"
+        }
+      }
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

@@ -2,35 +2,20 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
+import type { PersistedKanjiProgress } from './deck';
 import {
-  answerKanji,
-  createDeckSession,
-  drawNextKanji,
-  extractPersistedProgress,
+  closeKanjiSession,
+  createKanjiSession,
+  fetchKanjiCatalog,
+  importLegacyProgress,
+  resumeKanjiSession,
+  submitKanjiAnswer,
   type AnswerResult,
-  type DeckSession,
-  type PersistedKanjiProgress,
-} from './deck';
-
-type KanjiRecord = {
-  id: number;
-  kanji: string;
-  meaning: string;
-  onyomi: string | null;
-  kunyomi: string | null;
-  grade: number;
-  jlpt: string | null;
-};
-
-type KanjiData = {
-  version: number;
-  count: number;
-  kanji: KanjiRecord[];
-};
-
-type Grouping = 'jlpt' | 'grade';
+} from './api';
+import type { KanjiGrouping as Grouping, KanjiRecord, KanjiSessionView } from './contracts';
 
 const STORAGE_KEY = 'nihongo-kanji-progress-v1';
+const SESSION_KEY = 'nihongo-kanji-session-v2';
 const JLPT_LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'] as const;
 const SCHOOL_GRADES = ['1', '2', '3', '4', '5', '6'] as const;
 
@@ -43,10 +28,6 @@ function loadProgress(): Record<number, PersistedKanjiProgress> {
   }
 }
 
-function saveProgress(progress: Record<number, PersistedKanjiProgress>) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-}
-
 export default function KanjiTrainerPage() {
   const [data, setData] = useState<KanjiRecord[]>([]);
   const [loading, setLoading] = useState(true);
@@ -56,20 +37,36 @@ export default function KanjiTrainerPage() {
   const [advanced, setAdvanced] = useState(false);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [search, setSearch] = useState('');
-  const [session, setSession] = useState<DeckSession | null>(null);
-  const [currentId, setCurrentId] = useState<number | null>(null);
+  const [session, setSession] = useState<KanjiSessionView | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [sessionError, setSessionError] = useState('');
+  const [sessionBusy, setSessionBusy] = useState(false);
 
   useEffect(() => {
-    fetch('/data/kanji.json')
-      .then((response) => {
-        if (!response.ok) throw new Error('Falha ao carregar os kanjis.');
-        return response.json() as Promise<KanjiData>;
-      })
-      .then((payload) => setData(payload.kanji))
-      .catch(() => setLoadError('Não foi possível carregar o banco de kanjis.'))
-      .finally(() => setLoading(false));
+    let cancelled = false;
+
+    async function initialize() {
+      try {
+        const payload = await fetchKanjiCatalog();
+        if (cancelled) return;
+        setData(payload.kanji);
+
+        const savedSessionId = window.localStorage.getItem(SESSION_KEY);
+        if (savedSessionId) {
+          const resumed = await resumeKanjiSession(savedSessionId);
+          if (cancelled) return;
+          if (resumed) setSession(resumed);
+          else window.localStorage.removeItem(SESSION_KEY);
+        }
+      } catch {
+        if (!cancelled) setLoadError('Não foi possível carregar o banco de kanjis.');
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    void initialize();
+    return () => { cancelled = true; };
   }, []);
 
   const levelKanji = useMemo(() => {
@@ -94,8 +91,8 @@ export default function KanjiTrainerPage() {
     );
   }, [levelKanji, search]);
 
-  const currentKanji = currentId === null ? null : data.find((item) => item.id === currentId) ?? null;
-  const currentEntry = currentId === null ? null : session?.entries[currentId] ?? null;
+  const currentKanji = session === null ? null : data.find((item) => item.id === session.currentId) ?? null;
+  const currentEntry = session?.progress ?? null;
 
   function chooseLevel(level: string) {
     const matchingIds = data
@@ -127,7 +124,7 @@ export default function KanjiTrainerPage() {
     });
   }
 
-  function startTraining() {
+  async function startTraining() {
     const ids = advanced ? [...selectedIds] : levelKanji.map((item) => item.id);
 
     if (ids.length < 3) {
@@ -135,44 +132,53 @@ export default function KanjiTrainerPage() {
       return;
     }
 
+    setSessionBusy(true);
     try {
-      const created = createDeckSession(ids, loadProgress());
-      const firstDraw = drawNextKanji(created);
-      setSession(firstDraw.session);
-      setCurrentId(firstDraw.kanjiId);
+      await importLegacyProgress(loadProgress()).catch(() => undefined);
+      const created = await createKanjiSession({
+        grouping,
+        level: selectedLevel!,
+        ...(advanced ? { selectedIds: ids } : {}),
+      });
+      setSession(created);
+      window.localStorage.setItem(SESSION_KEY, created.sessionId);
       setRevealed(false);
       setSessionError('');
     } catch (error) {
       setSessionError(error instanceof Error ? error.message : 'Não foi possível iniciar o treino.');
+    } finally {
+      setSessionBusy(false);
     }
   }
 
-  function answer(result: AnswerResult) {
-    if (!session || currentId === null || !revealed) return;
+  async function answer(result: AnswerResult) {
+    if (!session || !revealed || sessionBusy) return;
 
+    setSessionBusy(true);
     try {
-      const answered = answerKanji(session, currentId, result);
-      const persisted = {
-        ...loadProgress(),
-        ...extractPersistedProgress(answered),
-      };
-      saveProgress(persisted);
-
-      const nextDraw = drawNextKanji(answered);
-      setSession(nextDraw.session);
-      setCurrentId(nextDraw.kanjiId);
+      const updated = await submitKanjiAnswer({
+        sessionId: session.sessionId,
+        turn: session.turn,
+        kanjiId: session.currentId,
+        result,
+      });
+      setSession(updated);
       setRevealed(false);
       setSessionError('');
     } catch (error) {
-      setSessionError(error instanceof Error ? error.message : 'O baralho travou. Milagre estatístico ruim.');
+      setSessionError(error instanceof Error ? error.message : 'O servidor travou. Milagre estatístico ruim.');
+    } finally {
+      setSessionBusy(false);
     }
   }
 
   function leaveSession() {
+    const sessionId = session?.sessionId;
     setSession(null);
-    setCurrentId(null);
     setRevealed(false);
     setSessionError('');
+    window.localStorage.removeItem(SESSION_KEY);
+    if (sessionId) void closeKanjiSession(sessionId).catch(() => undefined);
   }
 
   if (session && currentKanji && currentEntry) {
@@ -215,8 +221,8 @@ export default function KanjiTrainerPage() {
 
           {revealed && (
             <div className="answer-actions">
-              <button className="wrong-answer" type="button" onClick={() => answer('wrong')}>✗ Errei</button>
-              <button className="correct-answer" type="button" onClick={() => answer('correct')}>✓ Acertei</button>
+              <button disabled={sessionBusy} className="wrong-answer" type="button" onClick={() => answer('wrong')}>✗ Errei</button>
+              <button disabled={sessionBusy} className="correct-answer" type="button" onClick={() => answer('correct')}>✓ Acertei</button>
             </div>
           )}
 
@@ -286,8 +292,8 @@ export default function KanjiTrainerPage() {
 
             {selectedLevel && (
               <div className="selected-level-actions">
-                <button className="start-training" type="button" onClick={startTraining}>
-                  Começar com {advanced ? selectedIds.size : levelKanji.length} kanjis
+                <button className="start-training" type="button" disabled={sessionBusy} onClick={startTraining}>
+                  {sessionBusy ? 'Abrindo sessão…' : `Começar com ${advanced ? selectedIds.size : levelKanji.length} kanjis`}
                 </button>
                 <button
                   className="advanced-toggle"
