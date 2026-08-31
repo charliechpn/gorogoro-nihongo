@@ -1,0 +1,1810 @@
+{
+  "version": 1,
+  "count": 189,
+  "onomatopoeia": [
+    {
+      "id": 1,
+      "term": "ドキドキする",
+      "meaningPt": "Ficar nervoso, coração acelerado.",
+      "meaningJa": "緊張や興奮で胸が高鳴る。",
+      "categories": [
+        "giongo_verb",
+        "giongo"
+      ]
+    },
+    {
+      "id": 2,
+      "term": "バタバタする",
+      "meaningPt": "Correr de um lado para o outro, agitar-se.",
+      "meaningJa": "慌ただしく動き回ったり、大きな音を立てたりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 3,
+      "term": "ガタガタする",
+      "meaningPt": "Tremer, chacoalhar, ficar instável.",
+      "meaningJa": "物が激しく揺れたり、安定せず音を立てたりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 4,
+      "term": "ゴロゴロする",
+      "meaningPt": "Rolar, descansar de forma preguiçosa.",
+      "meaningJa": "家で何もせず、のんびり寝転がって過ごす。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 5,
+      "term": "カチカチにする",
+      "meaningPt": "Tornar algo duro, endurecer.",
+      "meaningJa": "物を非常に硬い状態にする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 6,
+      "term": "シュワシュワする",
+      "meaningPt": "Fazer bolhas, ser efervescente.",
+      "meaningJa": "炭酸などが細かい泡を立てる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 7,
+      "term": "ペラペラしゃべる",
+      "meaningPt": "Falar fluentemente, falar muito rápido.",
+      "meaningJa": "外国語などを流暢に、またはよどみなく話す。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 8,
+      "term": "フワフワする",
+      "meaningPt": "Flutuar suavemente, sentir-se leve.",
+      "meaningJa": "軽く浮いているように揺れたり、気持ちが落ち着かなかったりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 9,
+      "term": "バリバリ働く",
+      "meaningPt": "Trabalhar com energia, trabalhar intensamente.",
+      "meaningJa": "勢いよく精力的に働く。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 10,
+      "term": "モヤモヤする",
+      "meaningPt": "Sentir-se frustrado, não clarear.",
+      "meaningJa": "気持ちや考えが晴れず、すっきりしない。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 11,
+      "term": "クシャクシャにする",
+      "meaningPt": "Amassar, amassar algo.",
+      "meaningJa": "紙や布などをしわだらけにする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 12,
+      "term": "チクチクする",
+      "meaningPt": "Sentir dor aguda, ser picado.",
+      "meaningJa": "針で刺されるような細かい痛みや刺激を感じる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 13,
+      "term": "ピリピリする",
+      "meaningPt": "Sentir dor, sensação de algo picante ou tenso.",
+      "meaningJa": "鋭い刺激を感じたり、緊張して神経が張り詰めたりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 14,
+      "term": "ガリガリやる",
+      "meaningPt": "Arranhar, roçar com força.",
+      "meaningJa": "硬い物を強くこすったり、引っかいたりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 15,
+      "term": "モフモフする",
+      "meaningPt": "Acariciar algo macio, sentir algo fofo.",
+      "meaningJa": "柔らかく毛の多い物に触れて、その感触を楽しむ。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 16,
+      "term": "バラバラにする",
+      "meaningPt": "Dispersar, desorganizar, quebrar em pedaços.",
+      "meaningJa": "まとまった物を別々にしたり、細かく分解したりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 17,
+      "term": "スイスイ進む",
+      "meaningPt": "Avançar suavemente, ir sem obstáculos.",
+      "meaningJa": "抵抗や問題がなく、滑らかに進む。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 18,
+      "term": "チラチラ見る",
+      "meaningPt": "Olhar furtivamente, olhar de esguelha.",
+      "meaningJa": "相手に気づかれないよう、何度も少しずつ見る。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 19,
+      "term": "ウロウロする",
+      "meaningPt": "Andar sem rumo, vaguear.",
+      "meaningJa": "目的や行き先がはっきりしないまま歩き回る。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 20,
+      "term": "ドタドタ歩く",
+      "meaningPt": "Andar pesadamente, fazer barulho ao andar.",
+      "meaningJa": "大きな足音を立てて重そうに歩く。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 21,
+      "term": "カラカラ笑う",
+      "meaningPt": "Rir ruidosamente, dar uma risada seca.",
+      "meaningJa": "乾いた感じの明るく大きな声で笑う。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 22,
+      "term": "ザワザワする",
+      "meaningPt": "Agitar-se, sentir-se inquieto.",
+      "meaningJa": "周囲が騒がしくなったり、胸が落ち着かなくなったりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 23,
+      "term": "ガヤガヤする",
+      "meaningPt": "Conversar animadamente, fazer barulho.",
+      "meaningJa": "大勢の人が一斉に話して騒がしくなる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 24,
+      "term": "フリフリする",
+      "meaningPt": "Balançar, sacudir.",
+      "meaningJa": "手や物を左右に繰り返し振る。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 25,
+      "term": "ジリジリする",
+      "meaningPt": "Sentir calor intenso, queimar aos poucos.",
+      "meaningJa": "強い日差しで焼けるように感じたり、焦れて落ち着かなくなったりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 26,
+      "term": "タラタラ流れる",
+      "meaningPt": "Escorrer lentamente, algo escorrendo.",
+      "meaningJa": "汗や液体が途切れずゆっくり流れ続ける。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 27,
+      "term": "ピョンピョン跳ねる",
+      "meaningPt": "Pular animadamente, saltitar.",
+      "meaningJa": "軽く勢いよく何度も跳ぶ。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 28,
+      "term": "ムシャムシャ食べる",
+      "meaningPt": "Comer com apetite, devorar.",
+      "meaningJa": "口いっぱいに入れて、勢いよく食べる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 29,
+      "term": "バクバク食べる",
+      "meaningPt": "Comer rapidamente, devorar.",
+      "meaningJa": "食べ物を次々と勢いよく食べる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 30,
+      "term": "モコモコする",
+      "meaningPt": "Inchado, ficar volumoso (como algo crescendo).",
+      "meaningJa": "厚みがあって、ふくらんだ柔らかい状態になる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 31,
+      "term": "グツグツ煮る",
+      "meaningPt": "Ferver, cozinhar lentamente.",
+      "meaningJa": "泡が次々と出る状態で煮込む。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 32,
+      "term": "ポタポタ落ちる",
+      "meaningPt": "Cair gota a gota, pingar.",
+      "meaningJa": "液体が一滴ずつ続けて落ちる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 33,
+      "term": "ガチャガチャする",
+      "meaningPt": "Fazer barulho, mexer algo de maneira desordenada.",
+      "meaningJa": "物を乱雑に動かして、硬い物同士がぶつかる音を立てる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 34,
+      "term": "ウキウキする",
+      "meaningPt": "Ficar animado, empolgado.",
+      "meaningJa": "うれしいことを期待して、心が弾む。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 35,
+      "term": "ピョコピョコする",
+      "meaningPt": "Pular de forma fofa ou animada.",
+      "meaningJa": "小さく軽い動きで何度も跳ねる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 36,
+      "term": "バンバン打つ",
+      "meaningPt": "Bater com força, dar socos repetidamente.",
+      "meaningJa": "強い力で繰り返し打ったり叩いたりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 37,
+      "term": "ブーブー言う",
+      "meaningPt": "Reclamar, resmungar.",
+      "meaningJa": "不満を繰り返し口にして文句を言う。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 38,
+      "term": "チューチュー吸う",
+      "meaningPt": "Chupar (como um bebê ou rato).",
+      "meaningJa": "細い口やストローなどで繰り返し吸う。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 39,
+      "term": "ポンポン叩く",
+      "meaningPt": "Bater suavemente, dar tapinhas.",
+      "meaningJa": "軽くリズミカルに何度も叩く。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 40,
+      "term": "キラキラ輝く",
+      "meaningPt": "Brilhar intensamente, cintilar.",
+      "meaningJa": "細かい光を美しく反射して輝く。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 41,
+      "term": "ドンドン進む",
+      "meaningPt": "Avançar com rapidez, prosseguir.",
+      "meaningJa": "勢いを保ったまま、次々と前へ進む。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 42,
+      "term": "カタカタ鳴る",
+      "meaningPt": "Fazer barulho, como algo batendo ou chacoalhando.",
+      "meaningJa": "硬い物が小刻みに触れ合って軽い音を立てる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 43,
+      "term": "スカスカになる",
+      "meaningPt": "Tornar-se vazio, ficar oco.",
+      "meaningJa": "中身が少なくなり、隙間の多い状態になる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 44,
+      "term": "ピカピカ光る",
+      "meaningPt": "Brilhar, reluzir.",
+      "meaningJa": "明るい光を繰り返し放ったり反射したりする。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 45,
+      "term": "チリチリ音を立てる",
+      "meaningPt": "Fazer um som sibilante (como algo queimando).",
+      "meaningJa": "物が焼けたり細かく触れ合ったりして、かすかな音を立てる。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 46,
+      "term": "ニコニコ笑う",
+      "meaningPt": "Sorrir de forma amigável, sorrir de maneira leve.",
+      "meaningJa": "うれしそうな表情で、にこやかに笑う。",
+      "categories": [
+        "giongo_verb"
+      ]
+    },
+    {
+      "id": 47,
+      "term": "ゴロゴロ",
+      "meaningPt": "Som de trovão ou de algo rolando.",
+      "meaningJa": "雷や大きな物が転がる音。腹が鳴る音や、寝転がって過ごす様子にも使う。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 48,
+      "term": "バタバタ",
+      "meaningPt": "Movimento apressado, agitação.",
+      "meaningJa": "手足や物が続けて大きく動く音や、慌ただしく動き回る様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 49,
+      "term": "ザーザー",
+      "meaningPt": "Som de chuva forte.",
+      "meaningJa": "雨や水が激しく大量に降ったり流れたりする音。",
+      "categories": [
+        "giseijougo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 50,
+      "term": "ドキドキ",
+      "meaningPt": "Batimento cardíaco acelerado, nervosismo.",
+      "meaningJa": "緊張や期待、興奮などで心臓が速く打つ様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 51,
+      "term": "キラキラ",
+      "meaningPt": "Brilho cintilante, como estrelas.",
+      "meaningJa": "小さな光を美しく連続して反射する様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 52,
+      "term": "ピカピカ",
+      "meaningPt": "Algo brilhante ou reluzente.",
+      "meaningJa": "強く光り輝く様子。また、非常にきれいで新しい様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 53,
+      "term": "ガタガタ",
+      "meaningPt": "Som de algo batendo ou trepidando.",
+      "meaningJa": "硬い物が激しく揺れてぶつかる音や、不安定に震える様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 54,
+      "term": "ワサワサ",
+      "meaningPt": "Movimento agitado ou frenético, como estar ocupado ou nervoso.",
+      "meaningJa": "多くの物が一斉に動く様子や、人が慌ただしく落ち着かない様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 55,
+      "term": "フワフワ",
+      "meaningPt": "Sensação de leveza, algo macio e fofo.",
+      "meaningJa": "軽く浮き漂う様子。また、柔らかく膨らんだ感触。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 56,
+      "term": "ピョンピョン",
+      "meaningPt": "Pular, saltitar.",
+      "meaningJa": "人や小動物が軽快に何度も跳ねる様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 57,
+      "term": "カリカリ",
+      "meaningPt": "Sentir-se irritado, ansioso, agitado.",
+      "meaningJa": "硬く乾いた物をかむ音や食感。また、いら立っている様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 58,
+      "term": "ゴチャゴチャ",
+      "meaningPt": "Algo confuso, bagunçado ou desorganizado.",
+      "meaningJa": "多くの物が入り混じり、乱雑で整理されていない様子。",
+      "categories": [
+        "giseijougo"
+      ]
+    },
+    {
+      "id": 59,
+      "term": "モヤモヤ",
+      "meaningPt": "Sentimento de confusão ou incerteza.",
+      "meaningJa": "煙などがぼんやり広がる様子。また、心が晴れずすっきりしない状態。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 60,
+      "term": "ボロボロ",
+      "meaningPt": "Algo em muito mau estado ou fragmentado.",
+      "meaningJa": "物がひどく傷んで崩れかけている様子。また、心身がひどく疲れた状態。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 61,
+      "term": "ドンドン",
+      "meaningPt": "Som de batidas repetidas ou de algo grande se aproximando.",
+      "meaningJa": "強く繰り返し叩く音。また、物事が勢いよく進んだり増えたりする様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 62,
+      "term": "テクテク",
+      "meaningPt": "Caminhar de maneira constante e sem pressa.",
+      "meaningJa": "長い道のりを一定の歩調で黙々と歩く様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 63,
+      "term": "バリバリ",
+      "meaningPt": "Som de rasgar algo ou de algo quebrando.",
+      "meaningJa": "硬い物を砕いたり破いたりする音。また、勢いよく精力的に行動する様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 64,
+      "term": "スラスラ",
+      "meaningPt": "Algo feito de maneira suave ou fluida, como falar facilmente ou ler rapidamente.",
+      "meaningJa": "話す、読む、書くなどが滞らず滑らかに進む様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 65,
+      "term": "ジリジリ",
+      "meaningPt": "Tensão crescente, impaciência.",
+      "meaningJa": "強い日差しが焼きつける様子。また、焦りながら少しずつ近づく様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 66,
+      "term": "チラチラ",
+      "meaningPt": "Algo piscando, cintilando, movimento leve.",
+      "meaningJa": "光が断続的に見える様子や、何度も短く視線を向ける様子。",
+      "categories": [
+        "giseijougo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 67,
+      "term": "ドヨーン",
+      "meaningPt": "Sentir-se deprimido ou pesado, desânimo.",
+      "meaningJa": "空気や気分が重く沈み、暗く元気のない様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 68,
+      "term": "フラフラ",
+      "meaningPt": "Estar tonto, desorientado, como se estivesse prestes a cair.",
+      "meaningJa": "体が安定せず揺れる様子。また、目的なく歩き回る様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 69,
+      "term": "ジメジメ",
+      "meaningPt": "Algo úmido ou abafado, como um ambiente quente e úmido.",
+      "meaningJa": "湿気が多く不快な様子。また、性格や雰囲気が陰気な様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 70,
+      "term": "ボンボン",
+      "meaningPt": "Som de explosões ou batidas repetidas; também pode indicar excesso ou grande quantidade.",
+      "meaningJa": "物が続けてはじけたり、強く打ち上がったりする音。",
+      "categories": [
+        "giseijougo"
+      ]
+    },
+    {
+      "id": 71,
+      "term": "バンバン",
+      "meaningPt": "Som de impacto forte, como batidas repetidas.",
+      "meaningJa": "物を強く繰り返し叩く音。また、ためらわず盛んに行う様子。",
+      "categories": [
+        "giseijougo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 72,
+      "term": "シクシク",
+      "meaningPt": "Chorar baixinho ou soluçar.",
+      "meaningJa": "声を抑えて弱々しく泣く様子。また、細く続く腹痛。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 73,
+      "term": "クタクタ",
+      "meaningPt": "Cansaço extremo, exaustão.",
+      "meaningJa": "体力を使い果たして、ひどく疲れている様子。",
+      "categories": [
+        "giseijougo",
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 74,
+      "term": "ガチガチ",
+      "meaningPt": "Algo muito rígido ou duro, como um objeto congelado.",
+      "meaningJa": "非常に硬く固まった様子。また、緊張で体がこわばる様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 75,
+      "term": "ガチャガチャ",
+      "meaningPt": "Som de algo batendo ou sendo mexido.",
+      "meaningJa": "硬い物が乱雑にぶつかり合う騒がしい音。",
+      "categories": [
+        "giseijougo",
+        "gitaigo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 76,
+      "term": "クネクネ",
+      "meaningPt": "Movimento sinuoso ou contorcido, como uma cobra se movendo.",
+      "meaningJa": "体や細長い物が何度も曲がり、しなやかに動く様子。",
+      "categories": [
+        "giseijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 77,
+      "term": "イライラ",
+      "meaningPt": "Irritação, frustração.",
+      "meaningJa": "思いどおりにならず、焦ったり腹を立てたりする様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 78,
+      "term": "ワクワク",
+      "meaningPt": "Excitação, antecipação.",
+      "meaningJa": "楽しいことを期待して、心が弾み興奮する様子。",
+      "categories": [
+        "gijougo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 79,
+      "term": "ウキウキ",
+      "meaningPt": "Animado, feliz, empolgado.",
+      "meaningJa": "うれしくて気持ちが浮き立つ様子。",
+      "categories": [
+        "gijougo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 80,
+      "term": "ガッカリ",
+      "meaningPt": "Decepção, desapontamento.",
+      "meaningJa": "期待が外れて、気力を失い落ち込む様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 81,
+      "term": "ハラハラ",
+      "meaningPt": "Tensão, preocupação, ansiedade.",
+      "meaningJa": "危険な成り行きを心配し、落ち着かず見守る様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 82,
+      "term": "ゾクゾク",
+      "meaningPt": "Arrepios, excitação ou medo.",
+      "meaningJa": "寒さや恐怖、強い興奮で背筋に震えが走る様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 83,
+      "term": "ホッ",
+      "meaningPt": "Alívio, sensação de relaxamento.",
+      "meaningJa": "心配がなくなり、短く息をついて安心する様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 84,
+      "term": "メソメソ",
+      "meaningPt": "Choro suave, tristeza.",
+      "meaningJa": "弱々しく、いつまでも泣き続ける様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 85,
+      "term": "ボーっと",
+      "meaningPt": "Estar distraído ou em um estado de sonolência.",
+      "meaningJa": "意識や注意がはっきりせず、ぼんやりしている様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 86,
+      "term": "ガクガク",
+      "meaningPt": "Tremendo, geralmente por medo ou cansaço.",
+      "meaningJa": "恐怖や寒さ、疲れなどで体や膝が大きく震える様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 87,
+      "term": "ギリギリ",
+      "meaningPt": "No limite, algo que acontece por pouco.",
+      "meaningJa": "限界に非常に近く、余裕がほとんどない様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 88,
+      "term": "ムカムカ",
+      "meaningPt": "Sensação de raiva ou náusea.",
+      "meaningJa": "吐き気がする様子。また、怒りがこみ上げて不快な様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 89,
+      "term": "ニコニコ",
+      "meaningPt": "Sorriso constante ou expressão feliz.",
+      "meaningJa": "うれしそうに、絶えず笑顔を浮かべている様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 90,
+      "term": "ニヤニヤ",
+      "meaningPt": "Sorriso malicioso ou de satisfação.",
+      "meaningJa": "意味ありげに、声を出さず薄笑いを浮かべる様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 91,
+      "term": "スッキリ",
+      "meaningPt": "Sentir-se aliviado, sensação de clareza mental ou física.",
+      "meaningJa": "余計なものや不快感がなくなり、爽快で明快な様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 92,
+      "term": "コソコソ",
+      "meaningPt": "Agir furtivamente, como alguém tentando esconder algo.",
+      "meaningJa": "人に知られないよう、隠れて静かに行動する様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 93,
+      "term": "サワサワ",
+      "meaningPt": "Sensação de algo suave ou agradável, como um vento suave.",
+      "meaningJa": "風などで葉や髪が軽く触れ合って揺れる様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 94,
+      "term": "カッカ",
+      "meaningPt": "Sentir-se extremamente irritado, encolerizado.",
+      "meaningJa": "怒りや暑さで、頭や体が熱くなる様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 95,
+      "term": "ピリピリ",
+      "meaningPt": "Sensação de dor aguda, ou algo picante.",
+      "meaningJa": "鋭い刺激や痛みを感じる様子。また、緊張した雰囲気。",
+      "categories": [
+        "gijougo",
+        "gitaigo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 96,
+      "term": "タジタジ",
+      "meaningPt": "Estar atordoado, sobrecarregado.",
+      "meaningJa": "相手の勢いに圧倒され、ひるんで対応できない様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 97,
+      "term": "ハッキリ",
+      "meaningPt": "Claridade, certeza, em uma resposta ou opinião.",
+      "meaningJa": "曖昧さがなく、明確で分かりやすい様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 98,
+      "term": "イソイソ",
+      "meaningPt": "Estar apressado e animado, como ir rapidamente para algum lugar.",
+      "meaningJa": "うれしい予定などのため、心を弾ませて急いで行動する様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 99,
+      "term": "モチモチ",
+      "meaningPt": "Sentir-se macio, acolhedor, como algo fofinho.",
+      "meaningJa": "柔らかく、弾力があって粘りのある食感や感触。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 100,
+      "term": "ビクビク",
+      "meaningPt": "Tremendo de medo ou ansiedade.",
+      "meaningJa": "恐ろしさや不安で絶えずおびえている様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 101,
+      "term": "ムズムズ",
+      "meaningPt": "Sentir-se inquieto, como se tivesse algo incomodando.",
+      "meaningJa": "かゆみなどで落ち着かない様子。また、何かをしたくてじっとできない様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 102,
+      "term": "ウロウロ",
+      "meaningPt": "Andar de um lado para o outro, sem rumo ou indeciso.",
+      "meaningJa": "目的や行き先が決まらず、あちこち歩き回る様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 103,
+      "term": "オロオロ",
+      "meaningPt": "Ficar agitado e confuso, sem saber como reagir.",
+      "meaningJa": "驚きや不安で慌て、どうしてよいか分からない様子。",
+      "categories": [
+        "gijougo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 104,
+      "term": "モリモリ",
+      "meaningPt": "Comer de forma voraz ou estar com grande apetite.",
+      "meaningJa": "食欲旺盛にたくさん食べる様子。また、力や意欲がわく様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 105,
+      "term": "ガヤガヤ",
+      "meaningPt": "Som de pessoas falando ou agitação.",
+      "meaningJa": "大勢の人が勝手に話して、騒がしい様子。",
+      "categories": [
+        "gijougo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 106,
+      "term": "タラタラ",
+      "meaningPt": "Gotejamento lento, como suor escorrendo.",
+      "meaningJa": "汗や液体が続けてゆっくり流れる様子。また、だらしなく長引く様子。",
+      "categories": [
+        "gijougo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 107,
+      "term": "メチャメチャ",
+      "meaningPt": "Algo bagunçado, caótico, descontrolado.",
+      "meaningJa": "秩序がなく、ひどく乱れたり壊れたりしている様子。",
+      "categories": [
+        "gijougo"
+      ]
+    },
+    {
+      "id": 108,
+      "term": "ギュウギュウ",
+      "meaningPt": "Algo muito apertado, comprimido.",
+      "meaningJa": "隙間がないほど強く詰め込まれたり、押しつけられたりする様子。",
+      "categories": [
+        "gijougo",
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 109,
+      "term": "パラパラ",
+      "meaningPt": "Cair levemente, como folhas caindo.",
+      "meaningJa": "小さく軽い物がまばらに落ちたり、ページをめくったりする音や様子。",
+      "categories": [
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 110,
+      "term": "グタグタ",
+      "meaningPt": "Algo feito de maneira desleixada, cansada ou preguiçosa.",
+      "meaningJa": "疲れ切って力が抜けた様子、または物事が締まりなく乱れた様子。",
+      "categories": [
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 111,
+      "term": "トントン",
+      "meaningPt": "Batidas suaves e regulares, como na porta ou em algum objeto.",
+      "meaningJa": "扉などを軽く規則的に叩く音。また、物事が順調に進む様子。",
+      "categories": [
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 112,
+      "term": "ベタベタ",
+      "meaningPt": "Pegajoso, sensação viscosa.",
+      "meaningJa": "物が粘りついて離れにくい様子。また、人に過度に甘える様子。",
+      "categories": [
+        "gitaigo",
+        "giongo"
+      ]
+    },
+    {
+      "id": 113,
+      "term": "バラバラ",
+      "meaningPt": "Disperso, em pedaços, desorganizado.",
+      "meaningJa": "まとまりがなく別々である様子。また、物が細かく分かれた状態。",
+      "categories": [
+        "gitaigo",
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 114,
+      "term": "ノロノロ",
+      "meaningPt": "Algo acontecendo lentamente ou com preguiça.",
+      "meaningJa": "動作や進み方が非常に遅い様子。",
+      "categories": [
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 115,
+      "term": "サラサラ",
+      "meaningPt": "Algo suave, como cabelo sedoso ou uma superfície lisa.",
+      "meaningJa": "乾いて滑らかな手触り。また、水などが軽やかに流れる音。",
+      "categories": [
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 116,
+      "term": "ビリビリ",
+      "meaningPt": "Sentir uma vibração intensa ou eletricidade.",
+      "meaningJa": "電気に触れたような強い刺激。また、紙や布を勢いよく破る音。",
+      "categories": [
+        "gitaigo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 117,
+      "term": "ダラダラ",
+      "meaningPt": "Sentir-se desmotivado ou sem energia, fazer algo sem pressa.",
+      "meaningJa": "緊張感なく怠けて過ごす様子。また、液体が絶えず流れる様子。",
+      "categories": [
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 118,
+      "term": "ポロポロ",
+      "meaningPt": "Algo caindo em pequenas quantidades ou suavemente, como lágrimas caindo.",
+      "meaningJa": "涙や小さな粒が次々とこぼれ落ちる様子。",
+      "categories": [
+        "gitaigo"
+      ]
+    },
+    {
+      "id": 119,
+      "term": "ワンワン",
+      "meaningPt": "Latido de cachorro.",
+      "meaningJa": "犬が大きな声で繰り返しほえる声。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 120,
+      "term": "ニャーニャー",
+      "meaningPt": "Miado de gato.",
+      "meaningJa": "猫が繰り返し鳴く声。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 121,
+      "term": "モフモフ",
+      "meaningPt": "Sensação de algo macio, fofo.",
+      "meaningJa": "毛などが豊かで、柔らかくふかふかしている感触。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 122,
+      "term": "チクチク",
+      "meaningPt": "Picada, sensação de dor leve e repetitiva.",
+      "meaningJa": "針などで繰り返し刺されるような細かい痛みや刺激。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 123,
+      "term": "パチパチ",
+      "meaningPt": "Som de aplausos, estalos.",
+      "meaningJa": "拍手の音や、火花などが続けてはじける音。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 124,
+      "term": "クシャクシャ",
+      "meaningPt": "Som de algo sendo amassado.",
+      "meaningJa": "紙や布がしわだらけに乱れた様子。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 125,
+      "term": "カラカラ",
+      "meaningPt": "Som de algo seco ou de algo girando.",
+      "meaningJa": "乾いた硬い物が軽く触れ合う音。また、水分がなく乾き切った様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 126,
+      "term": "ゴツゴツ",
+      "meaningPt": "Textura áspera, algo irregular.",
+      "meaningJa": "表面に硬い凹凸が多く、滑らかでない様子。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 127,
+      "term": "ピーピー",
+      "meaningPt": "Som de algo apitando ou chiando.",
+      "meaningJa": "笛や機械が高い音を繰り返し出す様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 128,
+      "term": "ポタポタ",
+      "meaningPt": "Som de gotas caindo.",
+      "meaningJa": "液体が一滴ずつ続けて落ちる音や様子。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 129,
+      "term": "ドン",
+      "meaningPt": "Som de impacto forte, algo caindo com força.",
+      "meaningJa": "重い物がぶつかったり落ちたりする大きな音。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 130,
+      "term": "ガリガリ",
+      "meaningPt": "Som de algo roçando ou esfregando.",
+      "meaningJa": "硬い物を強くかいたり削ったりする音。また、非常に痩せた様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 131,
+      "term": "フリフリ",
+      "meaningPt": "Sacudir, mexer, movimento repetido.",
+      "meaningJa": "手や物を左右に繰り返し振る様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 132,
+      "term": "シュワシュワ",
+      "meaningPt": "Som de algo efervescente, borbulhas.",
+      "meaningJa": "炭酸などの細かい泡が次々とはじける音や感触。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 133,
+      "term": "スイスイ",
+      "meaningPt": "Nadar suavemente, movimento fluido.",
+      "meaningJa": "水中や物事の中を、妨げなく軽快に進む様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 134,
+      "term": "ペラペラ",
+      "meaningPt": "Falar fluentemente, som de algo fino e leve.",
+      "meaningJa": "外国語を流暢に話す様子。また、薄い物が軽く動く様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 135,
+      "term": "スカスカ",
+      "meaningPt": "Vazio, algo sem conteúdo.",
+      "meaningJa": "中身が少なく、隙間が多い様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 136,
+      "term": "ドタドタ",
+      "meaningPt": "Som de passos pesados ou movimento desajeitado.",
+      "meaningJa": "大きく重い足音を立てて慌ただしく動く様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 137,
+      "term": "バクバク",
+      "meaningPt": "Comer com apetite, bater rápido (coração).",
+      "meaningJa": "勢いよく食べる様子。また、心臓が激しく打つ様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 138,
+      "term": "ピンピン",
+      "meaningPt": "Animado, cheio de energia.",
+      "meaningJa": "元気がよく、生き生きしている様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 139,
+      "term": "モコモコ",
+      "meaningPt": "Algo fofo ou inchado.",
+      "meaningJa": "厚くふくらみ、柔らかく盛り上がっている様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 140,
+      "term": "グツグツ",
+      "meaningPt": "Som de algo fervendo.",
+      "meaningJa": "煮物などが激しく泡を立てて煮える音や様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 141,
+      "term": "ザワザワ",
+      "meaningPt": "Som de agitação, murmúrio.",
+      "meaningJa": "多くの人や物が立てる小さく騒がしい音。また、不安で落ち着かない様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 142,
+      "term": "ツルツル",
+      "meaningPt": "Suave, escorregadio, polido.",
+      "meaningJa": "表面が非常に滑らかで、滑りやすい様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 143,
+      "term": "キュウキュウ",
+      "meaningPt": "Apertado, algo que está cheio ou comprimido.",
+      "meaningJa": "物が強く締めつけられる音や、余裕がなく苦しい様子。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 144,
+      "term": "コツコツ",
+      "meaningPt": "Com perseverança, de forma constante.",
+      "meaningJa": "硬い物を軽く繰り返し叩く音。また、地道に努力を続ける様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 145,
+      "term": "チューチュー",
+      "meaningPt": "Som de um rato ou bebê mamando.",
+      "meaningJa": "ねずみの鳴き声や、口をすぼめて液体を吸う音。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 146,
+      "term": "ムシャムシャ",
+      "meaningPt": "Comer com apetite, mastigar vigorosamente.",
+      "meaningJa": "食べ物を口いっぱいに入れ、勢いよく食べる様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 147,
+      "term": "ツンツン",
+      "meaningPt": "Atitude fria ou arrogante, ou algo pontudo.",
+      "meaningJa": "先が鋭くとがった様子。また、冷たくよそよそしい態度。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 148,
+      "term": "ネバネバ",
+      "meaningPt": "Pegajoso, viscoso.",
+      "meaningJa": "粘り気が強く、物にまとわりつく様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 149,
+      "term": "ポンポン",
+      "meaningPt": "Som de algo leve batendo ou pulando.",
+      "meaningJa": "軽く続けて叩く音や、物が勢いよく飛び出す様子。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 150,
+      "term": "ユラユラ",
+      "meaningPt": "Balançar suavemente, como algo flutuando.",
+      "meaningJa": "物が大きくゆっくり左右に揺れ続ける様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 151,
+      "term": "ピョコピョコ",
+      "meaningPt": "Pular ou saltitar de maneira fofa.",
+      "meaningJa": "小さな物や動物が軽く何度も跳ねる様子。",
+      "categories": [
+        "giongo"
+      ]
+    },
+    {
+      "id": 152,
+      "term": "ブーブー",
+      "meaningPt": "Som de reclamação ou algo apitando.",
+      "meaningJa": "豚の鳴き声や車の警笛。また、不満を繰り返し言う様子。",
+      "categories": [
+        "giongo",
+        "giseigo"
+      ]
+    },
+    {
+      "id": 153,
+      "term": "モーモー",
+      "meaningPt": "Som de uma vaca mugindo.",
+      "meaningJa": "牛が鳴く声。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 154,
+      "term": "コケコッコー",
+      "meaningPt": "Som de um galo cantando.",
+      "meaningJa": "雄鶏が朝などに鳴く声。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 155,
+      "term": "ピヨピヨ",
+      "meaningPt": "Som de um pintinho.",
+      "meaningJa": "ひよこなどの小鳥が鳴く高く弱い声。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 156,
+      "term": "ガオー",
+      "meaningPt": "Som de um leão rugindo.",
+      "meaningJa": "ライオンなどの大型動物がほえる声。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 157,
+      "term": "ヒヒーン",
+      "meaningPt": "Som de um cavalo relinchando.",
+      "meaningJa": "馬が高い声でいななく声。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 158,
+      "term": "カーカー",
+      "meaningPt": "Som de um corvo.",
+      "meaningJa": "からすが鳴く声。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 159,
+      "term": "モゴモゴ",
+      "meaningPt": "Falar de modo abafado ou mastigar com a boca cheia.",
+      "meaningJa": "口の中に物を入れたまま、はっきりしない声で話す様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 160,
+      "term": "ピチピチ",
+      "meaningPt": "Saltar com energia, como um peixe; também indica algo jovem e cheio de vida.",
+      "meaningJa": "魚などが元気よく跳ねる様子。また、若く生き生きした様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 161,
+      "term": "ドカン",
+      "meaningPt": "Som de uma explosão.",
+      "meaningJa": "爆発や大きな衝突で生じる非常に大きな音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 162,
+      "term": "シューシュー",
+      "meaningPt": "Som de vapor, ar ou água escapando com força.",
+      "meaningJa": "蒸気や空気が細い所から勢いよく出る音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 163,
+      "term": "チクタク",
+      "meaningPt": "Som de um relógio.",
+      "meaningJa": "時計の針が規則正しく動く音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 164,
+      "term": "カチカチ",
+      "meaningPt": "Som de algo batendo ou rangendo.",
+      "meaningJa": "硬い物同士が小さく繰り返しぶつかる音。また、非常に硬い様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 165,
+      "term": "バタン",
+      "meaningPt": "Som de uma porta batendo.",
+      "meaningJa": "扉などが勢いよく閉まる大きな音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 166,
+      "term": "ギーギー",
+      "meaningPt": "Som de uma porta rangendo.",
+      "meaningJa": "扉や機械などがきしむ高く不快な音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 167,
+      "term": "チリチリ",
+      "meaningPt": "Som de algo queimando ou de fricção.",
+      "meaningJa": "物が焼けたり、細い物同士が触れたりして立つ小さな音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 168,
+      "term": "ブンブン",
+      "meaningPt": "Som de algo zumbindo, como uma mosca ou abelha.",
+      "meaningJa": "蜂や機械などが回転して立てる低い連続音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 169,
+      "term": "タタタ",
+      "meaningPt": "Som de passos rápidos.",
+      "meaningJa": "人や小動物が軽く素早く走る足音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 170,
+      "term": "クスクス",
+      "meaningPt": "Som de rir baixinho, risadinhas.",
+      "meaningJa": "声を抑えて小さく笑う音や様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 171,
+      "term": "ボソボソ",
+      "meaningPt": "Som de falar de forma sussurrante ou baixa.",
+      "meaningJa": "小さく不明瞭な声で話す様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 172,
+      "term": "スースー",
+      "meaningPt": "Som de respiração ou vento suave.",
+      "meaningJa": "寝息や、狭い所を風が通る静かな音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 173,
+      "term": "チョキチョキ",
+      "meaningPt": "Som de tesoura cortando.",
+      "meaningJa": "はさみで続けて物を切る音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 174,
+      "term": "プツプツ",
+      "meaningPt": "Som de algo estourando ou de algo sendo quebrado em pedaços pequenos.",
+      "meaningJa": "小さな物が次々と切れたり、はじけたりする音や様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 175,
+      "term": "ジージー",
+      "meaningPt": "Som de cigarra.",
+      "meaningJa": "せみや電気機器などが出す連続した音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 176,
+      "term": "キョロキョロ",
+      "meaningPt": "Olhar ao redor repetidamente, com curiosidade ou inquietação.",
+      "meaningJa": "顔や目を動かして、落ち着きなく周囲を見回す様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 177,
+      "term": "ピンポン",
+      "meaningPt": "Som de campainha ou sino.",
+      "meaningJa": "玄関の呼び鈴などが鳴る音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 178,
+      "term": "グングン",
+      "meaningPt": "Avançar, crescer ou melhorar rapidamente e com força.",
+      "meaningJa": "勢いよく、目に見えて進んだり成長したりする様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 179,
+      "term": "コロコロ",
+      "meaningPt": "Som de algo pequeno rolando ou de algo fofinho, como uma bola.",
+      "meaningJa": "小さく丸い物が軽く転がる音や様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 180,
+      "term": "ガシャガシャ",
+      "meaningPt": "Som de algo batendo ou de um som metálico.",
+      "meaningJa": "金属など硬い物が激しくぶつかり合う騒がしい音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 181,
+      "term": "ズーム",
+      "meaningPt": "Som de algo acelerando rapidamente, como um carro ou avião.",
+      "meaningJa": "車や飛行機などが高速で進むことを表す音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 182,
+      "term": "ヒリヒリ",
+      "meaningPt": "Sensação de dor ligeira, como uma queimadura.",
+      "meaningJa": "やけどや擦り傷などが、焼けるように痛む様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 183,
+      "term": "キュッキュッ",
+      "meaningPt": "Som de algo apertando ou esfregando.",
+      "meaningJa": "物を強くこすったり締めつけたりするときの高い音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 184,
+      "term": "ガラガラ",
+      "meaningPt": "Som de objetos duros rolando ou desabando; também descreve uma voz rouca.",
+      "meaningJa": "硬い物が大きく転がったり崩れたりする音。また、声がかれた様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 185,
+      "term": "ダダダ",
+      "meaningPt": "Som de passos rápidos ou de algo acelerado.",
+      "meaningJa": "人や物が非常に速く連続して進む大きな音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 186,
+      "term": "メキメキ",
+      "meaningPt": "Som de algo quebrando com força ou de algo se desenvolvendo rapidamente.",
+      "meaningJa": "物が力を受けてきしむ音。また、能力が急速に伸びる様子。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 187,
+      "term": "ゴボゴボ",
+      "meaningPt": "Som de algo borbulhando ou de água.",
+      "meaningJa": "水や空気が大きな泡となって続けて出る音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 188,
+      "term": "ポコポコ",
+      "meaningPt": "Som de algo batendo ou de bolhas estourando.",
+      "meaningJa": "小さな物を軽く叩く音や、泡が次々と出る音。",
+      "categories": [
+        "giseigo"
+      ]
+    },
+    {
+      "id": 189,
+      "term": "パッパ",
+      "meaningPt": "Som de algo acontecendo rapidamente ou de batidas rápidas.",
+      "meaningJa": "動作を手早く次々と行う様子。また、軽くはたく音。",
+      "categories": [
+        "giseigo"
+      ]
+    }
+  ]
+}
