@@ -38,6 +38,7 @@ export default function KanjiTrainerPage() {
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [search, setSearch] = useState('');
   const [session, setSession] = useState<KanjiSessionView | null>(null);
+  const [resumableSession, setResumableSession] = useState<KanjiSessionView | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [sessionError, setSessionError] = useState('');
   const [sessionBusy, setSessionBusy] = useState(false);
@@ -55,7 +56,7 @@ export default function KanjiTrainerPage() {
         if (savedSessionId) {
           const resumed = await resumeKanjiSession(savedSessionId);
           if (cancelled) return;
-          if (resumed) setSession(resumed);
+          if (resumed) setResumableSession(resumed);
           else window.localStorage.removeItem(SESSION_KEY);
         }
       } catch {
@@ -141,6 +142,7 @@ export default function KanjiTrainerPage() {
         ...(advanced ? { selectedIds: ids } : {}),
       });
       setSession(created);
+      setResumableSession(null);
       window.localStorage.setItem(SESSION_KEY, created.sessionId);
       setRevealed(false);
       setSessionError('');
@@ -175,10 +177,19 @@ export default function KanjiTrainerPage() {
   function leaveSession() {
     const sessionId = session?.sessionId;
     setSession(null);
+    setResumableSession(null);
     setRevealed(false);
     setSessionError('');
     window.localStorage.removeItem(SESSION_KEY);
     if (sessionId) void closeKanjiSession(sessionId).catch(() => undefined);
+  }
+
+  function continueSession() {
+    if (!resumableSession) return;
+    setSession(resumableSession);
+    setResumableSession(null);
+    setRevealed(false);
+    setSessionError('');
   }
 
   if (session && currentKanji && currentEntry) {
@@ -291,10 +302,20 @@ export default function KanjiTrainerPage() {
             <h1>Comece pelo conjunto certo.</h1>
             <p>Escolha por JLPT ou série escolar. Cada kanji entra no baralho com três cópias e vai ganhando ou perdendo presença conforme suas respostas.</p>
           </div>
-          <img src="/mode-kanji.png" alt="Gato bordado com cartões de estudo e pincel" />
+          <img src="/home-assets/mode-kanji.png" alt="Gato bordado com cartões de estudo e pincel" />
         </div>
 
         <div className="deck-selector-shell">
+          {resumableSession && (
+            <div className="resume-session-banner">
+              <div>
+                <span>Sessão anterior</span>
+                <strong>Você parou no turno {resumableSession.turn}.</strong>
+              </div>
+              <button type="button" onClick={continueSession}>Continuar treino</button>
+            </div>
+          )}
+
           <div className="deck-selector-topline">
             <div>
               <span>Organizar conjunto</span>

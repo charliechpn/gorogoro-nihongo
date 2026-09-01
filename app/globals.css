@@ -999,6 +999,48 @@ a:focus-visible {
   pointer-events: none;
 }
 
+.resume-session-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 4px 24px;
+  padding: 15px 17px;
+  border: 1px solid rgba(18, 55, 100, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.resume-session-banner > div { display: flex; flex-direction: column; }
+
+.resume-session-banner span {
+  margin-bottom: 4px;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  opacity: 0.58;
+}
+
+.resume-session-banner strong {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.resume-session-banner button {
+  min-height: 38px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff8e9;
+  background: var(--ink);
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .deck-selector-topline {
   display: flex;
   align-items: center;
@@ -1398,6 +1440,8 @@ a:focus-visible {
   .kanji-selector-intro > img { width: min(310px, 92%); justify-self: center; transform: rotate(1deg); }
 
   .deck-selector-shell { margin-top: 0; padding: 24px 18px 28px; border-radius: 21px; }
+  .resume-session-banner { align-items: stretch; flex-direction: column; gap: 12px; text-align: left; }
+  .resume-session-banner button { width: 100%; }
   .deck-selector-topline { align-items: stretch; flex-direction: column; gap: 16px; }
   .deck-selector-topline > div:first-child { align-items: center; }
   .kanji-selector .grouping-tabs { width: 100%; }
