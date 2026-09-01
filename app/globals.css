@@ -859,6 +859,566 @@ a:focus-visible {
 .wrong-answer { border: 1px solid #9c3328; color: #9c3328; background: #fff; }
 .correct-answer { border: 1px solid var(--ink); color: #fff; background: var(--ink); }
 
+/* Kanji garden: the mechanics stay strict; the room no longer looks like tax software. */
+.kanji-trainer-page {
+  min-height: 100vh;
+  background-color: #f5f1e7;
+  background-image: var(--home-texture);
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+.kanji-trainer-header {
+  position: relative;
+  z-index: 20;
+  width: min(1080px, 100%);
+  height: 76px;
+  padding: 0 var(--home-rail);
+  border-bottom: 0;
+  background: rgba(250, 247, 238, 0.78);
+  box-shadow: 0 1px 0 rgba(18, 55, 100, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.kanji-home-link {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase;
+}
+
+.kanji-home-link img { width: 29px; height: 29px; object-fit: contain; }
+
+.kanji-trainer-brand {
+  justify-self: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.kanji-trainer-brand small {
+  margin-bottom: 5px;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 8px;
+  letter-spacing: 0.24em;
+}
+
+.kanji-trainer-brand strong {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.kanji-header-mark {
+  width: 36px;
+  height: 36px;
+  justify-self: end;
+}
+
+.kanji-header-mark img { width: 100%; height: 100%; object-fit: contain; }
+
+.change-deck-button {
+  min-height: 34px;
+  padding: 0 16px !important;
+  border: 1px solid rgba(18, 55, 100, 0.18) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.62) !important;
+  font-size: 8px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase;
+}
+
+.kanji-selector {
+  width: min(1000px, calc(100% - 40px));
+  padding: 42px 0 86px;
+}
+
+.kanji-selector-intro {
+  min-height: 330px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  align-items: center;
+  gap: 34px;
+  overflow: hidden;
+}
+
+.kanji-selector-intro > div { padding-left: 22px; }
+
+.kanji-selector-intro h1 {
+  max-width: 570px;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.kanji-selector-intro > div > p:last-child {
+  max-width: 570px;
+  margin: 20px 0 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.kanji-selector-intro > img {
+  width: 410px;
+  max-width: 118%;
+  justify-self: end;
+  filter: drop-shadow(0 18px 22px rgba(36, 47, 57, 0.12));
+  transform: rotate(1.5deg) translateX(18px);
+}
+
+.deck-selector-shell {
+  position: relative;
+  isolation: isolate;
+  margin-top: 12px;
+  padding: 32px 34px 36px;
+  border: 1px solid rgba(18, 55, 100, 0.13);
+  border-radius: 26px;
+  background-color: rgba(252, 249, 241, 0.9);
+  background-image: var(--home-texture);
+  background-size: 880px auto;
+  box-shadow: 0 18px 40px rgba(52, 43, 33, 0.09);
+}
+
+.deck-selector-shell::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 8px;
+  border: 1px dashed rgba(88, 120, 162, 0.28);
+  border-radius: 19px;
+  pointer-events: none;
+}
+
+.deck-selector-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 4px;
+}
+
+.deck-selector-topline > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.deck-selector-topline > div:first-child span {
+  margin-bottom: 5px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.62;
+}
+
+.deck-selector-topline > div:first-child strong {
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.kanji-selector .grouping-tabs {
+  margin: 0;
+  border-color: rgba(18, 55, 100, 0.15);
+  background: rgba(226, 220, 207, 0.62);
+}
+
+.kanji-selector .grouping-tabs button {
+  min-height: 40px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.kanji-selector .grouping-tabs button.is-active {
+  background-image: linear-gradient(rgba(18, 55, 100, 0.9), rgba(18, 55, 100, 0.9)), url('/mode-kanji-card-v2.png');
+  background-position: center bottom;
+  background-size: 230% auto;
+  box-shadow: 0 5px 12px rgba(18, 55, 100, 0.2);
+}
+
+.kanji-selector .level-grid {
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.kanji-selector .level-grid button {
+  position: relative;
+  min-height: 0;
+  aspect-ratio: 2 / 3;
+  justify-content: flex-end;
+  padding: 0 12px 14%;
+  overflow: hidden;
+  border: 0;
+  border-radius: 15px;
+  color: #fbf3df;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 46%, rgba(7, 35, 67, 0.2) 62%, rgba(7, 35, 67, 0.86) 100%), url('/mode-kanji-card-v2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: none;
+  filter: drop-shadow(0 8px 7px rgba(38, 36, 31, 0.16));
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.kanji-selector .level-grid button:hover { transform: translateY(-5px) rotate(-0.4deg); }
+.kanji-selector .level-grid button:nth-child(even):hover { transform: translateY(-5px) rotate(0.4deg); }
+
+.kanji-selector .level-grid button.is-selected {
+  border-color: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 11px 10px rgba(18, 55, 100, 0.28)) drop-shadow(0 0 2px #c84a37);
+  transform: translateY(-7px);
+}
+
+.kanji-selector .level-grid button.is-selected::after {
+  content: '選';
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 241, 221, 0.72);
+  border-radius: 50%;
+  color: #fff1dd;
+  background: rgba(174, 55, 39, 0.86);
+  font-family: var(--serif);
+  font-size: 12px;
+}
+
+.kanji-selector .level-grid strong {
+  font-size: clamp(27px, 3.4vw, 38px);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+.kanji-selector .level-grid span {
+  margin-top: 5px;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  opacity: 0.86;
+}
+
+.kanji-selector .selected-level-actions {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.kanji-selector .start-training,
+.console-reveal-button,
+.kanji-trainer-page .correct-answer {
+  border: 1px solid rgba(255, 244, 222, 0.45);
+  color: #fff8e9;
+  background-color: var(--ink);
+  background-image: linear-gradient(rgba(13, 52, 93, 0.88), rgba(13, 52, 93, 0.94)), url('/mode-kanji-card-v2.png');
+  background-position: center bottom;
+  background-size: 210% auto;
+  box-shadow: 0 7px 15px rgba(18, 55, 100, 0.2);
+}
+
+.kanji-selector .start-training {
+  min-height: 50px;
+  padding: 0 30px;
+  font-size: 14px;
+}
+
+.kanji-selector .advanced-toggle {
+  border-bottom-color: rgba(18, 55, 100, 0.48);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.kanji-selector .advanced-picker {
+  margin-top: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: inset 0 0 0 5px rgba(88, 120, 162, 0.05);
+}
+
+.kanji-selector .kanji-table-wrap { background: rgba(255, 255, 255, 0.7); }
+
+.kanji-trainer-page .trainer-session {
+  width: min(1000px, calc(100% - 40px));
+  padding: 40px 0 74px;
+}
+
+.kanji-session-heading {
+  align-self: stretch;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.kanji-session-heading h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(39px, 5.4vw, 62px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.kanji-session-heading > p:last-child {
+  margin: 13px 0 0;
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.kanji-session-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(340px, 454px) minmax(300px, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: clamp(28px, 5vw, 62px);
+}
+
+.kanji-trainer-page .study-card {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border: 0;
+  border-radius: 31px;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 18px 18px rgba(35, 38, 42, 0.2));
+  transform: rotate(-0.45deg);
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.kanji-trainer-page .study-card:hover {
+  filter: drop-shadow(0 22px 22px rgba(35, 38, 42, 0.24));
+  transform: rotate(0deg) translateY(-3px);
+}
+
+.study-card-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.study-card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54% 13% 10%;
+  color: #fff4dc;
+  text-align: center;
+}
+
+.kanji-trainer-page .study-character {
+  color: #fff4dc;
+  font-size: clamp(106px, 11vw, 148px);
+  line-height: 0.92;
+  text-shadow: 0 3px 2px rgba(3, 24, 47, 0.38);
+}
+
+.kanji-trainer-page .study-card.is-revealed .study-character { font-size: clamp(64px, 7vw, 92px); }
+
+.kanji-trainer-page .reveal-hint {
+  margin-top: 22px;
+  color: #f6e8cb;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  opacity: 0.78;
+}
+
+.kanji-trainer-page .study-answer {
+  gap: 5px;
+  margin-top: 17px;
+  color: #fff6e4;
+  text-shadow: 0 2px 2px rgba(3, 24, 47, 0.4);
+}
+
+.kanji-trainer-page .study-answer > strong { font-size: clamp(20px, 2.4vw, 28px); }
+.kanji-trainer-page .study-answer > span { font-size: clamp(12px, 1.45vw, 15px); }
+.kanji-trainer-page .study-answer small { color: #f1e2c5; opacity: 0.78; }
+
+.session-console {
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(18, 55, 100, 0.14);
+  border-radius: 24px;
+  background-color: rgba(253, 250, 242, 0.9);
+  background-image: var(--home-texture);
+  background-size: 760px auto;
+  box-shadow: 0 18px 40px rgba(52, 43, 33, 0.1);
+}
+
+.session-console::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px dashed rgba(88, 120, 162, 0.25);
+  border-radius: 17px;
+  pointer-events: none;
+}
+
+.session-console-heading {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(18, 55, 100, 0.13);
+}
+
+.session-console-heading span {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  opacity: 0.62;
+}
+
+.session-console-heading strong {
+  color: var(--red);
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.session-console .session-stats {
+  position: relative;
+  gap: 7px;
+  margin: 18px 0 0;
+}
+
+.session-console .session-stats span {
+  min-height: 60px;
+  border: 1px solid rgba(18, 55, 100, 0.12);
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.session-console .session-stats strong { font-family: var(--serif); font-size: 16px; }
+
+.session-guidance {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.session-guidance > span {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff4dc;
+  background: var(--ink);
+  font-family: var(--serif);
+  font-size: 24px;
+  box-shadow: inset 0 0 0 3px rgba(255, 244, 220, 0.16);
+}
+
+.session-guidance strong { font-family: var(--serif); font-size: 16px; font-weight: 500; }
+.session-guidance p { margin: 5px 0 0; font-family: var(--serif); font-size: 12px; line-height: 1.45; opacity: 0.78; }
+
+.session-console .answer-actions {
+  position: relative;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.session-console .answer-actions button {
+  min-height: 54px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.kanji-trainer-page .wrong-answer {
+  border-color: rgba(156, 51, 40, 0.62);
+  color: #92372d;
+  background: rgba(255, 249, 239, 0.82);
+}
+
+.console-reveal-button {
+  position: relative;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 24px;
+  border-radius: 12px;
+  font-family: var(--serif);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.deck-rule {
+  position: relative;
+  margin: 20px 0 0;
+  padding-top: 17px;
+  border-top: 1px solid rgba(18, 55, 100, 0.12);
+  font-family: var(--serif);
+  font-size: 10px;
+  line-height: 1.5;
+  opacity: 0.64;
+}
+
+.kanji-trainer-page .trainer-error { align-self: stretch; text-align: center; }
+
+@media (max-width: 780px) {
+  .kanji-trainer-header { height: 66px; padding: 0 16px; }
+  .kanji-home-link span { display: none; }
+  .kanji-trainer-brand small { font-size: 6px; }
+  .kanji-trainer-brand strong { font-size: 14px; }
+  .kanji-header-mark { width: 31px; height: 31px; }
+  .change-deck-button { padding: 0 10px !important; font-size: 7px !important; }
+
+  .kanji-selector { width: min(100% - 24px, 1000px); padding-top: 24px; }
+  .kanji-selector-intro { min-height: 0; grid-template-columns: 1fr; gap: 8px; text-align: center; }
+  .kanji-selector-intro > div { padding: 20px 12px 0; }
+  .kanji-selector-intro h1 { font-size: clamp(38px, 12vw, 54px); }
+  .kanji-selector-intro > div > p:last-child { font-size: 13px; }
+  .kanji-selector-intro > img { width: min(310px, 92%); justify-self: center; transform: rotate(1deg); }
+
+  .deck-selector-shell { margin-top: 0; padding: 24px 18px 28px; border-radius: 21px; }
+  .deck-selector-topline { align-items: stretch; flex-direction: column; gap: 16px; }
+  .deck-selector-topline > div:first-child { align-items: center; }
+  .kanji-selector .grouping-tabs { width: 100%; }
+  .kanji-selector .grouping-tabs button { flex: 1; padding: 0 10px; }
+  .kanji-selector .level-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .kanji-selector .level-grid button { border-radius: 12px; }
+  .kanji-selector .selected-level-actions { align-items: stretch; }
+  .kanji-selector .start-training { width: 100%; }
+  .kanji-selector .advanced-toggle { align-self: center; }
+
+  .kanji-trainer-page .trainer-session { width: min(100% - 24px, 1000px); padding-top: 26px; }
+  .kanji-session-heading { margin-bottom: 21px; }
+  .kanji-session-heading h1 { font-size: clamp(36px, 11vw, 48px); }
+  .kanji-session-heading > p:last-child { padding: 0 10px; font-size: 12px; }
+  .kanji-session-layout { grid-template-columns: 1fr; gap: 23px; }
+  .kanji-trainer-page .study-card { width: min(430px, 100%); justify-self: center; border-radius: 24px; }
+  .session-console { width: 100%; padding: 24px 20px; border-radius: 20px; }
+  .session-console .session-stats span { min-height: 54px; font-size: 7px; }
+  .session-guidance { align-items: flex-start; }
+}
+
 /* Active recall game: one free-form field, many words, zero form-builder circus. */
 .word-game-page {
   background-color: #f5f1e7;
