@@ -129,6 +129,7 @@ export const vocabularyCatalog = sqliteTable(
     id: integer('id').primaryKey(),
     word: text('word').notNull(),
     reading: text('reading').notNull(),
+    promptPt: text('prompt_pt'),
     meaningsPtJson: text('meanings_pt_json').notNull(),
     meaningsEnJson: text('meanings_en_json').notNull(),
     jlptLevel: text('jlpt_level').notNull(),

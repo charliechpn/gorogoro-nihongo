@@ -16,6 +16,7 @@ type VocabularyRow = {
   id: number;
   word: string;
   reading: string;
+  prompt_pt: string | null;
   meanings_pt_json: string;
   jlpt_level: string;
 };
@@ -49,6 +50,7 @@ function mapVocabulary(row: VocabularyRow): VocabularyRecord {
     id: Number(row.id),
     word: row.word,
     reading: row.reading,
+    promptPt: row.prompt_pt,
     meaningsPt: JSON.parse(row.meanings_pt_json) as string[],
     jlpt: row.jlpt_level,
   };
@@ -78,26 +80,33 @@ function mapSession(row: SessionRow): VocabularySessionView {
 export async function loadVocabularyCatalog(): Promise<VocabularyCatalogResponse> {
   const database = getDatabase();
   const result = await database.prepare(`
-    SELECT jlpt_level, COUNT(*) AS count
+    SELECT jlpt_level, COUNT(*) AS count, COUNT(prompt_pt) AS curated_count
     FROM vocabulary_catalog
     GROUP BY jlpt_level
-  `).all<{ jlpt_level: string; count: number }>();
+  `).all<{ jlpt_level: string; count: number; curated_count: number }>();
 
   const counts = Object.fromEntries(
     result.results.map((row) => [row.jlpt_level, Number(row.count)]),
   );
+  const curatedCounts = Object.fromEntries(
+    result.results.map((row) => [row.jlpt_level, Number(row.curated_count)]),
+  );
   return {
-    version: 1,
+    version: 2,
     total: Object.values(counts).reduce((sum, count) => sum + count, 0),
     counts,
+    curatedCounts,
   };
 }
 
 async function loadLevelIds(level: string) {
   const result = await getDatabase()
-    .prepare('SELECT id FROM vocabulary_catalog WHERE jlpt_level = ? ORDER BY id')
+    .prepare('SELECT id, prompt_pt FROM vocabulary_catalog WHERE jlpt_level = ? ORDER BY id')
     .bind(level)
-    .all<{ id: number }>();
+    .all<{ id: number; prompt_pt: string | null }>();
+  if (result.results.some((row) => !row.prompt_pt)) {
+    throw new KanjiApiError(409, 'level_under_review', 'Esse nível ainda está em curadoria. Por enquanto, escolha o N5.');
+  }
   return result.results.map((row) => Number(row.id));
 }
 
@@ -159,6 +168,7 @@ export async function getVocabularySession(learnerId: string, sessionId: string)
       catalog.id,
       catalog.word,
       catalog.reading,
+      catalog.prompt_pt,
       catalog.meanings_pt_json,
       catalog.jlpt_level,
       COALESCE(progress.copies, 3) AS copies,
@@ -250,6 +260,7 @@ export async function answerVocabularySession(
       catalog.id,
       catalog.word,
       catalog.reading,
+      catalog.prompt_pt,
       catalog.meanings_pt_json,
       catalog.jlpt_level,
       COALESCE(progress.copies, 3) AS copies,
@@ -345,4 +356,3 @@ export async function closeVocabularySession(learnerId: string, sessionId: strin
   `).bind(sessionId, learnerId).run();
   return Number(result.meta.changes) > 0;
 }
-

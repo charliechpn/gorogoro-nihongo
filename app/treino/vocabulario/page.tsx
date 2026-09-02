@@ -16,7 +16,7 @@ import type {
   VocabularySessionView,
 } from './contracts';
 
-const SESSION_KEY = 'nihongo-vocabulary-session-v1';
+const SESSION_KEY = 'nihongo-vocabulary-session-v2';
 const JLPT_LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'] as const;
 
 function directionLabel(direction: VocabularyDirection) {
@@ -132,7 +132,7 @@ export default function VocabularyTrainerPage() {
     const isPortuguesePrompt = session.direction === 'pt_to_jp';
     const streakSymbol = progress.lastResult === 'correct' ? '✓' : progress.lastResult === 'wrong' ? '✗' : '—';
     const portugueseMeaning = current.meaningsPt.join(' · ');
-    const primaryMeaning = current.meaningsPt[0];
+    const primaryMeaning = current.promptPt ?? current.meaningsPt[0];
 
     return (
       <main className="trainer-page vocabulary-trainer-page">
@@ -308,10 +308,15 @@ export default function VocabularyTrainerPage() {
                       className={selectedLevel === level ? 'is-selected' : ''}
                       type="button"
                       key={level}
+                      disabled={(catalog.curatedCounts[level] ?? 0) !== (catalog.counts[level] ?? 0)}
                       onClick={() => setSelectedLevel(level)}
                     >
                       <strong>{level}</strong>
-                      <span>{catalog.counts[level] ?? 0} palavras</span>
+                      <span>
+                        {(catalog.curatedCounts[level] ?? 0) === (catalog.counts[level] ?? 0)
+                          ? `${catalog.counts[level] ?? 0} palavras`
+                          : 'em curadoria'}
+                      </span>
                     </button>
                   ))}
                 </div>
@@ -369,7 +374,7 @@ export default function VocabularyTrainerPage() {
 
               <div className="vocabulary-start-row">
                 <div>
-                  <span>{catalog.total} palavras na base</span>
+                  <span>{Object.values(catalog.curatedCounts).reduce((sum, count) => sum + count, 0)} palavras disponíveis</span>
                   <p>O baralho começa com três cópias de cada palavra.</p>
                 </div>
                 <button

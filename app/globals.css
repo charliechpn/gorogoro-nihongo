@@ -1606,6 +1606,20 @@ a:focus-visible {
   font-size: 12px;
 }
 
+.vocabulary-selector .vocabulary-level-grid button:disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.45);
+  opacity: 0.48;
+  transform: none;
+}
+
+.vocabulary-selector .vocabulary-level-grid button:disabled span {
+  color: var(--ink-soft);
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .vocabulary-selector .vocabulary-level-grid strong {
   font-size: clamp(26px, 3.2vw, 37px);
 }

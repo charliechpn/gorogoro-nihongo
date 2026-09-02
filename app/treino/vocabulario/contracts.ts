@@ -6,6 +6,7 @@ export type VocabularyRecord = {
   id: number;
   word: string;
   reading: string;
+  promptPt: string | null;
   meaningsPt: string[];
   jlpt: string;
 };
@@ -14,6 +15,7 @@ export type VocabularyCatalogResponse = {
   version: number;
   total: number;
   counts: Record<string, number>;
+  curatedCounts: Record<string, number>;
 };
 
 export type VocabularySessionView = {
@@ -39,4 +41,3 @@ export type AnswerVocabularySessionInput = {
   vocabularyId: number;
   result: AnswerResult;
 };
-

@@ -1,10 +1,11 @@
 import fs from "node:fs";
 import { DatabaseSync } from "node:sqlite";
 
-const migrationFiles = [
-  "drizzle/0000_perpetual_stark_industries.sql",
-  "drizzle/0001_violet_brood.sql",
-];
+const migrationFiles = fs
+  .readdirSync("drizzle")
+  .filter((file) => /^\d{4}_.+\.sql$/.test(file))
+  .sort()
+  .map((file) => `drizzle/${file}`);
 
 const database = new DatabaseSync(":memory:");
 
@@ -27,5 +28,15 @@ const samples = database
   )
   .all("お皿", "お見舞い", "いい加減", "お代わり");
 const integrity = database.prepare("pragma integrity_check").get();
+const curation = database
+  .prepare(`
+    select
+      count(*) as catalogCount,
+      count(prompt_pt) as promptCount,
+      count(distinct prompt_pt) as uniquePromptCount
+    from vocabulary_catalog
+    where jlpt_level = 'N5'
+  `)
+  .get();
 
-console.log(JSON.stringify({ count, levels, samples, integrity }, null, 2));
+console.log(JSON.stringify({ count, levels, samples, curation, integrity }, null, 2));
