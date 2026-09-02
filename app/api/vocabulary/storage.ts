@@ -105,7 +105,7 @@ async function loadLevelIds(level: string) {
     .bind(level)
     .all<{ id: number; prompt_pt: string | null }>();
   if (result.results.some((row) => !row.prompt_pt)) {
-    throw new KanjiApiError(409, 'level_under_review', 'Esse nível ainda está em curadoria. Por enquanto, escolha o N5.');
+    throw new KanjiApiError(409, 'level_under_review', 'Esse nível ainda está em curadoria. Escolha um nível já liberado.');
   }
   return result.results.map((row) => Number(row.id));
 }
