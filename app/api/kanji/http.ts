@@ -39,7 +39,11 @@ export async function withKanjiApiErrors(action: () => Promise<Response>) {
     }
 
     const message = error instanceof Error ? error.message : '';
-    if (message.includes('stale_kanji_answer') || message.includes('UNIQUE constraint failed')) {
+    if (
+      message.includes('stale_kanji_answer')
+      || message.includes('stale_vocabulary_answer')
+      || message.includes('UNIQUE constraint failed')
+    ) {
       return jsonResponse(
         { error: 'stale_answer', message: 'Esta carta já foi respondida. Atualize a sessão.' },
         409,

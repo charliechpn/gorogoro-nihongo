@@ -18,7 +18,7 @@ const modeCards = [
     title: 'Vocabulário',
     description: 'Palavras comuns ligadas a cada kanji.',
     light: true,
-    href: null,
+    href: '/treino/vocabulario',
     wide: false,
   },
   {
@@ -130,18 +130,10 @@ export default function Home() {
               </>
             );
 
-            return mode.href ? (
+            return (
               <a className={`mode-card${mode.light ? ' is-light' : ''}${mode.wide ? ' is-wide' : ''}`} href={mode.href} key={mode.id}>
                 {cardContent}
               </a>
-            ) : (
-              <button
-                className={`mode-card${mode.light ? ' is-light' : ''}${mode.wide ? ' is-wide' : ''}`}
-                type="button"
-                key={mode.id}
-              >
-                {cardContent}
-              </button>
             );
           })}
         </div>

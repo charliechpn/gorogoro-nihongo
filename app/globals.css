@@ -1463,6 +1463,488 @@ a:focus-visible {
   .session-guidance { align-items: flex-start; }
 }
 
+/* Vocabulary atelier: same honest deck, a separate memory for each direction. */
+.vocabulary-trainer-page {
+  min-height: 100vh;
+  background-color: #f5f1e7;
+  background-image: var(--home-texture);
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+.vocabulary-trainer-header {
+  position: relative;
+  z-index: 20;
+  width: min(1080px, 100%);
+  height: 76px;
+  padding: 0 var(--home-rail);
+  border-bottom: 0;
+  background: rgba(250, 247, 238, 0.78);
+  box-shadow: 0 1px 0 rgba(18, 55, 100, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.vocabulary-selector {
+  width: min(1000px, calc(100% - 40px));
+  padding: 42px 0 86px;
+}
+
+.vocabulary-selector-intro > img {
+  width: 390px;
+  transform: rotate(-1deg) translateX(8px);
+}
+
+.vocabulary-selector-shell {
+  display: grid;
+  gap: 34px;
+}
+
+.vocabulary-selector-shell > .resume-session-banner,
+.vocabulary-selector-shell > .trainer-message,
+.vocabulary-selector-shell > .trainer-error {
+  margin-bottom: -10px;
+}
+
+.vocabulary-choice-section {
+  position: relative;
+  padding: 0 4px;
+}
+
+.vocabulary-choice-section + .vocabulary-choice-section {
+  padding-top: 30px;
+  border-top: 1px solid rgba(18, 55, 100, 0.12);
+}
+
+.vocabulary-choice-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.vocabulary-choice-heading > span {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(18, 55, 100, 0.22);
+  border-radius: 50%;
+  color: var(--red);
+  font-family: var(--serif);
+  font-size: 12px;
+}
+
+.vocabulary-choice-heading h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.vocabulary-choice-heading p {
+  margin: 5px 0 0;
+  font-family: var(--serif);
+  font-size: 12px;
+  line-height: 1.45;
+  opacity: 0.7;
+}
+
+.vocabulary-selector .vocabulary-level-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 23px;
+}
+
+.vocabulary-selector .vocabulary-level-grid button {
+  position: relative;
+  min-height: 0;
+  aspect-ratio: 2 / 3;
+  justify-content: flex-end;
+  padding: 0 10px 14%;
+  overflow: hidden;
+  border: 0;
+  border-radius: 15px;
+  color: var(--ink);
+  background-color: transparent;
+  background-image:
+    linear-gradient(to bottom, transparent 48%, rgba(250, 244, 231, 0.1) 62%, rgba(250, 244, 231, 0.92) 100%),
+    url('/mode-vocabulary-card-v2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: none;
+  filter: drop-shadow(0 8px 7px rgba(38, 36, 31, 0.15));
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.vocabulary-selector .vocabulary-level-grid button:hover {
+  transform: translateY(-5px) rotate(-0.35deg);
+}
+
+.vocabulary-selector .vocabulary-level-grid button.is-selected {
+  border-color: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 11px 10px rgba(18, 55, 100, 0.24)) drop-shadow(0 0 2px #c84a37);
+  transform: translateY(-7px);
+}
+
+.vocabulary-selector .vocabulary-level-grid button.is-selected::after {
+  content: '選';
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 241, 221, 0.72);
+  border-radius: 50%;
+  color: #fff1dd;
+  background: rgba(174, 55, 39, 0.88);
+  font-family: var(--serif);
+  font-size: 12px;
+}
+
+.vocabulary-selector .vocabulary-level-grid strong {
+  font-size: clamp(26px, 3.2vw, 37px);
+}
+
+.vocabulary-selector .vocabulary-level-grid span {
+  margin-top: 5px;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.direction-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.direction-grid > button {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid rgba(18, 55, 100, 0.15);
+  border-radius: 18px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 9px 22px rgba(52, 43, 33, 0.06);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.direction-grid > button:hover {
+  border-color: rgba(18, 55, 100, 0.36);
+  transform: translateY(-3px);
+}
+
+.direction-grid > button.is-selected {
+  border-color: var(--ink);
+  color: #fff7e6;
+  background-color: var(--ink);
+  background-image: linear-gradient(rgba(13, 52, 93, 0.89), rgba(13, 52, 93, 0.94)), url('/mode-vocabulary-card-v2.png');
+  background-position: center bottom;
+  background-size: 155% auto;
+}
+
+.direction-grid > button > span {
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+  opacity: 0.67;
+}
+
+.direction-grid strong {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 29px;
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.direction-grid strong b { font-weight: 500; }
+.direction-grid strong i { color: var(--red); font-style: normal; }
+.direction-grid > button.is-selected strong i { color: #ef9a80; }
+
+.direction-grid p {
+  max-width: 360px;
+  margin: 13px 0 0;
+  font-family: var(--serif);
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.76;
+}
+
+.furigana-segmented {
+  width: min(520px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 21px;
+  padding: 7px;
+  border: 1px solid rgba(18, 55, 100, 0.13);
+  border-radius: 16px;
+  background: rgba(226, 220, 207, 0.52);
+}
+
+.furigana-segmented button {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 11px;
+  color: var(--ink);
+  background: transparent;
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.furigana-segmented button span {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.furigana-segmented button.is-selected {
+  color: #fff7e6;
+  background: var(--ink);
+  box-shadow: 0 5px 12px rgba(18, 55, 100, 0.18);
+}
+
+.vocabulary-start-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 4px 0;
+  border-top: 1px solid rgba(18, 55, 100, 0.12);
+}
+
+.vocabulary-start-row > div > span {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.62;
+}
+
+.vocabulary-start-row p {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 13px;
+}
+
+.vocabulary-selector .start-training {
+  min-width: 220px;
+  min-height: 52px;
+  padding: 0 30px;
+  border: 1px solid rgba(255, 244, 222, 0.45);
+  border-radius: 12px;
+  color: #fff8e9;
+  background-color: var(--ink);
+  background-image: linear-gradient(rgba(13, 52, 93, 0.88), rgba(13, 52, 93, 0.94)), url('/mode-vocabulary-card-v2.png');
+  background-position: center bottom;
+  background-size: 210% auto;
+  box-shadow: 0 7px 15px rgba(18, 55, 100, 0.2);
+  font-family: var(--serif);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.vocabulary-selector .start-training:disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.7);
+  opacity: 0.4;
+}
+
+.vocabulary-trainer-page .trainer-session {
+  width: min(1000px, calc(100% - 40px));
+  padding: 40px 0 74px;
+}
+
+.vocabulary-trainer-page .study-card {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border: 0;
+  border-radius: 31px;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 18px 18px rgba(35, 38, 42, 0.19));
+  transform: rotate(0.45deg);
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.vocabulary-trainer-page .study-card:hover {
+  filter: drop-shadow(0 22px 22px rgba(35, 38, 42, 0.23));
+  transform: rotate(0deg) translateY(-3px);
+}
+
+.vocabulary-card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54% 14% 10%;
+  color: var(--ink);
+  text-align: center;
+}
+
+.vocabulary-card-label {
+  margin-bottom: 20px;
+  color: var(--red);
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 0.19em;
+}
+
+.vocabulary-portuguese-prompt {
+  max-height: 190px;
+  overflow: auto;
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.8vw, 34px);
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.vocabulary-japanese-prompt,
+.vocabulary-revealed-answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vocabulary-japanese-prompt ruby,
+.vocabulary-japanese-prompt strong,
+.vocabulary-revealed-answer > strong {
+  max-width: 100%;
+  font-family: var(--serif);
+  font-size: clamp(44px, 5.8vw, 72px);
+  font-weight: 500;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.vocabulary-revealed-answer > span {
+  margin-top: 10px;
+  font-family: var(--serif);
+  font-size: clamp(15px, 1.8vw, 20px);
+}
+
+.vocabulary-japanese-prompt rt {
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 0.3em;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.vocabulary-revealed-answer i {
+  max-height: 112px;
+  margin-top: 16px;
+  overflow: auto;
+  font-family: var(--serif);
+  font-size: clamp(15px, 1.75vw, 20px);
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.vocabulary-trainer-page .reveal-hint {
+  margin-top: 23px;
+  color: var(--ink-soft);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+  opacity: 0.68;
+}
+
+.session-furigana-toggle {
+  position: relative;
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+  padding: 0 13px;
+  border: 1px solid rgba(18, 55, 100, 0.13);
+  border-radius: 10px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.48);
+  cursor: pointer;
+}
+
+.session-furigana-toggle span {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.session-furigana-toggle strong {
+  font-family: var(--serif);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.session-furigana-toggle.is-active {
+  border-color: rgba(18, 55, 100, 0.34);
+  background: rgba(211, 225, 234, 0.54);
+}
+
+.vocabulary-trainer-page .correct-answer {
+  border: 1px solid rgba(255, 244, 222, 0.45);
+  color: #fff8e9;
+  background-color: var(--ink);
+  background-image: linear-gradient(rgba(13, 52, 93, 0.88), rgba(13, 52, 93, 0.94)), url('/mode-vocabulary-card-v2.png');
+  background-position: center bottom;
+  background-size: 210% auto;
+  box-shadow: 0 7px 15px rgba(18, 55, 100, 0.2);
+}
+
+.vocabulary-trainer-page .wrong-answer {
+  border-color: rgba(156, 51, 40, 0.62);
+  color: #92372d;
+  background: rgba(255, 249, 239, 0.82);
+}
+
+@media (max-width: 780px) {
+  .vocabulary-trainer-header { height: 66px; padding: 0 16px; }
+  .vocabulary-selector { width: min(100% - 24px, 1000px); padding-top: 24px; }
+  .vocabulary-selector .vocabulary-level-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .vocabulary-selector .vocabulary-level-grid button:last-child { grid-column: 1 / -1; width: calc(50% - 5px); justify-self: center; }
+  .direction-grid { grid-template-columns: 1fr; }
+  .direction-grid > button { min-height: 170px; }
+  .vocabulary-start-row { align-items: stretch; flex-direction: column; }
+  .vocabulary-selector .start-training { width: 100%; }
+  .vocabulary-trainer-page .trainer-session { width: min(100% - 24px, 1000px); padding-top: 26px; }
+  .vocabulary-trainer-page .study-card { width: min(430px, 100%); justify-self: center; border-radius: 24px; }
+}
+
+@media (max-width: 480px) {
+  .furigana-segmented { grid-template-columns: 1fr; }
+  .vocabulary-choice-heading p { font-size: 11px; }
+  .vocabulary-card-content { padding-inline: 13%; }
+}
+
 /* Active recall game: one free-form field, many words, zero form-builder circus. */
 .word-game-page {
   background-color: #f5f1e7;

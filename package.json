@@ -15,6 +15,7 @@
     "db:migrate:local": "wrangler d1 migrations apply site-creator-d1 --local --config wrangler.jsonc",
     "test:deck": "node --test app/treino/kanji/deck.test.ts",
     "test:kanji-backend": "node --test app/api/kanji/backend.test.ts",
+    "test:vocabulary-backend": "node --test app/api/vocabulary/backend.test.ts",
     "test:words": "node --test app/treino/palavras/game.test.ts",
     "test:onomatopoeia": "node --test app/treino/onomatopeias/game.test.ts",
     "test:verbs": "node --test app/treino/verbos/game.test.ts",
