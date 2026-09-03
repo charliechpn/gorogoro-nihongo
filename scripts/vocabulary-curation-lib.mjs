@@ -14,6 +14,11 @@ export const LEVEL_RANGES = {
       2144, 2145,
     ],
   },
+  N2: {
+    firstId: 2224,
+    lastId: 3434,
+    excludedIds: [2523, 2530, 2555, 2602, 2603, 2604, 2983, 3179, 3245, 3326],
+  },
 };
 
 export function sqlText(value) {

@@ -19,10 +19,14 @@ const n4Curation = JSON.parse(
 const n3Curation = JSON.parse(
   fs.readFileSync('content/vocabulary/n3.pt.json', 'utf8'),
 ) as { level: string; entries: CuratedEntry[] };
+const n2Curation = JSON.parse(
+  fs.readFileSync('content/vocabulary/n2.pt.json', 'utf8'),
+) as { level: string; entries: CuratedEntry[] };
 
 const n5ById = new Map(n5Curation.entries.map((entry) => [entry[0], entry]));
 const n4ById = new Map(n4Curation.entries.map((entry) => [entry[0], entry]));
 const n3ById = new Map(n3Curation.entries.map((entry) => [entry[0], entry]));
+const n2ById = new Map(n2Curation.entries.map((entry) => [entry[0], entry]));
 
 function rangeIds(firstId: number, lastId: number, excludedIds: number[] = []) {
   const exclusions = new Set(excludedIds);
@@ -76,8 +80,20 @@ test('a curadoria cobre exatamente as 1.304 entradas únicas N3', () => {
   ]));
 });
 
+test('a curadoria cobre exatamente as 1.201 entradas únicas N2', () => {
+  assert.equal(n2Curation.level, 'N2');
+  assertCurationIntegrity(n2Curation, rangeIds(2224, 3434, [
+    2523, 2530, 2555, 2602, 2603, 2604, 2983, 3179, 3245, 3326,
+  ]));
+});
+
 test('as curadorias não repetem palavra/leitura entre níveis', () => {
-  const entries = [...n5Curation.entries, ...n4Curation.entries, ...n3Curation.entries];
+  const entries = [
+    ...n5Curation.entries,
+    ...n4Curation.entries,
+    ...n3Curation.entries,
+    ...n2Curation.entries,
+  ];
   const headwords = entries.map(([, word, reading]) => `${word}\u0000${reading}`);
   assert.equal(new Set(headwords).size, headwords.length);
 });
@@ -116,4 +132,17 @@ test('casos semanticamente perigosos foram curados explicitamente', () => {
   assert.equal(n3ById.get(1949)?.[3], 'especialista; doutor');
   assert.equal(n3ById.get(2056)?.[3], 'mudança; transformação');
   assert.equal(n3ById.get(2189)?.[3], 'terra firme; continente');
+
+  assert.equal(n2ById.has(2530), false);
+  assert.equal(n2ById.get(2562)?.[3], 'engenho; ideia prática');
+  assert.equal(n2ById.get(2571)?.[3], 'folhas de outono; mudança de cor das folhas');
+  assert.equal(n2ById.get(2848)?.[3], 'ciências humanas');
+  assert.equal(n2ById.get(2851)?.[3], 'enciclopédia ilustrada');
+  assert.equal(n2ById.get(2962)?.[1], '率直');
+  assert.equal(n2ById.get(3104)?.[1], '田んぼ');
+  assert.equal(n2ById.get(3115)?.[3], 'esforçar-se; empenhar-se');
+  assert.equal(n2ById.get(3128)?.[3], 'estatística; dados estatísticos');
+  assert.equal(n2ById.get(3196)?.[3], 'ideia; concepção');
+  assert.equal(n2ById.get(3203)?.[2], 'そる');
+  assert.equal(n2ById.get(3434)?.[1], '対立');
 });
