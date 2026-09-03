@@ -22,11 +22,15 @@ const n3Curation = JSON.parse(
 const n2Curation = JSON.parse(
   fs.readFileSync('content/vocabulary/n2.pt.json', 'utf8'),
 ) as { level: string; entries: CuratedEntry[] };
+const n1Curation = JSON.parse(
+  fs.readFileSync('content/vocabulary/n1.pt.json', 'utf8'),
+) as { level: string; entries: CuratedEntry[] };
 
 const n5ById = new Map(n5Curation.entries.map((entry) => [entry[0], entry]));
 const n4ById = new Map(n4Curation.entries.map((entry) => [entry[0], entry]));
 const n3ById = new Map(n3Curation.entries.map((entry) => [entry[0], entry]));
 const n2ById = new Map(n2Curation.entries.map((entry) => [entry[0], entry]));
+const n1ById = new Map(n1Curation.entries.map((entry) => [entry[0], entry]));
 
 function rangeIds(firstId: number, lastId: number, excludedIds: number[] = []) {
   const exclusions = new Set(excludedIds);
@@ -87,12 +91,23 @@ test('a curadoria cobre exatamente as 1.201 entradas únicas N2', () => {
   ]));
 });
 
+test('a curadoria cobre exatamente as 2.552 entradas únicas N1', () => {
+  assert.equal(n1Curation.level, 'N1');
+  assertCurationIntegrity(n1Curation, rangeIds(3435, 6029, [
+    3449, 3463, 3465, 3540, 3620, 3780, 3906, 4001, 4072, 4123, 4154, 4186,
+    4378, 4409, 4450, 4583, 4604, 4610, 4626, 4667, 4701, 4716, 4786, 4991,
+    5029, 5058, 5083, 5102, 5157, 5199, 5315, 5342, 5418, 5440, 5487, 5590,
+    5592, 5620, 5822, 5931, 5935, 5952, 6018,
+  ]));
+});
+
 test('as curadorias não repetem palavra/leitura entre níveis', () => {
   const entries = [
     ...n5Curation.entries,
     ...n4Curation.entries,
     ...n3Curation.entries,
     ...n2Curation.entries,
+    ...n1Curation.entries,
   ];
   const headwords = entries.map(([, word, reading]) => `${word}\u0000${reading}`);
   assert.equal(new Set(headwords).size, headwords.length);
@@ -145,4 +160,17 @@ test('casos semanticamente perigosos foram curados explicitamente', () => {
   assert.equal(n2ById.get(3196)?.[3], 'ideia; concepção');
   assert.equal(n2ById.get(3203)?.[2], 'そる');
   assert.equal(n2ById.get(3434)?.[1], '対立');
+
+  assert.equal(n1ById.get(3476)?.[2], 'あいぞう');
+  assert.equal(n1ById.get(3483)?.[2], 'あくにち');
+  assert.equal(n1ById.get(3527)?.[2], 'ひとすじ');
+  assert.equal(n1ById.get(3868)?.[2], 'きぞう');
+  assert.equal(n1ById.get(3887)?.[3], 'elegância; dignidade');
+  assert.equal(n1ById.get(3926)?.[1], '遡る');
+  assert.equal(n1ById.get(4371)?.[2], 'さんばし');
+  assert.equal(n1ById.get(4702)?.[3], 'marrom-escuro');
+  assert.equal(n1ById.get(4791)?.[2], 'まごころ');
+  assert.equal(n1ById.get(5160)?.[2], 'ちけい');
+  assert.equal(n1ById.get(5438)?.[3], 'quantidade de calor; calorias');
+  assert.equal(n1ById.get(5501)?.[2], 'ほっそく');
 });
