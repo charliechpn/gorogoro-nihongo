@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 
 const level = process.argv[2] ?? "N5";
@@ -11,14 +12,25 @@ if (!/^N[1-5]$/.test(level) || !Number.isInteger(offset) || !Number.isInteger(li
 }
 
 const database = new DatabaseSync(":memory:");
-for (const file of [
-  "drizzle/0000_perpetual_stark_industries.sql",
-  "drizzle/0001_violet_brood.sql",
-]) {
+for (const file of fs.readdirSync("drizzle").filter((name) => /^\d{4}_.+\.sql$/.test(name)).sort()) {
   database.exec(
-    fs.readFileSync(file, "utf8").replaceAll("--> statement-breakpoint", ""),
+    fs.readFileSync(path.join("drizzle", file), "utf8").replaceAll("--> statement-breakpoint", ""),
   );
 }
+
+const easierLevelKeys = new Set(
+  fs.readdirSync(path.join("content", "vocabulary"))
+    .filter((file) => /^n[1-5]\.pt\.json$/i.test(file))
+    .flatMap((file) => {
+      try {
+        return [JSON.parse(fs.readFileSync(path.join("content", "vocabulary", file), "utf8"))];
+      } catch {
+        return [];
+      }
+    })
+    .filter((curation) => Number(curation.level.slice(1)) > Number(level.slice(1)))
+    .flatMap((curation) => curation.entries.map(([, word, reading]) => `${word}\u0000${reading}`)),
+);
 
 const entries = database
   .prepare(`
@@ -30,9 +42,10 @@ const entries = database
     FROM vocabulary_catalog
     WHERE jlpt_level = ?
     ORDER BY id
-    LIMIT ? OFFSET ?
   `)
-  .all(level, limit, offset)
+  .all(level)
+  .filter((entry) => !easierLevelKeys.has(`${entry.word}\u0000${entry.reading}`))
+  .slice(offset, offset + limit)
   .map((entry) => ({
     ...entry,
     meaningsEn: JSON.parse(entry.meaningsEn),

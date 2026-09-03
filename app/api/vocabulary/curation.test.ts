@@ -16,20 +16,32 @@ const n5Curation = JSON.parse(
 const n4Curation = JSON.parse(
   fs.readFileSync('content/vocabulary/n4.pt.json', 'utf8'),
 ) as { level: string; entries: CuratedEntry[] };
+const n3Curation = JSON.parse(
+  fs.readFileSync('content/vocabulary/n3.pt.json', 'utf8'),
+) as { level: string; entries: CuratedEntry[] };
 
 const n5ById = new Map(n5Curation.entries.map((entry) => [entry[0], entry]));
 const n4ById = new Map(n4Curation.entries.map((entry) => [entry[0], entry]));
+const n3ById = new Map(n3Curation.entries.map((entry) => [entry[0], entry]));
+
+function rangeIds(firstId: number, lastId: number, excludedIds: number[] = []) {
+  const exclusions = new Set(excludedIds);
+  return Array.from(
+    { length: lastId - firstId + 1 },
+    (_, index) => firstId + index,
+  ).filter((id) => !exclusions.has(id));
+}
 
 function assertCurationIntegrity(
   curation: { level: string; entries: CuratedEntry[] },
-  firstId: number,
-  expectedCount: number,
+  expectedIds: number[],
 ) {
+  const expectedCount = expectedIds.length;
   assert.equal(curation.entries.length, expectedCount);
   assert.equal(new Set(curation.entries.map(([id]) => id)).size, expectedCount);
   assert.deepEqual(
     curation.entries.map(([id]) => id),
-    Array.from({ length: expectedCount }, (_, index) => firstId + index),
+    expectedIds,
   );
 
   const prompts = curation.entries.map(([, , , prompt]) => prompt.toLocaleLowerCase('pt-BR'));
@@ -47,16 +59,25 @@ function assertCurationIntegrity(
 
 test('a curadoria cobre exatamente as 459 entradas N5', () => {
   assert.equal(n5Curation.level, 'N5');
-  assertCurationIntegrity(n5Curation, 1, 459);
+  assertCurationIntegrity(n5Curation, rangeIds(1, 459));
 });
 
 test('a curadoria cobre exatamente as 432 entradas N4', () => {
   assert.equal(n4Curation.level, 'N4');
-  assertCurationIntegrity(n4Curation, 460, 432);
+  assertCurationIntegrity(n4Curation, rangeIds(460, 891));
 });
 
-test('as curadorias N5 e N4 não repetem palavra/leitura entre níveis', () => {
-  const entries = [...n5Curation.entries, ...n4Curation.entries];
+test('a curadoria cobre exatamente as 1.304 entradas únicas N3', () => {
+  assert.equal(n3Curation.level, 'N3');
+  assertCurationIntegrity(n3Curation, rangeIds(892, 2223, [
+    904, 951, 952, 965, 1084, 1212, 1216, 1246, 1266, 1274, 1391, 1497,
+    1498, 1504, 1533, 1536, 1569, 1583, 1628, 1652, 1683, 1714, 1779, 1917,
+    1918, 2076, 2144, 2145,
+  ]));
+});
+
+test('as curadorias não repetem palavra/leitura entre níveis', () => {
+  const entries = [...n5Curation.entries, ...n4Curation.entries, ...n3Curation.entries];
   const headwords = entries.map(([, word, reading]) => `${word}\u0000${reading}`);
   assert.equal(new Set(headwords).size, headwords.length);
 });
@@ -83,4 +104,16 @@ test('casos semanticamente perigosos foram curados explicitamente', () => {
   assert.equal(n4ById.get(698)?.[1], '真ん中');
   assert.equal(n4ById.get(875)?.[1], '落とす');
   assert.equal(n4ById.get(876)?.[1], '落ちる');
+
+  assert.equal(n3ById.get(1371)?.[2], 'さんせい');
+  assert.equal(n3ById.get(1387)?.[3], 'sustentar; apoiar');
+  assert.equal(n3ById.get(1471)?.[3], 'estado; província');
+  assert.equal(n3ById.get(1610)?.[3], 'popularidade');
+  assert.equal(n3ById.get(1653)?.[3], 'tecido; massa crua');
+  assert.equal(n3ById.get(1654)?.[3], 'ser vivo; organismo');
+  assert.equal(n3ById.get(1656)?.[3], 'auge; plenitude');
+  assert.equal(n3ById.get(1754)?.[3], 'proprietário de imóvel alugado');
+  assert.equal(n3ById.get(1949)?.[3], 'especialista; doutor');
+  assert.equal(n3ById.get(2056)?.[3], 'mudança; transformação');
+  assert.equal(n3ById.get(2189)?.[3], 'terra firme; continente');
 });

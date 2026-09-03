@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
   auditCuration,
+  LEVEL_RANGES,
   loadCuration,
   sqlText,
 } from './vocabulary-curation-lib.mjs';
@@ -37,6 +38,12 @@ for (const group of chunks(curation.entries, 75)) {
 statements.push(
   "UPDATE `vocabulary_practice_sessions` SET `status` = 'abandoned', `current_vocabulary_id` = NULL, `updated_at` = CURRENT_TIMESTAMP WHERE `status` = 'active';",
 );
+const excludedIds = LEVEL_RANGES[level]?.excludedIds ?? [];
+if (excludedIds.length) {
+  statements.push(
+    `DELETE FROM \`vocabulary_catalog\` WHERE \`jlpt_level\` = ${sqlText(level)} AND \`id\` IN (${excludedIds.join(', ')});`,
+  );
+}
 if (audit.collisions.length) {
   statements.push(
     `DELETE FROM \`vocabulary_catalog\` WHERE \`id\` IN (${audit.collisions.map(({ existingId }) => existingId).join(', ')});`,
@@ -49,7 +56,8 @@ SET
   \`reading\` = (SELECT stage.reading FROM \`${stageTable}\` AS stage WHERE stage.id = \`vocabulary_catalog\`.\`id\`),
   \`prompt_pt\` = (SELECT stage.prompt_pt FROM \`${stageTable}\` AS stage WHERE stage.id = \`vocabulary_catalog\`.\`id\`),
   \`meanings_pt_json\` = (SELECT stage.meanings_pt_json FROM \`${stageTable}\` AS stage WHERE stage.id = \`vocabulary_catalog\`.\`id\`)
-WHERE \`jlpt_level\` = ${sqlText(level)};`,
+WHERE \`jlpt_level\` = ${sqlText(level)}
+  AND EXISTS (SELECT 1 FROM \`${stageTable}\` AS stage WHERE stage.id = \`vocabulary_catalog\`.\`id\`);`,
   `DROP TABLE \`${stageTable}\`;`,
   'PRAGMA optimize;',
 );

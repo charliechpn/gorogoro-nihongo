@@ -3,8 +3,17 @@ import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
 export const LEVEL_RANGES = {
-  N5: { firstId: 1, count: 459 },
-  N4: { firstId: 460, count: 432 },
+  N5: { firstId: 1, lastId: 459, excludedIds: [] },
+  N4: { firstId: 460, lastId: 891, excludedIds: [] },
+  N3: {
+    firstId: 892,
+    lastId: 2223,
+    excludedIds: [
+      904, 951, 952, 965, 1084, 1212, 1216, 1246, 1266, 1274, 1391, 1497, 1498,
+      1504, 1533, 1536, 1569, 1583, 1628, 1652, 1683, 1714, 1779, 1917, 1918, 2076,
+      2144, 2145,
+    ],
+  },
 };
 
 export function sqlText(value) {
@@ -58,14 +67,15 @@ export function loadCuration(level) {
     return { id, word, reading, promptPt, meaningsPt };
   });
 
+  const excludedIds = new Set(expected.excludedIds);
   const expectedIds = Array.from(
-    { length: expected.count },
+    { length: expected.lastId - expected.firstId + 1 },
     (_, index) => expected.firstId + index,
-  );
+  ).filter((id) => !excludedIds.has(id));
   const ids = entries.map(({ id }) => id);
-  if (entries.length !== expected.count || JSON.stringify(ids) !== JSON.stringify(expectedIds)) {
+  if (entries.length !== expectedIds.length || JSON.stringify(ids) !== JSON.stringify(expectedIds)) {
     throw new Error(
-      `${normalizedLevel}: esperados ${expected.count} IDs contínuos a partir de ${expected.firstId}.`,
+      `${normalizedLevel}: esperados ${expectedIds.length} IDs válidos entre ${expected.firstId} e ${expected.lastId}.`,
     );
   }
 
@@ -138,4 +148,3 @@ export function auditCuration(curation, database = loadMigrationDatabase()) {
 
   return { sourceRows, collisions, changedHeadwords };
 }
-
