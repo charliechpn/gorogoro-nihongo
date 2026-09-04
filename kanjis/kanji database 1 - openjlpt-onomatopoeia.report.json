@@ -1,0 +1,73 @@
+{
+  "database_source": "artifacts\\kanji database 1 - openjlpt.db",
+  "database_output": "artifacts\\kanji database 1 - openjlpt-onomatopoeia.db",
+  "database_source_sha256": "fa7eb16a1625aa026c1a50a637ba12233450a6fd69b8085487593eda5f28fb38",
+  "database_output_sha256": "c130ce39bd39924bb9648abbb69e615c20f7f5794ae09efa923b58d51b7a51b5",
+  "notion_raw_entries": 305,
+  "unique_terms": 189,
+  "exact_duplicates_consolidated": 116,
+  "category_relations": 292,
+  "entries_by_category": {
+    "gijougo": 49,
+    "giongo": 60,
+    "giongo_verb": 46,
+    "giseigo": 63,
+    "giseijougo": 30,
+    "gitaigo": 44
+  },
+  "entries_with_multiple_categories": 58,
+  "portuguese_definitions": 189,
+  "japanese_definitions": 189,
+  "integrity_check": "ok",
+  "existing_tables_preserved": true,
+  "tables_before": [
+    "kanji",
+    "metadata",
+    "onomatopoeia",
+    "sqlite_sequence"
+  ],
+  "tables_after": [
+    "kanji",
+    "metadata",
+    "onomatopoeia",
+    "sqlite_sequence"
+  ],
+  "source_pages": [
+    {
+      "category": "giongo_verb",
+      "title": "Giongo com verbo",
+      "url": "https://app.notion.com/p/bbf0fc2a75c3448ab7ef6d060e6edf62?pvs=204",
+      "id": "bbf0fc2a-75c3-448a-b7ef-6d060e6edf62"
+    },
+    {
+      "category": "giseijougo",
+      "title": "Giseijougo",
+      "url": "https://app.notion.com/p/249cda3779214fdaa53d7c4362a84dd3?pvs=204",
+      "id": "249cda37-7921-4fda-a53d-7c4362a84dd3"
+    },
+    {
+      "category": "gijougo",
+      "title": "Gijougo",
+      "url": "https://app.notion.com/p/c7aa88c7d68f41d9824f1954e657382e?pvs=204",
+      "id": "c7aa88c7-d68f-41d9-824f-1954e657382e"
+    },
+    {
+      "category": "gitaigo",
+      "title": "Gitaigo",
+      "url": "https://app.notion.com/p/426938dfc8804243bf5b2f0e7b7d49c4?pvs=204",
+      "id": "426938df-c880-4243-bf5b-2f0e7b7d49c4"
+    },
+    {
+      "category": "giongo",
+      "title": "Giongo",
+      "url": "https://app.notion.com/p/5f81e2ba16c948f19dc7ff463e9c09e3?pvs=204",
+      "id": "5f81e2ba-16c9-48f1-9dc7-ff463e9c09e3"
+    },
+    {
+      "category": "giseigo",
+      "title": "Giseigo",
+      "url": "https://app.notion.com/p/30e1c6abf441443b808105ffcfc127ab?pvs=204",
+      "id": "30e1c6ab-f441-443b-8081-05ffcfc127ab"
+    }
+  ]
+}

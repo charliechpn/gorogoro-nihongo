@@ -1,0 +1,60 @@
+{
+  "dictionary": "OpenJLPT",
+  "source_repository": "https://github.com/evanclan/OpenJLPT",
+  "source_commit": "c42fd9fa3777bfc1775446f7c418d549dfd6e4cf",
+  "license": "CC BY-SA 4.0",
+  "translations_imported": false,
+  "source_database": "C:\\Users\\Pichau\\Documents\\SITES\\Japanese learning\\kanjis\\kanji database 1.db",
+  "output_database": "kanji database 1 - openjlpt.db",
+  "source_database_sha256": "2da444e092cdc894af1a77e14259d405ceaa3bd496be31630be0443a7be58bc3",
+  "output_database_sha256": "901455f9714507ee95ce7640b4e1cabb9400f70c9e7b67020c0ecb4a2da99e6c",
+  "source_entries_by_level": {
+    "N5": 662,
+    "N4": 632,
+    "N3": 1784,
+    "N2": 1793,
+    "N1": 3463
+  },
+  "source_entries_total": 8334,
+  "selected_unique_words_by_level": {
+    "N5": 459,
+    "N4": 432,
+    "N3": 1332,
+    "N2": 1211,
+    "N1": 2595
+  },
+  "openjlpt_selected_unique_words_total": 6029,
+  "supplemental_unique_entries_total": 69,
+  "supplemental_unique_surfaces_total": 66,
+  "supplemental_kanji_word_relations": 157,
+  "supplemental_source_file": "data\\manual-word-supplement.json",
+  "supplemental_sources": [
+    "https://www.kanjipedia.jp/kanji/0003370800/",
+    "https://kotobank.jp/word/%E4%BB%81-81299",
+    "https://www.kanjipedia.jp/kanji/0002162500",
+    "https://kotobank.jp/word/%E5%B0%BA-75770",
+    "https://kotobank.jp/word/%E7%BF%8C-653663",
+    "https://www.kanjipedia.jp/kanji/0002652700/",
+    "https://www.kanjipedia.jp/kanji/0006212000"
+  ],
+  "selected_unique_words_total": 6098,
+  "kanji_word_relations_by_level": {
+    "N5": 659,
+    "N4": 676,
+    "N3": 2085,
+    "N2": 2113,
+    "N1": 4130
+  },
+  "total_kanji_word_relations": 9820,
+  "kanji_count": 1006,
+  "average_words_per_kanji": 9.761431411530815,
+  "kanji_with_zero_words": [],
+  "integrity_check": "ok",
+  "existing_fields_preserved": true,
+  "final_tables": [
+    "kanji",
+    "metadata",
+    "sqlite_sequence"
+  ],
+  "elapsed_seconds": 0.062000000005355105
+}
