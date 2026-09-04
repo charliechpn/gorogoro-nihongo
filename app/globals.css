@@ -40,10 +40,14 @@ a:focus-visible {
 }
 
 .page-shell {
-  width: min(1080px, 100%);
+  width: min(1080px, calc(100% - 48px));
+  min-height: 100vh;
   margin: 0 auto;
   overflow: hidden;
-  background: transparent;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgba(34, 52, 71, 0.05),
+    0 0 42px rgba(45, 39, 30, 0.13);
 }
 
 .topbar {
@@ -2892,6 +2896,7 @@ a:focus-visible {
 }
 
 @media (max-width: 520px) {
+  .page-shell { width: 100%; box-shadow: none; }
   .topbar { grid-template-columns: 1fr auto; }
   .main-nav { display: none; }
   .topbar-right { grid-column: 2; }
