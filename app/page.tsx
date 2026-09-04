@@ -4,22 +4,12 @@ const content = homeCopy[defaultLocale];
 
 const modeCards = [
   {
-    id: 'kanji-cards',
-    image: '/home-assets/mode-kanji.png',
-    title: 'Cards de kanji',
-    description: 'Treine significado, leituras e memória.',
-    light: false,
-    href: '/treino/kanji',
-    wide: false,
-  },
-  {
     id: 'vocabulary',
     image: '/home-assets/mode-vocabulary.png',
     title: 'Vocabulário',
     description: 'Palavras comuns ligadas a cada kanji.',
     light: true,
     href: '/treino/vocabulario',
-    wide: false,
   },
   {
     id: 'word-game',
@@ -28,7 +18,6 @@ const modeCards = [
     description: 'Puxe da memória palavras com o kanji.',
     light: false,
     href: '/treino/palavras',
-    wide: false,
   },
   {
     id: 'verb-pairs',
@@ -37,32 +26,15 @@ const modeCards = [
     description: 'Transitivo × intransitivo, sem emboscada.',
     light: true,
     href: '/treino/verbos',
-    wide: false,
   },
   {
     id: 'onomatopoeia',
-    image: '/mode-onomatopoeia-wide-v2.png',
+    image: '/home-assets/mode-kanji.png',
     title: 'Onomatopeias',
     description: 'Som, sensação e contexto em dois níveis de dificuldade.',
-    light: true,
+    light: false,
     href: '/treino/onomatopeias',
-    wide: true,
   },
-] as const;
-
-const featuredKanji = [
-  { character: '学', reading: 'まな・ぶ' },
-  { character: '永', reading: 'なが・い' },
-  { character: '光', reading: 'ひかり' },
-  { character: '心', reading: 'こころ' },
-  { character: '道', reading: 'みち' },
-] as const;
-
-const dailyActions = [
-  { icon: '語', label: 'Vocabulário', sublabel: '今日の単語' },
-  { icon: '聴', label: 'Escuta', sublabel: 'リスニング' },
-  { icon: '話', label: 'Fala', sublabel: '話す練習' },
-  { icon: '復', label: 'Revisão', sublabel: '復習する' },
 ] as const;
 
 export default function Home() {
@@ -117,69 +89,48 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="practice-row" aria-label="Práticas em destaque">
+        <section className="profile-panel" aria-labelledby="profile-title">
+          <img
+            className="profile-art"
+            src="/home-assets/daily-practice.png"
+            alt="Gato estudando japonês em uma mesa baixa"
+          />
+          <div className="profile-heading">
+            <h2 id="profile-title">Perfil</h2>
+            <p>Seu progresso, suas metas e seu ritmo de estudo.</p>
+          </div>
+        </section>
+
+        <a className="kanji-panel" href="/treino/kanji" aria-labelledby="kanji-training-title">
+          <img
+            className="kanji-panel-art"
+            src="/home-assets/kanji-practice.png"
+            alt="Cinco cartões bordados com kanjis"
+          />
+          <span className="kanji-panel-copy">
+            <strong id="kanji-training-title">Treino de kanjis</strong>
+            <span>Escolha por JLPT ou série escolar e pratique no seu ritmo.</span>
+          </span>
+        </a>
+      </section>
+
       <section className="modes" id="modos" aria-label="Modos de estudo">
         <div className="mode-grid">
-          {modeCards.map((mode) => {
-            const cardContent = (
-              <>
+          {modeCards.map((mode) => (
+            <a
+              className={`mode-card${mode.light ? ' is-light' : ''}`}
+              href={mode.href}
+              key={mode.id}
+            >
               <img src={mode.image} alt="" aria-hidden="true" />
               <span className="mode-copy">
                 <strong>{mode.title}</strong>
                 <span>{mode.description}</span>
               </span>
-              </>
-            );
-
-            return (
-              <a className={`mode-card${mode.light ? ' is-light' : ''}${mode.wide ? ' is-wide' : ''}`} href={mode.href} key={mode.id}>
-                {cardContent}
-              </a>
-            );
-          })}
+            </a>
+          ))}
         </div>
-      </section>
-
-      <section className="practice-row" aria-label="Práticas em destaque">
-        <section className="daily-panel" aria-labelledby="daily-title">
-          <img
-            className="daily-art"
-            src="/home-assets/daily-practice.png"
-            alt="Gato estudando japonês em uma mesa baixa"
-          />
-          <div className="daily-heading">
-            <h2 id="daily-title">Prática diária</h2>
-            <p>Pequenos passos, progresso real.</p>
-          </div>
-          <div className="daily-actions">
-            {dailyActions.map((action) => (
-              <button type="button" key={action.label}>
-                <i aria-hidden="true">{action.icon}</i>
-                <strong>{action.label}</strong>
-                <span>{action.sublabel}</span>
-              </button>
-            ))}
-          </div>
-        </section>
-
-        <section className="kanji-panel" aria-labelledby="featured-kanji-title">
-          <div className="panel-heading">
-            <div>
-              <h2 id="featured-kanji-title">Prática de kanji</h2>
-              <p>Veja. Lembre. Use.</p>
-            </div>
-            <button type="button">Ver todos os kanjis</button>
-          </div>
-
-          <div className="kanji-list">
-            {featuredKanji.map((item) => (
-              <button type="button" className="kanji-tile" key={item.character}>
-                <strong>{item.character}</strong>
-                <span>{item.reading}</span>
-              </button>
-            ))}
-          </div>
-          <span className="brush" aria-hidden="true" />
-        </section>
       </section>
 
       <section className="closing-banner" aria-label="Mensagem final">

@@ -68,6 +68,10 @@ await Promise.all([
     resolve(assetsDirectory, 'cat illustration.png'),
     resolve(outputDirectory, 'hero-garden.png'),
   ),
+  copyFile(
+    resolve(assetsDirectory, 'kanjis.png'),
+    resolve(outputDirectory, 'kanji-practice.png'),
+  ),
   writeCard(
     pairedIcons,
     resolve(outputDirectory, 'mode-kanji.png'),
