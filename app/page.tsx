@@ -109,7 +109,7 @@ export default function Home() {
             alt="Cinco cartões bordados com kanjis"
           />
           <span className="kanji-panel-copy">
-            <strong id="kanji-training-title">Treino de kanjis</strong>
+            <strong id="kanji-training-title">Kanjis</strong>
             <span>Escolha por JLPT ou série escolar e pratique no seu ritmo.</span>
           </span>
         </a>
