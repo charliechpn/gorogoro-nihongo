@@ -1,6 +1,6 @@
 export const homeCopy = {
   'pt-BR': {
-    brand: 'Nihongo',
+    brand: 'GoroGoro Nihongo',
     navigation: {
       trainings: 'Treinos',
       kanjiDatabase: 'Banco de kanjis',
@@ -83,7 +83,7 @@ export const homeCopy = {
       description: 'A língua é uma ponte; o coração, uma viagem.',
     },
     footer: {
-      copyright: '© 2026 Nihongo',
+      copyright: '© 2026 GoroGoro Nihongo',
       note: 'Feito para quem resolveu encarar os kanjis de frente.',
     },
   },

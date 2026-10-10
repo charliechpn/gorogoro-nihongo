@@ -1,0 +1,32 @@
+.home { --card-gap: 20px; }
+.home :global(.practice-row), .home :global(.modes) { width: auto; margin-inline: var(--home-rail); padding-inline: 0; }
+.home :global(.practice-row) { grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: 16px; align-items: stretch; margin-block: 28px 32px; }
+.feature { min-width: 0; position: relative; }
+.home :global(.profile-panel) { height: 100%; min-height: 230px; }
+.home :global(.profile-art) { border-radius: 15px; }
+.home :global(.profile-heading) { top: 22px; left: 24px; padding: 0; background: none; backdrop-filter: none; border-radius: 0; }
+.home :global(.profile-heading h2) { font-size: 29px; text-shadow: 0 1px 8px #fff9ec; }
+.home :global(.kanji-panel) { height: 100%; min-height: 230px; aspect-ratio: 2.12; }
+.home :global(.kanji-panel-art) { top: -16.6%; left: -3.2%; width: 108.4%; height: 137%; object-fit: fill; transform: none; }
+.home :global(.kanji-panel-copy) { inset: 0; width: 100%; height: 100%; aspect-ratio: auto; transform: none; }
+.home :global(.kanji-panel-copy strong) { top: 9.3%; right: 4.3%; width: 19.9%; height: 11.5%; font: 500 clamp(16px,1.7vw,22px)/1 var(--serif); }
+.home :global(.mode-grid) { grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--card-gap); }
+.modeHost { min-width: 0; }
+.home :global(.mode-card) { aspect-ratio: .82; width: 100%; }
+.home :global(.mode-card > img) { object-fit: fill; max-width: none; }
+.home :global(.mode-card[data-mode='vocabulary'] > img), .home :global(.mode-card[data-mode='onomatopoeia'] > img) { left: -3.8%; width: 107.6%; }
+.home :global(.mode-card[data-mode='word-game'] > img) { top: -2.8%; left: -1.4%; width: 102.8%; height: 103.5%; }
+.home :global(.mode-card[data-mode='verb-pairs'] > img) { top: -4.5%; left: -8%; width: 116%; height: 110%; }
+.home :global(.mode-copy) { left: 8%; right: 18%; top: 73%; bottom: 8%; min-height: 0; align-items: center; justify-content: center; text-align: center; }
+.home :global(.mode-copy strong) { max-width: 100%; font: 700 clamp(17px,1.6vw,20px)/1.2 Georgia, serif; text-wrap: nowrap; }
+.tooltip { position: fixed; z-index: 1000; width: max-content; max-width: min(220px, calc(100vw - 16px)); padding: 7px 10px; border: 1px solid #12376420; border-radius: 5px; color: #123764; background: #fffdf7; box-shadow: 0 2px 8px #18314c14; font: 12px/1.45 var(--sans); text-align: left; pointer-events: none; }
+@media(max-width:820px) { .home { --home-rail: 28px; } .home :global(.practice-row) { grid-template-columns: 1fr; gap: 24px; } .home :global(.profile-panel) { min-height: 280px; } .home :global(.kanji-panel) { min-height: 0; height: auto; } .home :global(.mode-grid) { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; } .home :global(.mode-copy strong) { font-size: clamp(18px,2.7vw,23px); } }
+@media(max-width:520px) { .home { --home-rail: 14px; } .home :global(.profile-panel) { min-height: 230px; } .home :global(.mode-grid) { gap: 16px; } .home :global(.mode-copy strong) { font-size: clamp(12px,3.3vw,16px); } .home :global(.kanji-panel-copy strong) { font-size: 15px; } }
+
+
+
+
+
+.accessibleDescription { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+:global(html[data-theme='dark']) .tooltip { border-color: var(--theme-line); background: var(--theme-panel); color: var(--ink); box-shadow: 0 4px 16px #0005; }

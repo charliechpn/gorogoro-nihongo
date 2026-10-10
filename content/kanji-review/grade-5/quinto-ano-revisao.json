@@ -1,0 +1,6566 @@
+{
+  "status": "draft_not_applied",
+  "scope": "All 185 kanji with school_grade=5 in the existing database; school grades and IDs preserved.",
+  "method": "Individual linguistic judgment for all 185 entries. No external lists, dictionaries, translation services or inferred bulk classifications. Scripts only package and validate manually authored decisions.",
+  "notation": "Onyomi in katakana; kunyomi in hiragana; dot separates kanji reading from okurigana. Voicing, derived forms and irregular whole-word readings are explained separately.",
+  "level_policy": "JLPT levels are individual curricular judgments, not official classifications. A school grade does not determine JLPT level, and not every reading or compound must be taught at the assigned level.",
+  "reading_policy": "Proposed readings include common readings and selected contextual readings explicitly flagged for review. They are not all equally frequent. Additional readings remain in usage notes; original values are preserved in before. common_readings retains the existing review schema and does not assert equal frequency.",
+  "source": {
+    "path": "public/data/kanji.json",
+    "sha256": "0949400e3e3b1320462885207d34894f9d286d658805369655ff12bbacd663ad",
+    "source_database": "kanjis/kanji database 1.db",
+    "source_database_sha256": "2da444e092cdc894af1a77e14259d405ceaa3bd496be31630be0443a7be58bc3",
+    "manual_supplement_sha256": "ffdf751f9ac872fee0ce684114c3f22abbc8dbefc73c167b60f871ab690cb770"
+  },
+  "summary": {
+    "total": 185,
+    "reused": 0,
+    "newly_reviewed": 185,
+    "flagged": 39,
+    "proposed_levels": {
+      "N3": 82,
+      "N2": 101,
+      "N4": 2
+    },
+    "level_changes": 66
+  },
+  "entries": [
+    {
+      "id": 641,
+      "kanji": "久",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "muito tempo",
+        "onyomi": "きゅう",
+        "kunyomi": "ひさ",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "muito tempo; duradouro",
+        "onyomi": "キュウ、ク",
+        "kunyomi": "ひさ.しい",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キュウ",
+          "ク"
+        ],
+        "kunyomi": [
+          "ひさ.しい"
+        ]
+      },
+      "rationale": "久しぶり ancora o uso cotidiano; 永久 e 久遠 mostram as leituras on.",
+      "requires_review": true,
+      "review_note": "ク é contextual e menos prioritário; revisar sua presença entre as leituras principais.",
+      "additional_readings_and_usage": "久しぶり lê-se ひさしぶり; não confundir com uma leitura isolada ひさしぶり de 久.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 642,
+      "kanji": "仏",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "Buda",
+        "onyomi": "ふつ、ぶつ",
+        "kunyomi": "ほとけ",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "Buda; budismo; pessoa falecida",
+        "onyomi": "ブツ",
+        "kunyomi": "ほとけ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ブツ"
+        ],
+        "kunyomi": [
+          "ほとけ"
+        ]
+      },
+      "rationale": "仏教 e 仏像 sustentam ブツ; ほとけ é a leitura nativa central.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "フツ ocorre na abreviação de França, como 仏語; é contextual, não a leitura principal de Buda.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 643,
+      "kanji": "仮",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "farsa",
+        "onyomi": "かり",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "provisório; hipotético",
+        "onyomi": "カ、ケ",
+        "kunyomi": "かり",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カ",
+          "ケ"
+        ],
+        "kunyomi": [
+          "かり"
+        ]
+      },
+      "rationale": "仮定 e 仮に expressam hipótese; 仮病 exige ケ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "かり é kunyomi, não onyomi. 仮名 lê-se かな; 仮病, けびょう. Farsa não resume o núcleo do kanji.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 644,
+      "kanji": "件",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "assunto",
+        "onyomi": "けん",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "assunto; caso; contador de casos",
+        "onyomi": "ケン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ケン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "事件 e 条件 são recorrentes; 件 também conta ocorrências.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "くだん aparece em 件の, expressão formal; não é leitura básica prioritária.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 645,
+      "kanji": "任",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "responsabilidade",
+        "onyomi": "にん",
+        "kunyomi": "まか.せる",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "responsabilidade; confiar uma tarefa",
+        "onyomi": "ニン",
+        "kunyomi": "まか.せる、まか.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ニン"
+        ],
+        "kunyomi": [
+          "まか.せる",
+          "まか.す"
+        ]
+      },
+      "rationale": "責任 e 任せる cobrem responsabilidade e delegação.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "任す é variante corrente de 任せる, não conjugação dela.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 646,
+      "kanji": "似",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "assemelhar",
+        "onyomi": "じ",
+        "kunyomi": "に.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "parecer-se; semelhante",
+        "onyomi": "ジ",
+        "kunyomi": "に.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジ"
+        ],
+        "kunyomi": [
+          "に.る"
+        ]
+      },
+      "rationale": "似る é cotidiano; 類似 fornece ジ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "似合う lê-se にあう e significa combinar ou cair bem.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 647,
+      "kanji": "余",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "demais",
+        "onyomi": "よ",
+        "kunyomi": "あま.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "sobrar; excesso; restante",
+        "onyomi": "ヨ",
+        "kunyomi": "あま.る、あま.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヨ"
+        ],
+        "kunyomi": [
+          "あま.る",
+          "あま.す"
+        ]
+      },
+      "rationale": "余る e 余す distinguem sobrar e deixar sobrando; 余裕 amplia o uso.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "あまり também ocorre em 余り; preservar o par verbal.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 648,
+      "kanji": "価",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "valor",
+        "onyomi": "か",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "valor; preço",
+        "onyomi": "カ",
+        "kunyomi": "あたい",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カ"
+        ],
+        "kunyomi": [
+          "あたい"
+        ]
+      },
+      "rationale": "価格 e 価値 são centrais para preço e valor.",
+      "requires_review": true,
+      "review_note": "あたい é válida, mas menos frequente nesta grafia que 値; revisar prioridade na lista básica.",
+      "additional_readings_and_usage": "Não traduzir exclusivamente como preço: 価値 inclui valor abstrato.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 649,
+      "kanji": "保",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "preservar",
+        "onyomi": "ほ",
+        "kunyomi": "たも.つ",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "manter; proteger; conservar",
+        "onyomi": "ホ",
+        "kunyomi": "たも.つ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ホ"
+        ],
+        "kunyomi": [
+          "たも.つ"
+        ]
+      },
+      "rationale": "保険 e 保つ justificam nível intermediário.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 650,
+      "kanji": "修",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "disciplina",
+        "onyomi": "しゅう",
+        "kunyomi": "おさ.める",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "estudar; aperfeiçoar; reparar",
+        "onyomi": "シュウ、シュ",
+        "kunyomi": "おさ.める、おさ.まる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シュウ",
+          "シュ"
+        ],
+        "kunyomi": [
+          "おさ.める",
+          "おさ.まる"
+        ]
+      },
+      "rationale": "修理 e 研修 cobrem reparação e formação; 修める refere-se a estudo ou cultivo.",
+      "requires_review": true,
+      "review_note": "シュ é contextual, como 修行, しゅぎょう; おさまる é menos frequente e merece revisão de prioridade.",
+      "additional_readings_and_usage": "修まる refere-se a aprimoramento ou disciplina, distinto de 収まる e 治まる.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 651,
+      "kanji": "俵",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "bolsa de palha",
+        "onyomi": "ひょう",
+        "kunyomi": "たわら",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "saco de palha para cereais",
+        "onyomi": "ヒョウ",
+        "kunyomi": "たわら",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヒョウ"
+        ],
+        "kunyomi": [
+          "たわら"
+        ]
+      },
+      "rationale": "俵 e 土俵 ligam recipiente tradicional e arena de sumô.",
+      "requires_review": true,
+      "review_note": "Fronteira N2/N1: proponho N2 pela concretude e por 土俵, apesar do uso restrito.",
+      "additional_readings_and_usage": "Como contador, há alterações fonéticas: 一俵, いっぴょう.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 652,
+      "kanji": "個",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "individual",
+        "onyomi": "こ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "unidade; individual; contador de objetos",
+        "onyomi": "コ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "一個 e 個人 tornam o kanji útil cedo no intermediário.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 653,
+      "kanji": "備",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "prover",
+        "onyomi": "び",
+        "kunyomi": "そな.える",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "preparar; equipar; estar provido",
+        "onyomi": "ビ",
+        "kunyomi": "そな.える、そな.わる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ビ"
+        ],
+        "kunyomi": [
+          "そな.える",
+          "そな.わる"
+        ]
+      },
+      "rationale": "準備 é frequente; 備える e 備わる distinguem prover e possuir uma qualidade ou equipamento.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 654,
+      "kanji": "像",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "estátua",
+        "onyomi": "ぞう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "imagem; estátua",
+        "onyomi": "ゾウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゾウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "画像 e 映像 tornam imagem tão importante quanto estátua.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 655,
+      "kanji": "再",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "novamente",
+        "onyomi": "さい",
+        "kunyomi": "ふたた.び",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "novamente; repetir",
+        "onyomi": "サイ、サ",
+        "kunyomi": "ふたた.び",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サイ",
+          "サ"
+        ],
+        "kunyomi": [
+          "ふたた.び"
+        ]
+      },
+      "rationale": "再開 e 再び exprimem repetição; 再来年 exige サ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "再来年 lê-se さらいねん; não generalizar サ para todos os compostos.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 656,
+      "kanji": "刊",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "publicar",
+        "onyomi": "かん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "publicar; publicação periódica",
+        "onyomi": "カン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "週刊 e 月刊 ancoram periodicidade editorial.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 657,
+      "kanji": "判",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "juiz",
+        "onyomi": "はん",
+        "kunyomi": "わか.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "julgar; determinar; selo",
+        "onyomi": "ハン、バン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ハン",
+          "バン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "判断 e 判定 expressam julgamento; 裁判 exige バン.",
+      "requires_review": true,
+      "review_note": "Revisar se わかる deve aparecer como leitura complementar: 判る existe, mas 分かる é a grafia básica.",
+      "additional_readings_and_usage": "判 não significa apenas a pessoa juiz; 判子, はんこ, usa o sentido de selo.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 658,
+      "kanji": "制",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "controle",
+        "onyomi": "せい",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "sistema; regular; controlar",
+        "onyomi": "セイ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セイ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "制度 e 制限 reúnem organização e restrição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 659,
+      "kanji": "券",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "passe; bilhete",
+        "onyomi": "けん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "bilhete; vale; ingresso",
+        "onyomi": "ケン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ケン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "券売機 e 入場券 são úteis em viagens e serviços.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; proponho N3 pelo uso prático em bilhetes.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 660,
+      "kanji": "則",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "regra",
+        "onyomi": "そく",
+        "kunyomi": "のっと.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "regra; princípio; seguir uma norma",
+        "onyomi": "ソク",
+        "kunyomi": "のっと.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ソク"
+        ],
+        "kunyomi": [
+          "のっと.る"
+        ]
+      },
+      "rationale": "規則 e 原則 dão o núcleo; 則る significa agir de acordo com uma norma.",
+      "requires_review": true,
+      "review_note": "のっとる é formal e menos prioritária que ソク; revisar sua posição na lista básica.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 661,
+      "kanji": "効",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "efeito",
+        "onyomi": "こう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "efeito; eficácia; fazer efeito",
+        "onyomi": "コウ",
+        "kunyomi": "き.く",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ"
+        ],
+        "kunyomi": [
+          "き.く"
+        ]
+      },
+      "rationale": "効果 e 効く são cotidianos; a leitura nativa estava ausente.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "効く enfatiza efeito; 利く pode enfatizar capacidade ou funcionamento.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 662,
+      "kanji": "務",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "dever",
+        "onyomi": "む",
+        "kunyomi": "つと.める",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "dever; tarefa; desempenhar uma função",
+        "onyomi": "ム",
+        "kunyomi": "つと.める、つと.まる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ム"
+        ],
+        "kunyomi": [
+          "つと.める",
+          "つと.まる"
+        ]
+      },
+      "rationale": "事務 e 義務 cobrem tarefas e deveres; 務まる indica ser capaz de cumprir uma função.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Distinguir 勤める, trabalhar para, e 努める, esforçar-se.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 663,
+      "kanji": "勢",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "energia",
+        "onyomi": "せい",
+        "kunyomi": "いきお.い",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "força; impulso; influência",
+        "onyomi": "セイ",
+        "kunyomi": "いきお.い",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セイ"
+        ],
+        "kunyomi": [
+          "いきお.い"
+        ]
+      },
+      "rationale": "勢い e 勢力 cobrem impulso e poder.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 664,
+      "kanji": "厚",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "grosso",
+        "onyomi": "こう",
+        "kunyomi": "あつ.い",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "espesso; grosso; generoso",
+        "onyomi": "コウ",
+        "kunyomi": "あつ.い",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ"
+        ],
+        "kunyomi": [
+          "あつ.い"
+        ]
+      },
+      "rationale": "厚い é um adjetivo concreto comum; 厚意 amplia o sentido para consideração.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; priorizo o adjetivo cotidiano.",
+      "additional_readings_and_usage": "厚い mede espessura; não é o quente de 暑い ou 熱い.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 665,
+      "kanji": "句",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "frase",
+        "onyomi": "く",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "frase curta; verso; expressão",
+        "onyomi": "ク",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "文句 e 俳句 são âncoras frequentes e culturais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Não equivale sempre a uma oração completa: 句 pode ser grupo de palavras ou verso.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 666,
+      "kanji": "可",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "possível",
+        "onyomi": "か",
+        "kunyomi": null,
+        "jlpt": null
+      },
+      "proposed": {
+        "meaning": "possível; permitido; aceitável",
+        "onyomi": "カ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "可能 e 許可 justificam introdução intermediária.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "べし e outras leituras históricas não são prioritárias para o cartão básico.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 667,
+      "kanji": "営",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "gerenciar",
+        "onyomi": "えい",
+        "kunyomi": "いとな.む",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "administrar; exercer uma atividade",
+        "onyomi": "エイ",
+        "kunyomi": "いとな.む",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エイ"
+        ],
+        "kunyomi": [
+          "いとな.む"
+        ]
+      },
+      "rationale": "営業 e 経営 são centrais para atividade empresarial.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "営む também se usa para conduzir a vida ou uma atividade, não só gerenciar empresa.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 668,
+      "kanji": "因",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "causar",
+        "onyomi": "いん",
+        "kunyomi": "よ.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "causa; decorrer de",
+        "onyomi": "イン",
+        "kunyomi": "よ.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "イン"
+        ],
+        "kunyomi": [
+          "よ.る"
+        ]
+      },
+      "rationale": "原因 é frequente; 因る liga algo à sua causa.",
+      "requires_review": true,
+      "review_note": "よる costuma aparecer em kana ou em outras grafias; revisar prioridade de 因る.",
+      "additional_readings_and_usage": "因る não cobre indiscriminadamente todos os sentidos do verbo よる.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 669,
+      "kanji": "団",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "equipe",
+        "onyomi": "だん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "grupo; associação",
+        "onyomi": "ダン、トン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ダン",
+          "トン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "団体 é intermediário; 布団 exige トン.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "布団 lê-se ふとん; トン tem uso contextual.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 670,
+      "kanji": "圧",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "pressão",
+        "onyomi": "あつ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "pressão; comprimir",
+        "onyomi": "アツ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "アツ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "圧力 e 血圧 são os usos centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 671,
+      "kanji": "在",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "existir",
+        "onyomi": "ざい",
+        "kunyomi": "あ.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "existir; estar presente",
+        "onyomi": "ザイ",
+        "kunyomi": "あ.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ザイ"
+        ],
+        "kunyomi": [
+          "あ.る"
+        ]
+      },
+      "rationale": "現在 e 存在 dão a leitura on; 在る indica existência ou localização.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "ある costuma ser escrito em kana; não substituir toda ocorrência por 在る.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 672,
+      "kanji": "均",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "nível",
+        "onyomi": "きん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "uniforme; igualar",
+        "onyomi": "キン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "平均 e 均等 expressam igualdade e distribuição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Nível não é uma tradução básica suficiente para este kanji.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 673,
+      "kanji": "基",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "fundação",
+        "onyomi": "き",
+        "kunyomi": "もと.づく",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "base; fundamento; basear-se",
+        "onyomi": "キ",
+        "kunyomi": "もと、もとい、もと.づく",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キ"
+        ],
+        "kunyomi": [
+          "もと",
+          "もとい",
+          "もと.づく"
+        ]
+      },
+      "rationale": "基本 e 基礎 sustentam a classificação; 基づく merece preservação como uso verbal frequente.",
+      "requires_review": true,
+      "review_note": "もとい é válida, mas pouco usada fora de contextos formais; revisar prioridade.",
+      "additional_readings_and_usage": "基づく inclui o sufixo verbal づく; aparece aqui como forma pedagógica, não como leitura simples de todo o kanji.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 674,
+      "kanji": "報",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "relatório",
+        "onyomi": "ほう",
+        "kunyomi": "むく.いる",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "informar; notícia; retribuir",
+        "onyomi": "ホウ",
+        "kunyomi": "むく.いる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ホウ"
+        ],
+        "kunyomi": [
+          "むく.いる"
+        ]
+      },
+      "rationale": "情報 e 報告 são frequentes; 報いる cobre retribuição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "報いる pode ser recompensar ou retribuir um mal, conforme o contexto.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 675,
+      "kanji": "境",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "fronteira",
+        "onyomi": "きょう",
+        "kunyomi": "さかい",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "fronteira; limite; circunstância",
+        "onyomi": "キョウ、ケイ",
+        "kunyomi": "さかい",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キョウ",
+          "ケイ"
+        ],
+        "kunyomi": [
+          "さかい"
+        ]
+      },
+      "rationale": "環境 e 境界 são centrais; 境内 exige ケイ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "境内 lê-se けいだい; ケイ é contextual.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 676,
+      "kanji": "墓",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "sepultura",
+        "onyomi": "ぼ",
+        "kunyomi": "はか",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "túmulo; sepultura",
+        "onyomi": "ボ",
+        "kunyomi": "はか",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ボ"
+        ],
+        "kunyomi": [
+          "はか"
+        ]
+      },
+      "rationale": "墓 e 墓地 são usos concretos de frequência moderada.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 677,
+      "kanji": "増",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "aumentar",
+        "onyomi": "ぞう",
+        "kunyomi": "ま.す、ふ.える",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "aumentar; acrescentar",
+        "onyomi": "ゾウ",
+        "kunyomi": "ふ.える、ふ.やす、ま.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゾウ"
+        ],
+        "kunyomi": [
+          "ふ.える",
+          "ふ.やす",
+          "ま.す"
+        ]
+      },
+      "rationale": "増える e 増やす formam o par mais útil; 増す também é corrente.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "増加 ancora ゾウ; não omitir a forma transitiva ふやす.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 678,
+      "kanji": "夢",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "sonho",
+        "onyomi": "む",
+        "kunyomi": "ゆめ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "sonho",
+        "onyomi": "ム",
+        "kunyomi": "ゆめ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ム"
+        ],
+        "kunyomi": [
+          "ゆめ"
+        ]
+      },
+      "rationale": "夢 e 夢中 cobrem experiência e envolvimento intenso.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "onyomi"
+      ]
+    },
+    {
+      "id": 679,
+      "kanji": "妻",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "esposa",
+        "onyomi": "さい",
+        "kunyomi": "つま",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "esposa",
+        "onyomi": "サイ",
+        "kunyomi": "つま",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サイ"
+        ],
+        "kunyomi": [
+          "つま"
+        ]
+      },
+      "rationale": "妻 é vocabulário familiar; 夫妻 acrescenta サイ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "onyomi"
+      ]
+    },
+    {
+      "id": 680,
+      "kanji": "婦",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "senhora",
+        "onyomi": "ふ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "mulher; esposa",
+        "onyomi": "フ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "フ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "夫婦 e 主婦 são âncoras cotidianas.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "婦 ocorre sobretudo em compostos; não é tratamento genérico equivalente a senhora.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 681,
+      "kanji": "容",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "conter",
+        "onyomi": "よう",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "conteúdo; conter; aparência",
+        "onyomi": "ヨウ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヨウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "内容 e 容器 cobrem conteúdo e capacidade de conter; 容姿 acrescenta aparência.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 682,
+      "kanji": "寄",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "aproximar",
+        "onyomi": "き",
+        "kunyomi": "よ.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "aproximar-se; aproximar; contribuir",
+        "onyomi": "キ",
+        "kunyomi": "よ.る、よ.せる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キ"
+        ],
+        "kunyomi": [
+          "よ.る",
+          "よ.せる"
+        ]
+      },
+      "rationale": "寄る e 寄せる precisam do par; 寄付 mostra contribuição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 683,
+      "kanji": "富",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "rico",
+        "onyomi": "ふ",
+        "kunyomi": "とみ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "riqueza; abundância",
+        "onyomi": "フ、フウ",
+        "kunyomi": "とみ、と.む",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "フ",
+          "フウ"
+        ],
+        "kunyomi": [
+          "とみ",
+          "と.む"
+        ]
+      },
+      "rationale": "豊富 e 富む dão abundância; 富貴 conserva フウ.",
+      "requires_review": true,
+      "review_note": "フウ é menos frequente, principalmente em 富貴; revisar prioridade.",
+      "additional_readings_and_usage": "富士, ふじ, é nome próprio e não deve ser a única justificativa de leitura.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 684,
+      "kanji": "導",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "guiar",
+        "onyomi": "どう",
+        "kunyomi": "みちび.く",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "guiar; orientar",
+        "onyomi": "ドウ",
+        "kunyomi": "みちび.く",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ドウ"
+        ],
+        "kunyomi": [
+          "みちび.く"
+        ]
+      },
+      "rationale": "指導 e 導く cobrem orientação e condução.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 685,
+      "kanji": "居",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "residir",
+        "onyomi": "きょ",
+        "kunyomi": "い.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "estar; morar",
+        "onyomi": "キョ",
+        "kunyomi": "い.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キョ"
+        ],
+        "kunyomi": [
+          "い.る"
+        ]
+      },
+      "rationale": "居る é comum, embora frequentemente em kana; 住居 fornece キョ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "居酒屋 lê-se いざかや; 居る usa-se para seres animados.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 686,
+      "kanji": "属",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "pertencer",
+        "onyomi": "ぞく",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "pertencer; afiliação",
+        "onyomi": "ゾク",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゾク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "所属 e 金属 mostram usos administrativos e classificatórios.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "属する, ぞくする, é formação com leitura on, não kunyomi.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 687,
+      "kanji": "布",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "pano",
+        "onyomi": "ふ",
+        "kunyomi": "ぬの",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "tecido; distribuir",
+        "onyomi": "フ",
+        "kunyomi": "ぬの",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "フ"
+        ],
+        "kunyomi": [
+          "ぬの"
+        ]
+      },
+      "rationale": "布 e 配布 cobrem material e distribuição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 688,
+      "kanji": "師",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "especialista",
+        "onyomi": "し",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "mestre; professor; especialista",
+        "onyomi": "シ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "教師 e 医師 são cotidianos.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 689,
+      "kanji": "常",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "comum",
+        "onyomi": "じょう",
+        "kunyomi": "つね",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "habitual; constante",
+        "onyomi": "ジョウ",
+        "kunyomi": "つね、とこ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジョウ"
+        ],
+        "kunyomi": [
+          "つね",
+          "とこ"
+        ]
+      },
+      "rationale": "日常 e 常に são centrais; 常夏 mostra とこ.",
+      "requires_review": true,
+      "review_note": "とこ é contextual, como とこなつ; revisar se deve ficar só nas notas.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 690,
+      "kanji": "幹",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "tronco",
+        "onyomi": "かん",
+        "kunyomi": "みき",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "tronco; parte principal",
+        "onyomi": "カン",
+        "kunyomi": "みき",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カン"
+        ],
+        "kunyomi": [
+          "みき"
+        ]
+      },
+      "rationale": "幹 e 新幹線 ligam estrutura vegetal e eixo principal.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 691,
+      "kanji": "序",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "prefácio",
+        "onyomi": "じょ",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "ordem; introdução",
+        "onyomi": "ジョ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジョ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "順序 e 序文 cobrem ordem e prefácio.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "ついで em 序で é possível, mas normalmente se escreve em kana; não prioritário.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 692,
+      "kanji": "弁",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "válvula",
+        "onyomi": "べん",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "fala; distinguir; válvula",
+        "onyomi": "ベン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ベン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "弁当, 方言 regional em 関西弁 e 弁護士 impedem reduzir o kanji a válvula.",
+      "requires_review": true,
+      "review_note": "Revisar a inclusão de わきまえる: 弁える existe, mas a grafia em kana é mais usual.",
+      "additional_readings_and_usage": "O caractere reúne sentidos históricos diferentes; 弁当 significa refeição embalada, não se traduz peça a peça.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 693,
+      "kanji": "張",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "esticar",
+        "onyomi": "ちょう",
+        "kunyomi": "は.る",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "esticar; estender; afixar",
+        "onyomi": "チョウ",
+        "kunyomi": "は.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "チョウ"
+        ],
+        "kunyomi": [
+          "は.る"
+        ]
+      },
+      "rationale": "張る e 頑張る são frequentes; 出張 acrescenta チョウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 694,
+      "kanji": "往",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "jornada",
+        "onyomi": "おう",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "ir; deslocar-se",
+        "onyomi": "オウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "オウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "往復 e 往来 são os usos principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "往く, ゆく/いく, existe em usos literários; o verbo básico usa 行く.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 695,
+      "kanji": "復",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "repetir",
+        "onyomi": "ふく",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "retornar; recuperar; repetir",
+        "onyomi": "フク",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "フク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "復習 é cotidiano no estudo; 回復 amplia para recuperação.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 696,
+      "kanji": "徳",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "virtude",
+        "onyomi": "とく",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "virtude; mérito moral",
+        "onyomi": "トク",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "トク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "道徳 e 人徳 situam o kanji em qualidades morais.",
+      "requires_review": true,
+      "review_note": "Fronteira N2/N1: proponho N2, com foco em 道徳.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 697,
+      "kanji": "志",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "intenção",
+        "onyomi": "し",
+        "kunyomi": "こころざし",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "intenção; aspiração",
+        "onyomi": "シ",
+        "kunyomi": "こころざし、こころざ.す",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シ"
+        ],
+        "kunyomi": [
+          "こころざし",
+          "こころざ.す"
+        ]
+      },
+      "rationale": "志望 e 志す são úteis para projetos e candidaturas.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Preservar o substantivo 志, こころざし, e o verbo 志す.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 698,
+      "kanji": "応",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "replicar",
+        "onyomi": "おう",
+        "kunyomi": "こた.える",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "responder; corresponder; adaptar-se",
+        "onyomi": "オウ",
+        "kunyomi": "こた.える",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "オウ"
+        ],
+        "kunyomi": [
+          "こた.える"
+        ]
+      },
+      "rationale": "応援 e 対応 são comuns; 応える cobre corresponder a expectativa ou solicitação.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "じる em 応じる não é kunyomi: おうじる usa オウ. 答える é a grafia habitual para responder a uma pergunta.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 699,
+      "kanji": "快",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "animado",
+        "onyomi": "かい",
+        "kunyomi": "こころよ.い",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "agradável; confortável",
+        "onyomi": "カイ",
+        "kunyomi": "こころよ.い",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カイ"
+        ],
+        "kunyomi": [
+          "こころよ.い"
+        ]
+      },
+      "rationale": "快適 e 快い cobrem conforto e agrado.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 700,
+      "kanji": "性",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "gênero humano",
+        "onyomi": "せい、しょう",
+        "kunyomi": "さが",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "natureza; característica; sexo",
+        "onyomi": "セイ、ショウ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "性格 e 性別 são centrais; 相性 exige ショウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "さが é leitura válida, de tom literário, para natureza ou destino; manter como complementar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 701,
+      "kanji": "恩",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "graça",
+        "onyomi": "おん",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "favor recebido; gratidão; benevolência",
+        "onyomi": "オン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "オン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "恩 e 恩人 descrevem favores e dívida de gratidão.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 702,
+      "kanji": "情",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "sentimento",
+        "onyomi": "じょう",
+        "kunyomi": "なさ.け",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "sentimento; circunstância",
+        "onyomi": "ジョウ、セイ",
+        "kunyomi": "なさ.け",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジョウ",
+          "セイ"
+        ],
+        "kunyomi": [
+          "なさ.け"
+        ]
+      },
+      "rationale": "感情 e 事情 são frequentes; 風情 exige セイ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "風情 lê-se ふぜい, com sonorização. 情け é compaixão ou benevolência.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 703,
+      "kanji": "態",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "condição",
+        "onyomi": "たい",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "estado; atitude; aparência",
+        "onyomi": "タイ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "タイ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "状態 e 態度 são as âncoras principais.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2: ambos são úteis no intermediário; proponho N2 para consolidar os usos abstratos.",
+      "additional_readings_and_usage": "わざ em 態と/態々 é contextual e geralmente escrito em kana.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 704,
+      "kanji": "慣",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "acostumado",
+        "onyomi": "かん",
+        "kunyomi": "な.れる",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "acostumar-se; hábito",
+        "onyomi": "カン",
+        "kunyomi": "な.れる、な.らす",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カン"
+        ],
+        "kunyomi": [
+          "な.れる",
+          "な.らす"
+        ]
+      },
+      "rationale": "慣れる e 慣らす formam par importante; 習慣 fornece カン.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "慣らす é habituar; 馴らす pode ser amansar animais.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 705,
+      "kanji": "承",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "aquiescer",
+        "onyomi": "しょう",
+        "kunyomi": "うけたまわ.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "aceitar; receber; ouvir respeitosamente",
+        "onyomi": "ショウ",
+        "kunyomi": "うけたまわ.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ショウ"
+        ],
+        "kunyomi": [
+          "うけたまわ.る"
+        ]
+      },
+      "rationale": "承知 e 承認 ancoram aceitação; 承る é importante em atendimento formal.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "承る pode significar ouvir, receber ou aceitar humildemente, conforme o objeto.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 706,
+      "kanji": "技",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "talento",
+        "onyomi": "ぎ",
+        "kunyomi": "わざ",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "técnica; habilidade",
+        "onyomi": "ギ",
+        "kunyomi": "わざ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ギ"
+        ],
+        "kunyomi": [
+          "わざ"
+        ]
+      },
+      "rationale": "技術 e 技 ligam técnica e execução.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; proponho N2 pelo conjunto de usos técnicos.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 707,
+      "kanji": "招",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "acenar",
+        "onyomi": "しょう",
+        "kunyomi": "まね.く",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "convidar; chamar; provocar",
+        "onyomi": "ショウ",
+        "kunyomi": "まね.く",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ショウ"
+        ],
+        "kunyomi": [
+          "まね.く"
+        ]
+      },
+      "rationale": "招待 e 招く são úteis em interação social.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "招く também pode causar um resultado, como confusão ou perigo.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 708,
+      "kanji": "授",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "instruir",
+        "onyomi": "じゅ",
+        "kunyomi": "さず.ける",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "ensinar; conceder",
+        "onyomi": "ジュ",
+        "kunyomi": "さず.ける、さず.かる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジュ"
+        ],
+        "kunyomi": [
+          "さず.ける",
+          "さず.かる"
+        ]
+      },
+      "rationale": "授業 ancora nível intermediário; 授ける e 授かる distinguem conceder e receber.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 709,
+      "kanji": "採",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "apanhar",
+        "onyomi": "さい",
+        "kunyomi": "と.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "colher; recolher; adotar",
+        "onyomi": "サイ",
+        "kunyomi": "と.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サイ"
+        ],
+        "kunyomi": [
+          "と.る"
+        ]
+      },
+      "rationale": "採用 e 採る cobrem seleção e recolhimento.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "採る não substitui todo とる: a grafia depende do objeto e sentido.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 710,
+      "kanji": "接",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "contato",
+        "onyomi": "せつ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "entrar em contato; ligar; atender",
+        "onyomi": "セツ",
+        "kunyomi": "つ.ぐ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セツ"
+        ],
+        "kunyomi": [
+          "つ.ぐ"
+        ]
+      },
+      "rationale": "接続 e 接客 são centrais; 接ぐ cobre unir material.",
+      "requires_review": true,
+      "review_note": "つぐ é válida, mas menos frequente nesta grafia; revisar prioridade.",
+      "additional_readings_and_usage": "接する, せっする, é verbo com leitura on. 継ぐ tem outros usos, como suceder.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 711,
+      "kanji": "提",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "sugerir",
+        "onyomi": "てい",
+        "kunyomi": "さ.げる",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "propor; apresentar; levar na mão",
+        "onyomi": "テイ",
+        "kunyomi": "さ.げる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "テイ"
+        ],
+        "kunyomi": [
+          "さ.げる"
+        ]
+      },
+      "rationale": "提出 e 提案 são frequentes em contexto de estudo e trabalho.",
+      "requires_review": true,
+      "review_note": "さげる é contextual em 提げる; revisar prioridade em relação à forma habitual 下げる.",
+      "additional_readings_and_usage": "提げる indica levar algo pendurado na mão, não todo sentido de abaixar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 712,
+      "kanji": "損",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "dano",
+        "onyomi": "そん",
+        "kunyomi": "そこ.ねる",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "prejuízo; dano; prejudicar",
+        "onyomi": "ソン",
+        "kunyomi": "そこ.なう、そこ.ねる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ソン"
+        ],
+        "kunyomi": [
+          "そこ.なう",
+          "そこ.ねる"
+        ]
+      },
+      "rationale": "損失 e 損なう sustentam dano; 損ねる também ocorre em falhar ao fazer algo.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "損する usa leitura on. そこなう e そこねる merecem registro próprio.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 713,
+      "kanji": "支",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "apoio",
+        "onyomi": "し",
+        "kunyomi": "ささ.える",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "apoiar; sustentar; ramificação",
+        "onyomi": "シ",
+        "kunyomi": "ささ.える",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シ"
+        ],
+        "kunyomi": [
+          "ささ.える"
+        ]
+      },
+      "rationale": "支える e 支店 cobrem apoio e filial.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "支払う lê-se しはらう; シ continua sendo on nesse verbo.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 714,
+      "kanji": "政",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "política",
+        "onyomi": "せい",
+        "kunyomi": "まつりごと",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "política; governo",
+        "onyomi": "セイ、ショウ",
+        "kunyomi": "まつりごと",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunyomi": [
+          "まつりごと"
+        ]
+      },
+      "rationale": "政治 ancora o nível; 摂政 conserva ショウ.",
+      "requires_review": true,
+      "review_note": "まつりごと e ショウ são menos cotidianos; revisar prioridade, mantendo registro complementar.",
+      "additional_readings_and_usage": "摂政 lê-se せっしょう. まつりごと é administração política, de tom histórico.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 715,
+      "kanji": "故",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "circunstâncias",
+        "onyomi": "こ",
+        "kunyomi": "ゆえ",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "causa; falecido; antigo",
+        "onyomi": "コ",
+        "kunyomi": "ゆえ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コ"
+        ],
+        "kunyomi": [
+          "ゆえ"
+        ]
+      },
+      "rationale": "事故 e 故障 são frequentes; 故 também marca alguém falecido.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2 pelo uso em 事故; proponho N2 para a amplitude semântica.",
+      "additional_readings_and_usage": "ゆえ costuma aparecer em texto formal; 故郷, ふるさと, é leitura do conjunto, não de 故 sozinho.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 716,
+      "kanji": "敵",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "inimigo",
+        "onyomi": "てき",
+        "kunyomi": "かたき",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "inimigo; adversário",
+        "onyomi": "テキ",
+        "kunyomi": "かたき",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "テキ"
+        ],
+        "kunyomi": [
+          "かたき"
+        ]
+      },
+      "rationale": "敵 e 敵対 são as âncoras centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "敵 pode ser lido てき isoladamente; isso não torna てき uma leitura kun. かたき enfatiza inimigo ou rival, incluindo vingança.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 717,
+      "kanji": "断",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "recusar",
+        "onyomi": "だん",
+        "kunyomi": "た.つ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "cortar; interromper; recusar",
+        "onyomi": "ダン",
+        "kunyomi": "た.つ、ことわ.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ダン"
+        ],
+        "kunyomi": [
+          "た.つ",
+          "ことわ.る"
+        ]
+      },
+      "rationale": "断る é cotidiano; 判断 e 断つ acrescentam decisão e interrupção.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 718,
+      "kanji": "旧",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "nostalgia",
+        "onyomi": "きゅう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "antigo; anterior",
+        "onyomi": "キュウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キュウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "旧姓 e 新旧 descrevem estado anterior.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Não significa nostalgia por si só.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 719,
+      "kanji": "易",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "fácil",
+        "onyomi": "えき",
+        "kunyomi": "やさ.しい",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "fácil; trocar",
+        "onyomi": "エキ、イ",
+        "kunyomi": "やさ.しい",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エキ",
+          "イ"
+        ],
+        "kunyomi": [
+          "やさ.しい"
+        ]
+      },
+      "rationale": "易しい exige a leitura nativa; 貿易 e 容易 precisam das duas on.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "やすい é leitura possível em formas como 読み易い, geralmente escritas em kana; fica como complementar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 720,
+      "kanji": "暴",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "explosão",
+        "onyomi": "ぼう",
+        "kunyomi": "あば.く",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "violento; agir violentamente; expor",
+        "onyomi": "ボウ、バク",
+        "kunyomi": "あば.れる、あば.く",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ボウ",
+          "バク"
+        ],
+        "kunyomi": [
+          "あば.れる",
+          "あば.く"
+        ]
+      },
+      "rationale": "暴力 e 暴れる dão violência; 暴く significa expor algo oculto; 暴露 exige バク.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "あばれる não é conjugação de あばく; ambos precisam constar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 721,
+      "kanji": "条",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "cláusula",
+        "onyomi": "じょう",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "artigo de norma; condição; faixa",
+        "onyomi": "ジョウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジョウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "条件 e 条約 são centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 722,
+      "kanji": "枝",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "galho",
+        "onyomi": "し",
+        "kunyomi": "えだ",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "ramo; galho",
+        "onyomi": "シ",
+        "kunyomi": "えだ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シ"
+        ],
+        "kunyomi": [
+          "えだ"
+        ]
+      },
+      "rationale": "枝 e 枝葉 ancoram a leitura nativa e a on.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2: proponho N2 pela frequência menor da grafia no conjunto básico.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 723,
+      "kanji": "査",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "investigar",
+        "onyomi": "さ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "investigar; examinar",
+        "onyomi": "サ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "調査 e 検査 são as âncoras principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 724,
+      "kanji": "格",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "situação",
+        "onyomi": "かく",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "padrão; categoria; posição",
+        "onyomi": "カク、コウ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カク",
+          "コウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "合格 e 性格 são cotidianos; 格子 exige コウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "格子 lê-se こうし; コウ é contextual, não intercambiável com カク.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 725,
+      "kanji": "桜",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "cereja",
+        "onyomi": "おう",
+        "kunyomi": "さくらんぼ",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "cerejeira; flor de cerejeira",
+        "onyomi": "オウ",
+        "kunyomi": "さくら",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "オウ"
+        ],
+        "kunyomi": [
+          "さくら"
+        ]
+      },
+      "rationale": "桜 é palavra cultural e cotidiana; 桜花 fornece オウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "さくらんぼ significa cereja, o fruto, e não é a leitura básica de 桜. A leitura é さくら.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 726,
+      "kanji": "検",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "examinar",
+        "onyomi": "けん",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "examinar; inspecionar",
+        "onyomi": "ケン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ケン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "検査 e 検索 tornam inspeção e busca os sentidos prioritários.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 727,
+      "kanji": "構",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "edificar",
+        "onyomi": "こう",
+        "kunyomi": "かま.える",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "estrutura; construir; importar-se",
+        "onyomi": "コウ",
+        "kunyomi": "かま.える、かま.う",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ"
+        ],
+        "kunyomi": [
+          "かま.える",
+          "かま.う"
+        ]
+      },
+      "rationale": "構う e 結構 são frequentes; 構える indica preparar ou assumir uma posição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "構わない lê-se かまわない; não omitir かまう.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 728,
+      "kanji": "武",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "militar",
+        "onyomi": "ぶ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "militar; marcial",
+        "onyomi": "ブ、ム",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ブ",
+          "ム"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "武器 e 武道 cobrem o núcleo; 武者 exige ム.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "武者 lê-se むしゃ; ambas são on.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 729,
+      "kanji": "比",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "comparar",
+        "onyomi": "ひ",
+        "kunyomi": "くら.べる",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "comparar; proporção",
+        "onyomi": "ヒ",
+        "kunyomi": "くら.べる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヒ"
+        ],
+        "kunyomi": [
+          "くら.べる"
+        ]
+      },
+      "rationale": "比べる é cotidiano; 比較 fornece ヒ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 730,
+      "kanji": "永",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "eternidade",
+        "onyomi": "えい",
+        "kunyomi": "なが.い",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "eterno; duradouro",
+        "onyomi": "エイ",
+        "kunyomi": "なが.い",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エイ"
+        ],
+        "kunyomi": [
+          "なが.い"
+        ]
+      },
+      "rationale": "永遠 e 永久 são centrais.",
+      "requires_review": true,
+      "review_note": "ながい nesta grafia é expressiva ou literária; revisar prioridade na lista básica.",
+      "additional_readings_and_usage": "永い destaca duração prolongada; 長い é a grafia cotidiana mais geral.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 731,
+      "kanji": "河",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "córrego",
+        "onyomi": "が",
+        "kunyomi": "かわ",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "rio",
+        "onyomi": "カ",
+        "kunyomi": "かわ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カ"
+        ],
+        "kunyomi": [
+          "かわ"
+        ]
+      },
+      "rationale": "河川 e 河口 exigem カ, corrigindo o が isolado da origem.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "ガ ocorre por sonorização em 銀河, ぎんが; não deve substituir カ como leitura-base.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 732,
+      "kanji": "液",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "fluido",
+        "onyomi": "えき",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "líquido",
+        "onyomi": "エキ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エキ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "液体 e 血液 ancoram matéria e fisiologia.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 733,
+      "kanji": "混",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "combinação",
+        "onyomi": "こん",
+        "kunyomi": "まざ.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "misturar; confundir",
+        "onyomi": "コン",
+        "kunyomi": "ま.じる、ま.ざる、ま.ぜる、こ.む",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コン"
+        ],
+        "kunyomi": [
+          "ま.じる",
+          "ま.ざる",
+          "ま.ぜる",
+          "こ.む"
+        ]
+      },
+      "rationale": "混ぜる e 混ざる formam par; 混じる e 混む cobrem mistura e lotação.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "こむ também se escreve 込む; 混む enfatiza aglomeração. Corrijo a separação de okurigana em まざ.る.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 734,
+      "kanji": "減",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "decrescer",
+        "onyomi": "げん",
+        "kunyomi": "へ.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "diminuir; reduzir",
+        "onyomi": "ゲン",
+        "kunyomi": "へ.る、へ.らす",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゲン"
+        ],
+        "kunyomi": [
+          "へ.る",
+          "へ.らす"
+        ]
+      },
+      "rationale": "減る e 減らす são cotidianos; 減少 fornece ゲン.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 735,
+      "kanji": "測",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "braça; medir",
+        "onyomi": "そく",
+        "kunyomi": "はか.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "medir; estimar",
+        "onyomi": "ソク",
+        "kunyomi": "はか.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ソク"
+        ],
+        "kunyomi": [
+          "はか.る"
+        ]
+      },
+      "rationale": "測定 e 測る expressam medição.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Não significa braça; 測る mede comprimento, profundidade ou outras grandezas conforme contexto.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 736,
+      "kanji": "準",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "equivalente",
+        "onyomi": "じゅん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "preparar; padrão; quase-",
+        "onyomi": "ジュン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジュン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "準備 ancora o intermediário; 基準 amplia para padrão.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; proponho N3 por 準備.",
+      "additional_readings_and_usage": "準じる usa ジュン, leitura on; じる não é kunyomi.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 737,
+      "kanji": "演",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "performance",
+        "onyomi": "えん",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "representar; apresentar; executar",
+        "onyomi": "エン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "演奏 e 演技 cobrem execução musical e atuação.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "演じる lê-se えんじる e usa leitura on.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 738,
+      "kanji": "潔",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "imaculado",
+        "onyomi": "けつ",
+        "kunyomi": "いさぎよ.い",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "limpo; puro; íntegro",
+        "onyomi": "ケツ",
+        "kunyomi": "いさぎよ.い",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ケツ"
+        ],
+        "kunyomi": [
+          "いさぎよ.い"
+        ]
+      },
+      "rationale": "清潔 é cotidiano; 潔い descreve atitude franca ou sem hesitação mesquinha.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "潔い não significa apenas fisicamente limpo; pode indicar aceitar um resultado com dignidade.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 739,
+      "kanji": "災",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "disastre",
+        "onyomi": "さい",
+        "kunyomi": "わざわ.い",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "desastre; calamidade",
+        "onyomi": "サイ",
+        "kunyomi": "わざわ.い",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サイ"
+        ],
+        "kunyomi": [
+          "わざわ.い"
+        ]
+      },
+      "rationale": "災害 e 火災 são frequentes em avisos e notícias.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "災い também pode indicar infortúnio; não só desastre natural.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 740,
+      "kanji": "燃",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "queimar",
+        "onyomi": "ねん",
+        "kunyomi": "も.える",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "queimar; arder",
+        "onyomi": "ネン",
+        "kunyomi": "も.える、も.やす、も.す",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ネン"
+        ],
+        "kunyomi": [
+          "も.える",
+          "も.やす",
+          "も.す"
+        ]
+      },
+      "rationale": "燃える e 燃やす formam o par principal; 燃料 fornece ネン.",
+      "requires_review": true,
+      "review_note": "もす é válida, mas menos frequente que もやす; revisar prioridade.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 741,
+      "kanji": "版",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "bloco impresso",
+        "onyomi": "はん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "edição; placa de impressão",
+        "onyomi": "ハン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ハン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "出版 e 版 ligam edição e impressão.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 742,
+      "kanji": "犯",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "crime",
+        "onyomi": "はん",
+        "kunyomi": "おか.す",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "cometer crime ou infração",
+        "onyomi": "ハン",
+        "kunyomi": "おか.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ハン"
+        ],
+        "kunyomi": [
+          "おか.す"
+        ]
+      },
+      "rationale": "犯罪 e 犯人 são frequentes.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "犯す é cometer infração; não se usa para qualquer erro, normalmente 誤る ou 間違える.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 743,
+      "kanji": "状",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "forma",
+        "onyomi": "じょう",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "estado; forma; documento",
+        "onyomi": "ジョウ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジョウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "状態 e 状況 dão o núcleo; 招待状 mostra o sentido de documento.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 744,
+      "kanji": "独",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "sozinho",
+        "onyomi": "どく",
+        "kunyomi": "ひと.り",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "sozinho; independente; exclusivo",
+        "onyomi": "ドク",
+        "kunyomi": "ひと.り",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ドク"
+        ],
+        "kunyomi": [
+          "ひと.り"
+        ]
+      },
+      "rationale": "独立 e 独自 são centrais; 独り enfatiza estar só.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "一人 é a grafia comum para uma pessoa; 独り destaca solidão ou independência.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 745,
+      "kanji": "率",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "proporção",
+        "onyomi": "りつ",
+        "kunyomi": "ひきい.る",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "taxa; proporção; liderar",
+        "onyomi": "リツ、ソツ",
+        "kunyomi": "ひき.いる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "リツ",
+          "ソツ"
+        ],
+        "kunyomi": [
+          "ひき.いる"
+        ]
+      },
+      "rationale": "確率 e 効率 exigem リツ; 率直 exige ソツ; 率いる significa liderar.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Os sentidos de proporção, franqueza e comando precisam de contexto.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 746,
+      "kanji": "現",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "aparecer",
+        "onyomi": "げん",
+        "kunyomi": "あらわ.れる",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "atual; aparecer; manifestar",
+        "onyomi": "ゲン",
+        "kunyomi": "あらわ.れる、あらわ.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゲン"
+        ],
+        "kunyomi": [
+          "あらわ.れる",
+          "あらわ.す"
+        ]
+      },
+      "rationale": "現在 e 現実 são frequentes; preservar o par 現れる/現す.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "現す destaca tornar visível; 表す é usado para expressar ou representar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 747,
+      "kanji": "留",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "deter",
+        "onyomi": "りゅう、る",
+        "kunyomi": "とど.まる",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "reter; permanecer",
+        "onyomi": "リュウ、ル",
+        "kunyomi": "と.める、と.まる、とど.める、とど.まる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "リュウ",
+          "ル"
+        ],
+        "kunyomi": [
+          "と.める",
+          "と.まる",
+          "とど.める",
+          "とど.まる"
+        ]
+      },
+      "rationale": "留学 e 留守 exigem ambas as on; as formas nativas cobrem prender e permanecer.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "とめる aparece em 留める, como prender com alfinete; não generalizar esta grafia a toda parada.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 748,
+      "kanji": "略",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "abreviação",
+        "onyomi": "りゃく",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "abreviar; omitir; estratégia",
+        "onyomi": "リャク",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "リャク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "省略 e 戦略 cobrem os dois sentidos centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "略す, りゃくす, utiliza leitura on.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 749,
+      "kanji": "益",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "beneficiar-se",
+        "onyomi": "えき",
+        "kunyomi": "ま.す",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "benefício; lucro",
+        "onyomi": "エキ、ヤク",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エキ",
+          "ヤク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "利益 e 有益 usam エキ; ご利益 exige ヤク.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "ご利益 lê-se ごりやく; ます é leitura possível, mas 増す é a grafia básica para aumentar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 750,
+      "kanji": "眼",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "globo ocular",
+        "onyomi": "がん",
+        "kunyomi": "め",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "olho; visão",
+        "onyomi": "ガン、ゲン",
+        "kunyomi": "め、まなこ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ガン",
+          "ゲン"
+        ],
+        "kunyomi": [
+          "め",
+          "まなこ"
+        ]
+      },
+      "rationale": "眼科 ancora ガン; 開眼, かいげん no contexto budista, exemplifica ゲン.",
+      "requires_review": true,
+      "review_note": "ゲン é contextual, まなこ é literária e め costuma usar 目; revisar a prioridade dessas leituras na lista básica.",
+      "additional_readings_and_usage": "眼鏡, めがね, tem leitura do conjunto. 双眼鏡 lê-se そうがんきょう. 開眼 também se lê かいがん, especialmente no sentido de perceber ou despertar para algo.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 751,
+      "kanji": "破",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "rasgar",
+        "onyomi": "は",
+        "kunyomi": "やぶ.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "rasgar; romper; quebrar",
+        "onyomi": "ハ",
+        "kunyomi": "やぶ.る、やぶ.れる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ハ"
+        ],
+        "kunyomi": [
+          "やぶ.る",
+          "やぶ.れる"
+        ]
+      },
+      "rationale": "破る e 破れる formam par cotidiano; 破壊 acrescenta ハ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 752,
+      "kanji": "確",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "óbvio",
+        "onyomi": "かく",
+        "kunyomi": "たし.か",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "certo; seguro; confirmar",
+        "onyomi": "カク",
+        "kunyomi": "たし.か、たし.かめる",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カク"
+        ],
+        "kunyomi": [
+          "たし.か",
+          "たし.かめる"
+        ]
+      },
+      "rationale": "確か e 確かめる são frequentes; 確認 fornece カク.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Certo ou seguro descreve melhor o núcleo que óbvio.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 753,
+      "kanji": "示",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "indicar",
+        "onyomi": "し",
+        "kunyomi": "しめ.す",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "mostrar; indicar",
+        "onyomi": "ジ、シ",
+        "kunyomi": "しめ.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジ",
+          "シ"
+        ],
+        "kunyomi": [
+          "しめ.す"
+        ]
+      },
+      "rationale": "表示 e 指示 exigem ジ; 示唆 fornece シ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Corrijo a ausência de ジ, prioritária em 表示 e 指示. 示す é しめす.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 754,
+      "kanji": "祖",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "ancestral",
+        "onyomi": "そ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "ancestral; fundador",
+        "onyomi": "ソ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ソ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "祖父 e 祖母 são vocabulário familiar frequente.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 755,
+      "kanji": "禁",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "proibição",
+        "onyomi": "きん",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "proibir; interdição",
+        "onyomi": "キン",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "禁止 e 禁煙 são centrais em avisos.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2 pela utilidade dos avisos; proponho N2 para consolidação.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 756,
+      "kanji": "移",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "transformar",
+        "onyomi": "い",
+        "kunyomi": "うつ.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "mudar de lugar; transferir",
+        "onyomi": "イ",
+        "kunyomi": "うつ.る、うつ.す",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "イ"
+        ],
+        "kunyomi": [
+          "うつ.る",
+          "うつ.す"
+        ]
+      },
+      "rationale": "移動 e 移る/移す cobrem deslocamento e transferência.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Transformar é amplo demais; o núcleo envolve mudança de lugar ou transferência.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 757,
+      "kanji": "程",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "estender",
+        "onyomi": "てい",
+        "kunyomi": "ほど",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "grau; quantidade aproximada; percurso",
+        "onyomi": "テイ",
+        "kunyomi": "ほど",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "テイ"
+        ],
+        "kunyomi": [
+          "ほど"
+        ]
+      },
+      "rationale": "程度 e 日程 ancoram grau e programação; ほど expressa extensão ou quantidade aproximada.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "日程 lê-se にってい; 程 também aparece em 過程, processo.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 758,
+      "kanji": "税",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "taxa",
+        "onyomi": "ぜい",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "imposto",
+        "onyomi": "ゼイ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゼイ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "税金 e 消費税 são essenciais para vida financeira cotidiana.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Imposto é mais preciso que taxa genérica.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 759,
+      "kanji": "築",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "produzir",
+        "onyomi": "ちく",
+        "kunyomi": "きず.く",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "construir; edificar",
+        "onyomi": "チク",
+        "kunyomi": "きず.く",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "チク"
+        ],
+        "kunyomi": [
+          "きず.く"
+        ]
+      },
+      "rationale": "建築 e 築く dão construção física ou abstrata.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 760,
+      "kanji": "精",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "refinado",
+        "onyomi": "せい",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "refinado; minucioso; energia vital",
+        "onyomi": "セイ、ショウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "精神 e 精密 dão o núcleo; 精進 exige ショウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "精進 lê-se しょうじん; não reduzir a tradução a refinado.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 761,
+      "kanji": "素",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "elementar",
+        "onyomi": "す",
+        "kunyomi": "もと",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "elemento; base; simples",
+        "onyomi": "ソ、ス",
+        "kunyomi": "もと",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ソ",
+          "ス"
+        ],
+        "kunyomi": [
+          "もと"
+        ]
+      },
+      "rationale": "素材 e 要素 exigem ソ; 素顔 usa ス.",
+      "requires_review": true,
+      "review_note": "もと é válida nesta grafia, mas sua prioridade frente às leituras on deve ser revisada.",
+      "additional_readings_and_usage": "素人, しろうと, é leitura do conjunto, não uma leitura simples de 素.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 762,
+      "kanji": "経",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "longitude",
+        "onyomi": "けい",
+        "kunyomi": "へ.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "passar por; decorrer; administrar",
+        "onyomi": "ケイ、キョウ",
+        "kunyomi": "へ.る、た.つ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ケイ",
+          "キョウ"
+        ],
+        "kunyomi": [
+          "へ.る",
+          "た.つ"
+        ]
+      },
+      "rationale": "経験 e 経済 são frequentes; 経つ marca passagem do tempo; お経 exige キョウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "経度 cobre longitude, mas esse uso não deve ser a única tradução.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 763,
+      "kanji": "統",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "relacionamento",
+        "onyomi": "とう",
+        "kunyomi": "す.べる",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "unificar; sistema; linhagem",
+        "onyomi": "トウ",
+        "kunyomi": "す.べる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "トウ"
+        ],
+        "kunyomi": [
+          "す.べる"
+        ]
+      },
+      "rationale": "統一 e 伝統 mostram unidade e continuidade.",
+      "requires_review": true,
+      "review_note": "すべる é formal e pouco corrente; revisar prioridade.",
+      "additional_readings_and_usage": "統べる significa governar ou reunir sob comando; não deslizar, 滑る.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 764,
+      "kanji": "絶",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "cancelar",
+        "onyomi": "ぜつ",
+        "kunyomi": "た.つ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "interromper; cessar; absoluto",
+        "onyomi": "ゼツ",
+        "kunyomi": "た.える、た.やす、た.つ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゼツ"
+        ],
+        "kunyomi": [
+          "た.える",
+          "た.やす",
+          "た.つ"
+        ]
+      },
+      "rationale": "絶対 é frequente; 絶える e 絶やす cobrem cessar e extinguir.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "絶つ pode cortar relações; preservar os três verbos, com sentidos relacionados e distintos.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 765,
+      "kanji": "綿",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "algodão",
+        "onyomi": "めん",
+        "kunyomi": "わた",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "algodão",
+        "onyomi": "メン",
+        "kunyomi": "わた",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "メン"
+        ],
+        "kunyomi": [
+          "わた"
+        ]
+      },
+      "rationale": "綿 e 木綿 são usos materiais cotidianos.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "木綿 lê-se もめん; não atribuir も à leitura isolada de 木 neste cartão.",
+      "changed_fields": [
+        "onyomi"
+      ]
+    },
+    {
+      "id": 766,
+      "kanji": "総",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "geral",
+        "onyomi": "そう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "total; geral",
+        "onyomi": "ソウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ソウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "総合 e 総額 cobrem conjunto e total.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 767,
+      "kanji": "編",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "compilar",
+        "onyomi": "へん",
+        "kunyomi": "あ.む",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "tecer; tricotar; compilar",
+        "onyomi": "ヘン",
+        "kunyomi": "あ.む",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヘン"
+        ],
+        "kunyomi": [
+          "あ.む"
+        ]
+      },
+      "rationale": "編む e 編集 dão os usos artesanal e editorial.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 768,
+      "kanji": "績",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "façanha",
+        "onyomi": "せき",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "resultado; desempenho",
+        "onyomi": "セキ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セキ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "成績 e 実績 são as âncoras principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Façanha é estreito demais; resultados e desempenho são mais úteis.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 769,
+      "kanji": "織",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "fiar",
+        "onyomi": "しき",
+        "kunyomi": "お.る",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "tecer",
+        "onyomi": "ショク、シキ",
+        "kunyomi": "お.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ショク",
+          "シキ"
+        ],
+        "kunyomi": [
+          "お.る"
+        ]
+      },
+      "rationale": "組織 exige シキ; 織物 usa おる e 紡織 fornece ショク.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Tecer é mais preciso que fiar: fiar produz o fio; tecer entrelaça fios.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 770,
+      "kanji": "罪",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "culpado",
+        "onyomi": "ざい",
+        "kunyomi": "つみ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "crime; culpa; pecado",
+        "onyomi": "ザイ",
+        "kunyomi": "つみ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ザイ"
+        ],
+        "kunyomi": [
+          "つみ"
+        ]
+      },
+      "rationale": "犯罪 e 罪 são usos frequentes.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Culpado é pessoa ou estado; o núcleo nominal é culpa, crime ou pecado.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 771,
+      "kanji": "群",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "rebanho",
+        "onyomi": "ぐん",
+        "kunyomi": "む.れる",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "grupo; bando; reunir-se",
+        "onyomi": "グン",
+        "kunyomi": "む.れる、む.らがる、む.れ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "グン"
+        ],
+        "kunyomi": [
+          "む.れる",
+          "む.らがる",
+          "む.れ"
+        ]
+      },
+      "rationale": "群れ e 群れる são centrais; 群がる indica aglomerar-se.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "むれ é substantivo 群れ; 郡 é outro kanji, distrito.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 772,
+      "kanji": "義",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "justiça",
+        "onyomi": "ぎ",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "justiça; dever moral; significado",
+        "onyomi": "ギ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ギ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "主義 e 意義 cobrem doutrina e sentido; 義務 acrescenta dever.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 773,
+      "kanji": "耕",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "arado",
+        "onyomi": "こう",
+        "kunyomi": "たがや.す",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "cultivar; lavrar a terra",
+        "onyomi": "コウ",
+        "kunyomi": "たがや.す",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ"
+        ],
+        "kunyomi": [
+          "たがや.す"
+        ]
+      },
+      "rationale": "耕す e 農耕 são usos agrícolas concretos.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Arado é ferramenta; o kanji indica a atividade.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 774,
+      "kanji": "職",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "emprego",
+        "onyomi": "しょく",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "emprego; ocupação; cargo",
+        "onyomi": "ショク",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ショク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "職業 e 就職 são úteis em vida profissional.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 775,
+      "kanji": "肥",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "fertilizante",
+        "onyomi": "ひ",
+        "kunyomi": "こ.やす",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "engordar; enriquecer o solo; fertilizante",
+        "onyomi": "ヒ",
+        "kunyomi": "こ.える、こ.やす、こえ、ふと.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヒ"
+        ],
+        "kunyomi": [
+          "こ.える",
+          "こ.やす",
+          "こえ",
+          "ふと.る"
+        ]
+      },
+      "rationale": "肥料 e 肥える ligam solo e nutrição; 肥やす é transitivo.",
+      "requires_review": true,
+      "review_note": "ふとる nesta grafia é menos usual que 太る; revisar prioridade. こえ é substantivo para adubo, também menos cotidiano.",
+      "additional_readings_and_usage": "肥やし, こやし, deriva de 肥やす e pode ser adubo ou algo que enriquece a experiência.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 776,
+      "kanji": "能",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "capacidade",
+        "onyomi": "のう",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "capacidade; habilidade",
+        "onyomi": "ノウ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ノウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "能力 e 可能 são centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "能 também nomeia o teatro nō, sem mudar a leitura on.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 777,
+      "kanji": "興",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "entreter",
+        "onyomi": "きょう",
+        "kunyomi": "おこ.す",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "interesse; prosperar; promover",
+        "onyomi": "コウ、キョウ",
+        "kunyomi": "おこ.る、おこ.す",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ",
+          "キョウ"
+        ],
+        "kunyomi": [
+          "おこ.る",
+          "おこ.す"
+        ]
+      },
+      "rationale": "興味 exige キョウ; 振興 usa コウ; 興す é promover ou fundar.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "興る indica prosperar; não é a grafia geral para ocorrer, 起こる.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 778,
+      "kanji": "舌",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "língua",
+        "onyomi": "ぜつ",
+        "kunyomi": "した",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "língua",
+        "onyomi": "ゼツ",
+        "kunyomi": "した",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゼツ"
+        ],
+        "kunyomi": [
+          "した"
+        ]
+      },
+      "rationale": "舌 e 舌先 dão o uso concreto; 滑舌 fornece ゼツ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Língua como órgão; não como idioma em geral.",
+      "changed_fields": [
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 779,
+      "kanji": "舎",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "casebre",
+        "onyomi": "しゃ",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "edifício; alojamento",
+        "onyomi": "シャ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シャ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "校舎 e 宿舎 são os usos principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "田舎, いなか, é leitura do conjunto. Casebre acrescenta uma conotação depreciativa indevida.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 780,
+      "kanji": "術",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "artístico",
+        "onyomi": "じゅつ",
+        "kunyomi": "すべ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "técnica; arte; procedimento",
+        "onyomi": "ジュツ",
+        "kunyomi": "すべ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジュツ"
+        ],
+        "kunyomi": [
+          "すべ"
+        ]
+      },
+      "rationale": "手術 e 技術 são frequentes; 術, すべ, significa meio ou recurso.",
+      "requires_review": true,
+      "review_note": "すべ é válida, mas frequentemente escrita em kana e menos central; revisar prioridade.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 781,
+      "kanji": "衛",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "defesa",
+        "onyomi": "えい",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "defender; proteger",
+        "onyomi": "エイ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "エイ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "衛生 e 自衛 são âncoras úteis.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "衛生 significa higiene; não se traduz apenas juntando os sentidos isolados.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 782,
+      "kanji": "製",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "manufatura",
+        "onyomi": "せい",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "fabricar; manufatura",
+        "onyomi": "セイ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セイ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "製品 e 製造 são centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 783,
+      "kanji": "複",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "duplicar",
+        "onyomi": "ふく",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "múltiplo; composto; duplicado",
+        "onyomi": "フク",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "フク"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "複雑 e 複数 cobrem complexidade e multiplicidade.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 784,
+      "kanji": "規",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "norma",
+        "onyomi": "き",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "regra; padrão; escala",
+        "onyomi": "キ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "規則 e 規模 são os usos principais.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; proponho N2 pelo conjunto de usos abstratos.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 785,
+      "kanji": "解",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "desatar",
+        "onyomi": "げ、かい",
+        "kunyomi": "と.く",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "resolver; desfazer; compreender",
+        "onyomi": "カイ、ゲ",
+        "kunyomi": "と.く、と.ける、ほど.く、ほど.ける",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カイ",
+          "ゲ"
+        ],
+        "kunyomi": [
+          "と.く",
+          "と.ける",
+          "ほど.く",
+          "ほど.ける"
+        ]
+      },
+      "rationale": "解く e 解ける são centrais; 理解 usa カイ e 解熱 usa ゲ; ほどく refere-se a desfazer nós ou amarras.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "わかる pode ser escrito 解る, mas 分かる é a grafia básica; deixar como complementar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 786,
+      "kanji": "設",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "estabelecer",
+        "onyomi": "せつ",
+        "kunyomi": "もうけ.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "estabelecer; instalar",
+        "onyomi": "セツ",
+        "kunyomi": "もう.ける",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セツ"
+        ],
+        "kunyomi": [
+          "もう.ける"
+        ]
+      },
+      "rationale": "設定 e 設備 são centrais; 設ける é estabelecer ou criar uma estrutura.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Corrijo a separação de okurigana: もう.ける, não もうけ.る.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 787,
+      "kanji": "許",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "permitir",
+        "onyomi": "きょ",
+        "kunyomi": "ゆる.す",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "permitir; perdoar",
+        "onyomi": "キョ",
+        "kunyomi": "ゆる.す",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "キョ"
+        ],
+        "kunyomi": [
+          "ゆる.す"
+        ]
+      },
+      "rationale": "許す e 許可 são recorrentes.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 788,
+      "kanji": "証",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "evidência",
+        "onyomi": "しょう",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "prova; comprovação; certificado",
+        "onyomi": "ショウ",
+        "kunyomi": "あかし",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ショウ"
+        ],
+        "kunyomi": [
+          "あかし"
+        ]
+      },
+      "rationale": "証明 e 証拠 são centrais; 証, あかし, é prova ou sinal.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "あかし também aparece como 証し; ambas as grafias são usadas.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 789,
+      "kanji": "評",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "avaliar",
+        "onyomi": "ひょう",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "avaliar; comentar; reputação",
+        "onyomi": "ヒョウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヒョウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "評価 e 評判 são os usos principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 790,
+      "kanji": "講",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "discurso",
+        "onyomi": "こう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "aula; palestra; exposição oral",
+        "onyomi": "コウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "講義 e 講演 ancoram ensino e palestra.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 791,
+      "kanji": "謝",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "desculpar",
+        "onyomi": "しゃ",
+        "kunyomi": "あやま.る",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "agradecer; pedir desculpas",
+        "onyomi": "シャ",
+        "kunyomi": "あやま.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シャ"
+        ],
+        "kunyomi": [
+          "あやま.る"
+        ]
+      },
+      "rationale": "謝る é cotidiano; 感謝 acrescenta agradecimento.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 792,
+      "kanji": "識",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "discriminar",
+        "onyomi": "しき",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "conhecer; reconhecer; discernir",
+        "onyomi": "シキ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シキ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "知識 e 意識 são as âncoras principais.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; proponho N2 pelo uso abstrato em reconhecimento e consciência.",
+      "additional_readings_and_usage": "しる existe em 識る, mas 知る é a grafia comum; manter como complementar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 793,
+      "kanji": "護",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "proteção",
+        "onyomi": "ご",
+        "kunyomi": "まも.る",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "proteger; cuidar",
+        "onyomi": "ゴ",
+        "kunyomi": "まも.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゴ"
+        ],
+        "kunyomi": [
+          "まも.る"
+        ]
+      },
+      "rationale": "看護 e 保護 são centrais; 護る destaca proteção.",
+      "requires_review": true,
+      "review_note": "まもる nesta grafia é menos frequente que 守る; revisar prioridade.",
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 794,
+      "kanji": "豊",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "generoso",
+        "onyomi": "ほう",
+        "kunyomi": "ゆた.か",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "abundante; rico",
+        "onyomi": "ホウ",
+        "kunyomi": "ゆた.か",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ホウ"
+        ],
+        "kunyomi": [
+          "ゆた.か"
+        ]
+      },
+      "rationale": "豊か e 豊富 cobrem abundância material ou abstrata.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Generoso pode descrever uma pessoa, mas não é o núcleo geral.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 795,
+      "kanji": "財",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "riqueza",
+        "onyomi": "ざい",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "riqueza; bens; recursos financeiros",
+        "onyomi": "ザイ、サイ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ザイ",
+          "サイ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "財布 exige サイ; 財産 exige ザイ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "財布 lê-se さいふ; não omitir essa leitura cotidiana.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 796,
+      "kanji": "貧",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "pobre",
+        "onyomi": "ひん",
+        "kunyomi": "まずし.い",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "pobre; escasso",
+        "onyomi": "ヒン、ビン",
+        "kunyomi": "まず.しい",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヒン",
+          "ビン"
+        ],
+        "kunyomi": [
+          "まず.しい"
+        ]
+      },
+      "rationale": "貧しい e 貧乏 são centrais; 貧血 acrescenta ヒン.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "貧乏 lê-se びんぼう; ambas as on precisam constar.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 797,
+      "kanji": "責",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "acusar",
+        "onyomi": "せき",
+        "kunyomi": "せ.める",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "responsabilidade; culpar; cobrar",
+        "onyomi": "セキ",
+        "kunyomi": "せ.める",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セキ"
+        ],
+        "kunyomi": [
+          "せ.める"
+        ]
+      },
+      "rationale": "責任 e 責める são usos frequentes.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "責める não é atacar militarmente, 攻める.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 798,
+      "kanji": "貸",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "emprestar",
+        "onyomi": "たい",
+        "kunyomi": "か.す",
+        "jlpt": "N4"
+      },
+      "proposed": {
+        "meaning": "emprestar; alugar a alguém",
+        "onyomi": "タイ",
+        "kunyomi": "か.す",
+        "jlpt": "N4"
+      },
+      "common_readings": {
+        "onyomi": [
+          "タイ"
+        ],
+        "kunyomi": [
+          "か.す"
+        ]
+      },
+      "rationale": "貸す é verbo básico; 賃貸 acrescenta タイ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Distinguir 借りる, tomar emprestado ou alugar de alguém.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 799,
+      "kanji": "貿",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "trocar",
+        "onyomi": "ぼう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "comércio; intercâmbio comercial",
+        "onyomi": "ボウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ボウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "貿易 é o uso principal.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Trocar é amplo demais; aqui o foco é comércio.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 800,
+      "kanji": "賀",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "parabéns",
+        "onyomi": "が",
+        "kunyomi": "おめでとう",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "felicitação; celebração",
+        "onyomi": "ガ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ガ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "年賀状 e 祝賀 dão o núcleo e a leitura.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "おめでとう é uma expressão de parabéns, não kunyomi de 賀.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 801,
+      "kanji": "資",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "recursos",
+        "onyomi": "し",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "recursos; capital; material",
+        "onyomi": "シ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "資料 e 資格 são frequentes; 資金 acrescenta recursos financeiros.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 802,
+      "kanji": "賛",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "aprovar",
+        "onyomi": "さん",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "aprovar; apoiar; elogiar",
+        "onyomi": "サン",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サン"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "賛成 é frequente; 賞賛 amplia para elogio.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 803,
+      "kanji": "質",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "qualidade",
+        "onyomi": "しつ",
+        "kunyomi": null,
+        "jlpt": "N4"
+      },
+      "proposed": {
+        "meaning": "qualidade; natureza; pergunta",
+        "onyomi": "シツ、シチ、チ",
+        "kunyomi": null,
+        "jlpt": "N4"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シツ",
+          "シチ",
+          "チ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "質問 ancora N4; 品質 usa シツ, 質屋 usa シチ e 言質 usa チ.",
+      "requires_review": true,
+      "review_note": "チ é contextual e avançada, como 言質, げんち; revisar prioridade na lista básica.",
+      "additional_readings_and_usage": "N4 prioriza 質問; não exige dominar 言質 ou todos os sentidos de penhor.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 804,
+      "kanji": "輸",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "transporte",
+        "onyomi": "ゆ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "transportar; transferir",
+        "onyomi": "ユ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ユ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "輸出 e 輸入 são os usos principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 805,
+      "kanji": "述",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "menção",
+        "onyomi": "じゅつ",
+        "kunyomi": "の.べる",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "expor; declarar; descrever",
+        "onyomi": "ジュツ",
+        "kunyomi": "の.べる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ジュツ"
+        ],
+        "kunyomi": [
+          "の.べる"
+        ]
+      },
+      "rationale": "述べる e 記述 cobrem apresentação verbal ou escrita.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 806,
+      "kanji": "迷",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "perdido",
+        "onyomi": "めい",
+        "kunyomi": "まよ.う",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "perder-se; hesitar; estar confuso",
+        "onyomi": "メイ",
+        "kunyomi": "まよ.う",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "メイ"
+        ],
+        "kunyomi": [
+          "まよ.う"
+        ]
+      },
+      "rationale": "迷う e 迷惑 são frequentes.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 807,
+      "kanji": "退",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "retirar",
+        "onyomi": "たい",
+        "kunyomi": "しりぞ.く",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "recuar; retirar-se; deixar um posto",
+        "onyomi": "タイ",
+        "kunyomi": "しりぞ.く、しりぞ.ける",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "タイ"
+        ],
+        "kunyomi": [
+          "しりぞ.く",
+          "しりぞ.ける"
+        ]
+      },
+      "rationale": "退院 e 退職 são intermediários; preservar o par nativo.",
+      "requires_review": true,
+      "review_note": "Revisar inclusão de どく/どける: são comuns como palavras, mas geralmente em kana; ficam nas notas.",
+      "additional_readings_and_usage": "退く pode ser のく ou どく; 退ける, のける ou どける, conforme uso. São leituras contextuais adicionais.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 808,
+      "kanji": "逆",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "invertido",
+        "onyomi": "ぎゃく",
+        "kunyomi": "さから.う",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "inverso; contrário; contrariar",
+        "onyomi": "ギャク",
+        "kunyomi": "さか、さか.らう",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ギャク"
+        ],
+        "kunyomi": [
+          "さか",
+          "さか.らう"
+        ]
+      },
+      "rationale": "逆 e 逆らう são os usos centrais; 逆さ fornece さか.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "逆さ lê-se さかさ; さか é a parte correspondente ao kanji.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 809,
+      "kanji": "造",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "criar",
+        "onyomi": "ぞう",
+        "kunyomi": "つく.る",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "construir; fabricar",
+        "onyomi": "ゾウ",
+        "kunyomi": "つく.る",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゾウ"
+        ],
+        "kunyomi": [
+          "つく.る"
+        ]
+      },
+      "rationale": "製造 e 造る cobrem produção material.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "作る é a grafia geral de fazer; 造る tende a construção ou fabricação de escala maior, com exceções lexicais.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 810,
+      "kanji": "過",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "exagerar",
+        "onyomi": "か",
+        "kunyomi": "あやま.ち",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "passar; exceder; erro",
+        "onyomi": "カ",
+        "kunyomi": "す.ぎる、す.ごす、あやま.つ、あやま.ち",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "カ"
+        ],
+        "kunyomi": [
+          "す.ぎる",
+          "す.ごす",
+          "あやま.つ",
+          "あやま.ち"
+        ]
+      },
+      "rationale": "過ぎる e 過ごす são centrais e estavam ausentes; 過去 fornece カ.",
+      "requires_review": true,
+      "review_note": "あやまつ é formal; revisar prioridade, preservando a distinção de あやまち, substantivo.",
+      "additional_readings_and_usage": "過ち significa erro ou falta; não é a única leitura nativa do kanji.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 811,
+      "kanji": "適",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "adequado",
+        "onyomi": "てき",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "adequado; apropriado",
+        "onyomi": "テキ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "テキ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "適切 e 適当 cobrem adequação.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2; proponho N2 devido às diferenças de uso, especialmente 適当.",
+      "additional_readings_and_usage": "適当 pode ser adequado ou feito sem cuidado, dependendo do contexto.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 812,
+      "kanji": "酸",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "ácido",
+        "onyomi": "さん",
+        "kunyomi": null,
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "ácido; azedo",
+        "onyomi": "サン",
+        "kunyomi": "す.い",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サン"
+        ],
+        "kunyomi": [
+          "す.い"
+        ]
+      },
+      "rationale": "酸素 e 酸っぱい são úteis; 酸い registra a leitura nativa.",
+      "requires_review": true,
+      "review_note": "すい é menos comum isoladamente que すっぱい; revisar apresentação pedagógica.",
+      "additional_readings_and_usage": "酸っぱい lê-se すっぱい; registrar a palavra nas notas sem atribuir toda a sequência ao kanji.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 813,
+      "kanji": "鉱",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "mineral",
+        "onyomi": "こう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "minério; mineral",
+        "onyomi": "コウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "コウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "鉱山 e 鉱物 ancoram mineração e minerais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 814,
+      "kanji": "銅",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "cobre",
+        "onyomi": "どう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "cobre",
+        "onyomi": "ドウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ドウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "銅 e 銅線 são usos materiais concretos.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "あかがね é leitura nativa válida, mas histórica ou literária; preservar como complementar.",
+      "changed_fields": [
+        "onyomi"
+      ]
+    },
+    {
+      "id": 815,
+      "kanji": "銭",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "moeda",
+        "onyomi": "せん",
+        "kunyomi": "ぜに",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "dinheiro; moeda; sen",
+        "onyomi": "セン",
+        "kunyomi": "ぜに",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "セン"
+        ],
+        "kunyomi": [
+          "ぜに"
+        ]
+      },
+      "rationale": "小銭 e 金銭 cobrem trocado e dinheiro.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "Sen é unidade monetária histórica; ぜに aparece em こぜに e não é on.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    },
+    {
+      "id": 816,
+      "kanji": "防",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "evitar",
+        "onyomi": "ぼう",
+        "kunyomi": "ふせ.ぐ",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "prevenir; defender; impedir",
+        "onyomi": "ボウ",
+        "kunyomi": "ふせ.ぐ",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ボウ"
+        ],
+        "kunyomi": [
+          "ふせ.ぐ"
+        ]
+      },
+      "rationale": "予防 e 防ぐ são os usos centrais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 817,
+      "kanji": "限",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "limite",
+        "onyomi": "げん",
+        "kunyomi": "かぎ.る",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "limite; limitar",
+        "onyomi": "ゲン",
+        "kunyomi": "かぎ.る",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ゲン"
+        ],
+        "kunyomi": [
+          "かぎ.る"
+        ]
+      },
+      "rationale": "限る e 制限 são frequentes.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "限り, かぎり, é forma nominal frequente, ligada a 限る.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 818,
+      "kanji": "険",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "íngreme",
+        "onyomi": "けん",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "perigoso; íngreme; severo",
+        "onyomi": "ケン",
+        "kunyomi": "けわ.しい",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ケン"
+        ],
+        "kunyomi": [
+          "けわ.しい"
+        ]
+      },
+      "rationale": "危険 ancora N3; 険しい acrescenta a leitura ausente.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "険しい pode descrever terreno ou expressão facial severa.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 819,
+      "kanji": "際",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "ocasião",
+        "onyomi": "さい",
+        "kunyomi": "きわ",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "ocasião; limite; junto de",
+        "onyomi": "サイ",
+        "kunyomi": "きわ",
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "サイ"
+        ],
+        "kunyomi": [
+          "きわ"
+        ]
+      },
+      "rationale": "国際 e 実際 são frequentes; 窓際 ancora a leitura nativa.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "窓際 lê-se まどぎわ, com sonorização de きわ.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 820,
+      "kanji": "雑",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "diverso",
+        "onyomi": "ざつ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "variado; misturado; descuidado",
+        "onyomi": "ザツ、ゾウ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ザツ",
+          "ゾウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "雑誌 exige ザツ; 雑巾 exige ゾウ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "雑巾 lê-se ぞうきん; preservar ambas as on.",
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 821,
+      "kanji": "非",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "negativo",
+        "onyomi": "ひ",
+        "kunyomi": "あら.ず",
+        "jlpt": "N3"
+      },
+      "proposed": {
+        "meaning": "não; negação; erro",
+        "onyomi": "ヒ",
+        "kunyomi": null,
+        "jlpt": "N3"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヒ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "非常 e 非常に são frequentes; 非公式 exemplifica negação.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "あらず é leitura histórica ou formal, frequentemente em 非ず; não prioritária para o cartão básico.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 822,
+      "kanji": "預",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "depositar",
+        "onyomi": "よ",
+        "kunyomi": "あず.ける",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "deixar aos cuidados; receber para guardar",
+        "onyomi": "ヨ",
+        "kunyomi": "あず.ける、あず.かる",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ヨ"
+        ],
+        "kunyomi": [
+          "あず.ける",
+          "あず.かる"
+        ]
+      },
+      "rationale": "預ける e 預かる exigem o par; 預金 fornece ヨ.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": "預ける é entregar aos cuidados; 預かる é receber sob responsabilidade.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "kunyomi"
+      ]
+    },
+    {
+      "id": 823,
+      "kanji": "領",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "território",
+        "onyomi": "りょう",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "território; domínio; receber",
+        "onyomi": "リョウ",
+        "kunyomi": null,
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "リョウ"
+        ],
+        "kunyomi": []
+      },
+      "rationale": "領収書 e 領域 são os usos principais.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 824,
+      "kanji": "額",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "montante",
+        "onyomi": "がく",
+        "kunyomi": "ひたい",
+        "jlpt": "N2"
+      },
+      "proposed": {
+        "meaning": "quantia; testa; moldura",
+        "onyomi": "ガク",
+        "kunyomi": "ひたい",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "ガク"
+        ],
+        "kunyomi": [
+          "ひたい"
+        ]
+      },
+      "rationale": "金額 e 額縁 cobrem valor e moldura; ひたい é testa.",
+      "requires_review": false,
+      "review_note": null,
+      "additional_readings_and_usage": null,
+      "changed_fields": [
+        "meaning",
+        "onyomi"
+      ]
+    },
+    {
+      "id": 825,
+      "kanji": "飼",
+      "school_grade_unchanged": 5,
+      "scope": "school_grade_5",
+      "review_origin": "new_manual_review",
+      "before": {
+        "meaning": "domesticar",
+        "onyomi": "し",
+        "kunyomi": "か.う",
+        "jlpt": "N1"
+      },
+      "proposed": {
+        "meaning": "criar; manter um animal",
+        "onyomi": "シ",
+        "kunyomi": "か.う",
+        "jlpt": "N2"
+      },
+      "common_readings": {
+        "onyomi": [
+          "シ"
+        ],
+        "kunyomi": [
+          "か.う"
+        ]
+      },
+      "rationale": "飼う e 飼育 são os usos principais.",
+      "requires_review": true,
+      "review_note": "Fronteira N3/N2: o verbo é cotidiano, mas proponho N2 para a grafia e compostos.",
+      "additional_readings_and_usage": "飼う é criar ou manter um animal; não significa necessariamente domesticar um animal selvagem.",
+      "changed_fields": [
+        "meaning",
+        "onyomi",
+        "jlpt"
+      ]
+    }
+  ]
+}

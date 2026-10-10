@@ -1,0 +1,182 @@
+# Kanji|JLPT proposto|Significado|Onyomi|Kunyomi|Justificativa|Revisão|Notas
+並|N3|alinhar; comum; lado a lado|ヘイ|なら.ぶ、なら.べる、なみ、なら.びに|並ぶ e 並べる formam par cotidiano; 並行 fornece ヘイ.|ならびに é formal; revisar sua prioridade na lista básica.|並, なみ, indica padrão comum, como tamanho regular; 並びに é conjunção formal, e não apenas conjugação de 並ぶ.
+乱|N2|desordem; perturbar|ラン|みだ.れる、みだ.す|混乱 e 乱れる cobrem desordem; incluir a forma transitiva 乱す.|—|—
+乳|N2|leite; seio|ニュウ|ちち、ち|牛乳 e 乳 fornecem as leituras principais; 乳首 exige ち.|—|乳首 lê-se ちくび. ち é contextual, mas útil.
+亡|N3|morrer; falecer; desaparecer|ボウ、モウ|な.くなる|死亡 e 亡くなる são centrais; 亡者 exige モウ.|モウ é contextual e menos prioritária; revisar sua inclusão na lista básica.|亡くす, なくす, é forma transitiva usada para perder alguém por morte; preservar como leitura complementar.
+仁|N1|benevolência; humanidade|ジン、ニ|—|仁義 e 仁術 têm uso restrito; 仁王 fornece ニ.|Revisar fronteira N2/N1 e prioridade de ニ, contextual em 仁王.|仁王 lê-se におう; leituras de nomes próprios não foram acrescentadas.
+供|N3|oferecer; acompanhar|キョウ、ク|そな.える、とも|提供 e 供給 usam キョウ; 供養 usa ク; 供える é oferecer em ritual.|—|お供 lê-se おとも. 子供, こども, apresenta sonorização; não substituir とも por ども como única leitura.
+俳|N2|haicai; atuação|ハイ|—|俳優 e 俳句 tornam atuação e poesia os dois usos centrais.|—|Não significa somente ator; 俳句 é haicai.
+値|N3|valor; preço|チ|ね、あたい|値段 exige ね; 価値 usa チ; 値, あたい, é valor numérico ou abstrato.|—|値する, あたいする, é merecer ou valer; ね não pode ficar ausente.
+傷|N2|ferida; dano; ferir|ショウ|きず、いた.む、いた.める|傷 e 傷む cobrem ferida e deterioração; 負傷 fornece ショウ.|—|傷つく e 傷つける são formas derivadas de きず. 傷める pode ser danificar; 痛める enfatiza dor ou lesão conforme uso.
+優|N3|gentil; excelente; superior|ユウ|やさ.しい、すぐ.れる|優しい e 優れる cobrem gentileza e excelência; 優勝 fornece ユウ.|—|優る, まさる, existe, mas 勝る é a grafia mais habitual; leitura complementar.
+党|N2|partido político; grupo|トウ|—|政党 e 与党 são os usos principais.|—|—
+冊|N4|contador de livros e volumes|サツ、サク|—|一冊 é contador básico; 冊子 fornece サッ, variante fonética de サツ.|サク é contextual, como 短冊, たんざく; revisar sua prioridade.|N4 prioriza サツ; não exige dominar a leitura de 短冊.
+処|N2|tratar; lidar com; lugar|ショ|—|処理 e 処分 dão tratamento e destinação.|Fronteira N3/N2; proponho N2 pelo conjunto de usos administrativos.|ところ é leitura possível, mas 所 é a grafia básica mais comum; どころ ocorre contextualmente.
+刻|N3|entalhar; marcar; momento|コク|きざ.む|時刻 e 遅刻 são frequentes; 刻む é cortar fino, gravar ou marcar.|—|—
+割|N3|dividir; partir; proporção|カツ|わ.る、わ.れる、わり、さ.く|割る e 割れる formam par central; 割合 usa わり; 割く é dedicar ou separar parte.|—|分割 fornece カツ. 割く não é o rasgar de 裂く em todo contexto.
+創|N2|criar; fundar|ソウ|つく.る|創造 e 創立 sustentam criação e fundação.|つくる nesta grafia é menos geral que 作る; revisar prioridade.|創る destaca criação original; 創 também pode designar ferida em vocabulário médico, uso complementar.
+劇|N2|teatro; drama; intenso|ゲキ|—|演劇 e 劇場 são centrais; 劇的 acrescenta intensidade.|—|—
+勤|N3|trabalhar; dedicar-se ao trabalho|キン、ゴン|つと.める、つと.まる|勤務 e 通勤 ancoram trabalho; 勤める é trabalhar para alguém ou uma organização.|ゴン é contextual, como 勤行, ごんぎょう; revisar prioridade.|勤まる indica conseguir exercer o emprego. Determinação não é o núcleo; distinguir 努める e 務める.
+危|N3|perigoso; arriscado|キ|あぶ.ない、あや.うい、あや.ぶむ|危ない estava ausente; 危険 e 危うい cobrem perigo; 危ぶむ é temer por algo.|あやぶむ é menos frequente e mais formal; revisar prioridade.|—
+卵|N3|ovo|ラン|たまご|卵 é alimento e termo biológico cotidiano; 産卵 fornece ラン.|Fronteira N3/N2; proponho N3 pela frequência da palavra e da grafia.|玉子 é outra grafia frequente, sobretudo culinária; não altera esta entrada.
+厳|N2|rigoroso; severo; solene|ゲン、ゴン|きび.しい、おごそ.か|厳しい e 厳重 são centrais; 厳か acrescenta solenidade; 荘厳 exige ゴン.|—|荘厳 lê-se そうごん; ambas as on são válidas.
+収|N3|recolher; receber; caber|シュウ|おさ.める、おさ.まる|収入 e 収集 são frequentes; preservar o par 収める/収まる.|—|収まる pode ser caber ou ficar contido; o sentido depende do objeto.
+后|N1|imperatriz; consorte imperial|コウ|きさき|皇后 e 皇太后 têm uso institucional restrito.|Fronteira N2/N1; proponho N1 pela restrição temática. きさき é histórica ou literária.|皇后 lê-se こうごう, com sonorização de コウ; ゴウ não deve substituir a leitura-base.
+否|N3|não; negar; recusar|ヒ|いな|否定 e 否 são os usos centrais.|—|否, いな, é formal; いや pode aparecer nesta grafia, mas costuma ser kana e fica como complementar.
+吸|N3|sugar; inalar; absorver|キュウ|す.う|吸う e 呼吸 são cotidianos.|—|—
+呼|N3|chamar|コ|よ.ぶ|呼ぶ e 呼吸 ancoram as leituras.|—|—
+善|N2|bem; bondade; bom|ゼン|よ.い|改善 e 善悪 são centrais.|よい nesta grafia enfatiza bondade moral e é menos comum que 良い; revisar prioridade.|—
+困|N3|estar em dificuldade; afligir-se|コン|こま.る|困る e 困難 cobrem dificuldade.|—|Não é simplesmente cansar-se; 困る é estar em apuros ou não saber o que fazer.
+垂|N2|pender; deixar cair; vertical|スイ|た.れる、た.らす|垂直 e 垂れる exigem corrigir a on para スイ; incluir 垂らす.|—|垂直 lê-se すいちょく: チョク pertence a 直, não a 垂.
+城|N2|castelo|ジョウ|しろ|城 e 城下町 são usos concretos centrais.|Fronteira N3/N2; proponho N2 pela menor frequência fora de turismo e história.|—
+域|N2|área; região; domínio|イキ|—|地域 e 領域 são os usos principais.|—|Variedade não descreve o núcleo de área ou domínio.
+奏|N2|tocar música; apresentar|ソウ|かな.でる|演奏 e 奏でる sustentam o sentido musical.|—|奏する, そうする, usa on; também ocorre em 効果を奏する, produzir efeito.
+奮|N2|animar-se; empenhar-se; excitar-se|フン|ふる.う|興奮 e 奮闘 são as âncoras principais.|Fronteira N2/N1; proponho N2 por 興奮. ふるう nesta grafia é menos corrente que 振るう.|奮う indica animar-se ou tomar coragem; não é todo sentido de sacudir.
+姿|N2|figura; aparência; postura|シ|すがた|姿 e 姿勢 cobrem aparência e postura.|—|—
+存|N3|existir; preservar; saber|ソン、ゾン|—|存在 usa ソン; ご存じ e 存じる exigem ゾン.|—|存じる, ぞんじる, é verbo com on, não kunyomi. Supor não resume o kanji.
+孝|N2|respeito e dedicação aos pais|コウ|—|親孝行 é a âncora cotidiana e cultural.|Fronteira N2/N1 pela concentração em poucos compostos; proponho N2 por 親孝行.|—
+宅|N3|casa; residência|タク|—|自宅 e お宅 são os usos centrais.|—|いいえ significa não e não é leitura de 宅. Não atribuir automaticamente いえ, leitura de 家, a este kanji.
+宇|N2|espaço; universo|ウ|—|宇宙 é o uso prioritário no estudo geral.|—|O sentido histórico arquitetônico não deve ser a única tradução básica.
+宗|N2|religião; seita; princípio central|シュウ、ソウ|—|宗教 exige シュウ; 宗家 fornece ソウ, corrigindo a classificação como kun.|ソウ é mais contextual; revisar prioridade.|宗家 lê-se そうけ; ambas são on.
+宙|N2|espaço; ar|チュウ|—|宇宙 e 宙に浮く dão espaço e suspensão no ar.|—|—
+宝|N2|tesouro; precioso|ホウ|たから|宝 e 宝石 são os usos principais.|—|—
+宣|N2|anunciar; proclamar|セン|—|宣伝 e 宣言 são centrais.|—|のたまう é leitura literária ou irônica em 宣う; fica como complementar, sem prioridade básica.
+密|N2|secreto; denso; próximo|ミツ|—|秘密 e 密度 cobrem segredo e densidade.|—|ひそか, em 密か, é leitura nativa corrente na palavra, mas de classificação pedagógica a revisar; preservada como complementar.
+寸|N2|pequena medida; dimensão|スン|—|寸法 e 寸前 ancoram medida e proximidade imediata.|—|寸 é unidade tradicional de comprimento, aproximadamente 3 cm; não é medida genérica sem contexto.
+専|N2|exclusivo; especializado|セン|もっぱ.ら|専門 e 専ら cobrem especialização e dedicação principal.|—|—
+射|N2|atirar; lançar raios|シャ|い.る|注射 e 発射 são centrais; 射る é lançar flecha ou atingir com disparo.|—|さす em 射す ocorre para incidência de luz; manter como leitura complementar. うつ costuma usar 撃つ no contexto de disparos.
+将|N2|comandante; futuro|ショウ|—|将来 e 大将 são os usos principais.|—|まさに em 将に é contextual e normalmente em kana; não prioritária.
+尊|N2|respeitar; venerável; valioso|ソン|たっと.い、とうと.い、たっと.ぶ、とうと.ぶ|尊敬 ancora ソン; as formas nativas cobrem valor elevado e veneração.|As variantes たっとい/たっとぶ são menos frequentes; revisar prioridade sem apagá-las.|尊い pode ser valioso ou digno de reverência; 貴い é grafia relacionada com nuances de uso.
+就|N2|assumir; ingressar; dedicar-se|シュウ、ジュ|つ.く、つ.ける|就職 e 就く são centrais; 成就 exige ジュ.|つける é menos frequente que つく; revisar prioridade na lista básica.|成就 lê-se じょうじゅ. 就ける pode ser colocar alguém num cargo.
+尺|N2|unidade de comprimento; escala|シャク|—|尺度 e 縮尺 são úteis para proporção e medição.|Fronteira N2/N1; proponho N2 por 縮尺 e 尺度.|尺 é unidade tradicional de cerca de 30 cm, não especificamente profundidade.
+届|N3|chegar ao destino; entregar; notificar|—|とど.く、とど.ける|届く e 届ける são cotidianos e precisam do par.|—|Sem on prioritária atual. 届け também é notificação ou requerimento.
+展|N2|expandir; desenvolver; expor|テン|—|展覧会 e 発展 são os usos centrais.|—|—
+層|N2|camada; estrato|ソウ|—|高層 e 一層 ligam camadas e intensificação.|—|一層 também significa ainda mais; não se traduz literalmente em todo contexto.
+己|N2|si mesmo|コ、キ|おのれ|自己 exige コ; 克己 exige キ.|おのれ pode ser literário ou agressivo ao se dirigir a alguém; revisar prioridade. キ é contextual.|克己 lê-se こっき; 自己, じこ.
+巻|N2|enrolar; volume de obra|カン|ま.く、まき|巻く e 一巻 dão ação e volume; 巻, まき, ocorre em nomes de rolos.|—|—
+幕|N2|cortina; ato de peça; abertura ou fim de evento|マク、バク|—|幕 e 開幕 exigem マク; 幕府 usa バク.|—|マク é on, mesmo quando o kanji aparece sozinho; não é kunyomi.
+干|N2|secar; interferir|カン|ほ.す、ひ.る|干す e 干る cobrem secagem; 干渉 fornece カン.|ひる é menos comum e contextual, como 潮が干る; revisar prioridade.|干渉 significa interferência; não derivar o significado apenas de secar.
+幼|N2|infantil; muito jovem|ヨウ|おさな.い|幼稚園 e 幼い são os usos centrais.|—|—
+庁|N2|órgão público; repartição|チョウ|—|県庁 e 官庁 são os usos principais.|—|—
+座|N3|sentar; assento; lugar|ザ|すわ.る|座る e 座席 são cotidianos.|—|—
+延|N2|estender; prolongar; adiar|エン|の.びる、の.ばす、の.べる|延期 e 延ばす são centrais; incluir 延びる e 延べる.|—|延べ, のべ, também indica total acumulado; 延べる pode estender no tempo ou dispor algo.
+律|N2|lei; regra; ritmo|リツ、リチ|—|法律 e 規律 exigem リツ; 律儀 exige リチ.|—|律儀 lê-se りちぎ. Ritmo é apenas um dos sentidos.
+従|N2|seguir; obedecer; acompanhar|ジュウ、ショウ、ジュ|したが.う、したが.える|従う e 従業員 são centrais; 従容 e 従者 fornecem leituras contextuais.|ショウ em 従容, しょうよう, é literária; ジュ em 従者, じゅしゃ, é contextual. Revisar prioridade de ambas.|従える é fazer acompanhar ou subordinar; não omitir o verbo transitivo.
+忘|N3|esquecer|ボウ|わす.れる|忘れる e 忘年会 são frequentes.|—|—
+忠|N2|lealdade; fidelidade|チュウ|—|忠実 e 忠告 ancoram fidelidade e conselho.|—|—
+憲|N2|constituição; norma fundamental|ケン|—|憲法 é a âncora principal.|Fronteira N2/N1 pela especialização jurídica; proponho N2 para 憲法.|—
+我|N2|eu; nós; próprio|ガ|われ、わ|我々 e 自我 fornecem os usos principais; 我が usa わ.|—|我が lê-se わが; 俺, おれ, é outro kanji. 我 sozinho tem registro literário ou formal.
+批|N2|criticar; avaliar|ヒ|—|批判 e 批評 são os usos centrais.|—|—
+担|N2|carregar; assumir responsabilidade|タン|かつ.ぐ、にな.う|担当 e 担ぐ são centrais; 担う enfatiza encargo ou função.|—|—
+拝|N2|reverenciar; adorar; prefixo de humildade|ハイ|おが.む|拝見 e 拝む são os usos principais.|—|拝見する é ver em registro humilde, não simplesmente adorar.
+拡|N2|ampliar; expandir|カク|—|拡大 e 拡張 são centrais.|ひろげる é possível em 拡げる, mas 広げる é a grafia básica; revisar se deve migrar das notas para a lista principal.|拡がる e 拡げる são leituras complementares; não afirmar inexistência de kun.
+捨|N3|jogar fora; abandonar|シャ|す.てる|捨てる é cotidiano; 四捨五入 fornece シャ.|—|—
+探|N3|procurar; investigar|タン|さが.す、さぐ.る|探す e 探る distinguem busca e investigação; 探検 fornece タン.|—|—
+推|N2|inferir; recomendar; apoiar|スイ|お.す|推測 e 推薦 cobrem inferência e recomendação; 推す é apoiar ou recomendar.|—|推す também aparece no uso contemporâneo de apoiar um artista; não é o empurrar físico de 押す.
+揮|N2|dirigir; exercer; brandir|キ|—|指揮 e 発揮 são os usos prioritários.|—|ふるう existe em 揮う, mas 振るう é a grafia mais geral; leitura complementar.
+操|N2|operar; manipular; integridade|ソウ|あやつ.る、みさお|操作 e 操る cobrem operação; 操, みさお, indica integridade ou castidade em registro antigo.|みさお é literária ou histórica; revisar prioridade.|Castidade é um sentido possível aqui, não em 討.
+敬|N2|respeitar; reverenciar|ケイ|うやま.う|敬語 e 尊敬 são centrais.|—|—
+映|N4|refletir; projetar; destacar-se visualmente|エイ|うつ.る、うつ.す、は.える|映画 ancora N4; 映る/映す formam par; 映える é destacar-se pela aparência.|—|N4 introduz 映画; não implica domínio imediato de todas as leituras.
+晩|N4|noite; período tardio|バン|—|今晩 e 毎晩 são vocabulário básico.|Fronteira N4/N3; proponho N4 pelos compostos de tempo cotidianos.|—
+暖|N3|quente de modo agradável; aquecer|ダン|あたた.かい、あたた.まる、あたた.める|暖かい e 暖房 são cotidianos; preservar os dois verbos.|—|暖 costuma destacar clima ou ambiente; 温 é frequente para temperatura de objetos ou acolhimento, com sobreposição contextual.
+暮|N3|anoitecer; viver; fim de período|ボ|く.れる、く.らす|暮れる e 暮らす são frequentes; 歳暮 fornece ボ.|—|暮れ também indica fim do dia ou do ano; subsistência sozinha era insuficiente.
+朗|N2|alegre; claro; expressivo|ロウ|ほが.らか|朗読 e 朗らか cobrem leitura em voz alta e disposição alegre.|—|—
+机|N4|mesa de estudo; escrivaninha|キ|つくえ|机 é objeto básico; 机上 fornece キ.|—|キ é menos frequente que つくえ; N4 prioriza a palavra cotidiana.
+枚|N4|contador de objetos planos|マイ|—|一枚 é contador básico de papel, roupas e outros objetos planos.|—|Não se restringe a folhas de papel.
+染|N2|tingir; contaminar; infiltrar|セン|そ.める、そ.まる、し.みる、し.み|染める e 染まる formam par; 汚染 usa セン; 染みる/染み cobrem penetração e mancha.|—|染みる também pode indicar algo que toca emocionalmente; しみ é substantivo.
+株|N2|ação de empresa; toco; planta individual|シュ|かぶ|株 e 株式 ancoram a leitura nativa かぶ, que estava no campo errado.|シュ é leitura on de uso muito restrito; revisar se deve ficar apenas nas notas, sem prioridade no treino básico.|株式会社 lê-se かぶしきがいしゃ e 株主, かぶぬし; nenhum dos dois exemplifica シュ. かぶ é a leitura cotidiana prioritária.
+棒|N2|bastão; vara|ボウ|—|棒 e 相棒 são os usos centrais.|—|相棒 significa parceiro, não se traduz literalmente.
+模|N2|modelo; imitar; padrão|モ、ボ|—|模型 e 模様 usam モ; 規模 exige ボ.|—|—
+権|N2|direito; autoridade; poder|ケン、ゴン|—|権利 e 権力 são centrais; 権化 fornece ゴン.|ゴン é contextual e menos prioritária; revisar sua presença entre as leituras principais.|権化 lê-se ごんげ, personificação.
+樹|N2|árvore|ジュ|—|樹木 e 樹立 são os usos principais.|Fronteira N2/N1; proponho N2 por 樹木. き é possível, mas 木 é a grafia cotidiana; fica nas notas.|—
+欲|N3|desejo; querer|ヨク|ほ.しい、ほっ.する|欲しい e 食欲 são frequentes; 欲する também é usado para desejar.|ほっする é mais formal e menos prioritária que ほしい; revisar sua posição no treino básico.|Saudade não é tradução básica. 欲する lê-se ほっする; não confundir com o verbo 欲張る, よくばる, que usa ヨク.
+段|N3|degrau; etapa; nível|ダン|—|階段 e 段階 são os usos centrais.|—|—
+沿|N2|ao longo de; seguir|エン|そ.う|沿う e 沿岸 ligam percurso e margem.|—|—
+泉|N2|fonte; nascente|セン|いずみ|温泉 e 泉 são os usos principais.|—|—
+洗|N3|lavar|セン|あら.う|洗う e 洗濯 são cotidianos.|—|—
+派|N2|grupo; corrente; escola de pensamento|ハ|—|立派 e 派遣 são frequentes; 派 também indica facção ou corrente.|—|立派 significa admirável ou excelente; não se traduz por grupo.
+済|N3|concluir; resolver; liquidar|サイ|す.む、す.ます|済む e 済ます formam par; 経済 fornece サイ.|—|済ませる, すませる, é forma relacionada frequente; preservar nas notas.
+源|N2|fonte; origem|ゲン|みなもと|資源 e 電源 são as âncoras; 源 significa origem.|—|—
+潮|N2|maré; corrente; tendência|チョウ|しお|潮 e 満潮 são os usos principais; corrigir チョ para チョウ.|—|—
+激|N2|intenso; violento; estimular|ゲキ|はげ.しい|激しい e 刺激 são centrais.|—|—
+灰|N2|cinza; cinzas|カイ|はい|灰 e 灰色 fornecem はい; 石灰 fornece カイ.|—|はい é kun, não on. 石灰 lê-se せっかい.
+熟|N2|amadurecer; dominar; bem desenvolvido|ジュク|う.れる|成熟 e 熟語 são centrais; 熟れる é amadurecer.|—|熟す, じゅくす, usa on. こなす em 熟す é leitura contextual, frequentemente em kana; manter como complementar.
+片|N2|fragmento; um dos lados|ヘン|かた|片方 e 破片 são os usos centrais.|—|Remover おれ do campo: não é leitura básica de 片. 片付ける lê-se かたづける.
+班|N2|equipe; grupo de trabalho|ハン|—|班 e 班長 são usados em escola e trabalho.|Fronteira N2/N1; proponho N2 pela concretude e utilidade escolar.|—
+異|N2|diferente; estranho|イ|こと.なる|異なる e 異常 cobrem diferença e anormalidade.|—|—
+疑|N3|duvidar; suspeitar|ギ|うたが.う|疑う e 疑問 são os usos principais.|—|疑い, うたがい, é forma nominal frequente.
+痛|N3|dor; doer; ferir|ツウ|いた.い、いた.む、いた.める|痛い e 頭痛 são cotidianos; incluir os dois verbos.|—|—
+皇|N2|imperial; imperador|コウ、オウ|—|皇帝 usa コウ; 天皇 exige オウ.|—|オウ é on, não kun. 天皇 lê-se てんのう, com alteração fonética.
+盛|N2|próspero; auge; servir uma porção|セイ、ジョウ|さか.ん、も.る、さか.る|盛ん e 盛る são centrais; 繁盛 exige ジョウ; 盛大 usa セイ.|さかる é menos frequente e depende do contexto; revisar prioridade.|盛る é servir ou empilhar; 盛る também tem usos figurados de exagerar.
+盟|N2|aliança; compromisso entre grupos|メイ|—|同盟 e 加盟 são os usos principais.|—|—
+看|N2|observar; cuidar|カン|—|看護 e 看板 são centrais.|—|みる existe em 看る, especialmente para cuidar de alguém; preservar como complementar, a priorizar conforme uso clínico.
+砂|N2|areia|サ、シャ|すな|砂 e 砂糖 são centrais; 土砂 exige シャ.|—|砂糖 lê-se さとう; 土砂, どしゃ.
+磁|N2|magnetismo; porcelana|ジ|—|磁石 e 磁器 cobrem os dois sentidos principais.|Fronteira N2/N1 por especialização; proponho N2 para 磁石.|—
+私|N5|eu; particular; privado|シ|わたし、わたくし|Reconfirmo a proposta anterior de N5: 私 é pronome inicial; 私立 fornece シ.|—|N5 prioriza わたし; わたくし é mais formal. Leituras, significado e nível coincidem com a revisão manual N5 já existente.
+秘|N2|secreto; ocultar|ヒ|ひ.める|秘密 e 秘める são os usos principais.|—|—
+穀|N2|cereal; grão|コク|—|穀物 é a âncora principal.|Fronteira N2/N1 pela concentração temática; proponho N2 para alimentação e agricultura.|—
+穴|N2|buraco; abertura|ケツ|あな|穴 é concreto e cotidiano; 墓穴 fornece ケツ.|Fronteira N3/N2; proponho N2 para a grafia e a leitura on menos frequente.|—
+窓|N3|janela|ソウ|まど|窓 é cotidiano; 同窓会 fornece ソウ.|—|—
+筋|N2|músculo; tendão; linha; lógica de um argumento|キン|すじ|筋肉 e 筋 cobrem anatomia e linha de raciocínio.|—|—
+策|N2|medida; plano; estratégia|サク|—|対策 e 政策 são os usos principais.|—|Esquema pode soar pejorativo; plano ou medida é mais neutro.
+簡|N3|simples; conciso|カン|—|簡単 é muito frequente; 簡潔 amplia para concisão.|Fronteira N3/N2; proponho N3 com foco em 簡単.|—
+糖|N2|açúcar|トウ|—|砂糖 e 糖分 são os usos centrais.|—|—
+系|N2|sistema; linhagem; categoria|ケイ|—|系統 e 体系 são os usos centrais.|—|しお não é leitura de 系. 系 também funciona como sufixo de categoria, como 理系.
+紅|N2|vermelho intenso; carmesim|コウ、ク|べに、くれない|紅茶 exige コウ; 口紅 usa べに; 紅蓮 fornece ク.|ク é contextual e くれない tem tom literário; revisar prioridade.|紅蓮 lê-se ぐれん, com sonorização. 紅葉, もみじ, é leitura do conjunto; こうよう também é corrente.
+納|N2|entregar; recolher; guardar; aceitar|ノウ、ナッ、ナ、ナン、トウ|おさ.める、おさ.まる|納入 usa ノウ; 納得 usa ナッ; 納屋 usa ナ; 納戸 usa ナン; 出納 usa トウ.|ナン e トウ são contextuais; revisar se devem ficar apenas nas notas. Não têm a mesma prioridade de ノウ e ナッ.|納得, なっとく; 納屋, なや; 納戸, なんど; 出納, すいとう. Povoação era tradução inadequada.
+純|N2|puro; genuíno; sem mistura|ジュン|—|単純 e 純粋 são os usos principais.|—|—
+絹|N2|seda|ケン|きぬ|絹 é material concreto; 絹糸 fornece ケン em registro técnico.|Fronteira N2/N1 e prioridade de ケン: 絹糸 também se lê きぬいと; propor N2 para きぬ.|絹糸 pode ser けんし; a leitura depende do registro.
+縦|N2|vertical; comprimento; livremente|ジュウ|たて|縦 e 縦横 exigem corrigir ジュ para ジュウ.|—|縦横 lê-se じゅうおう; 縦 é contraposto a 横 no sentido espacial.
+縮|N2|encolher; reduzir; contrair|シュク|ちぢ.む、ちぢ.める、ちぢ.まる、ちぢ.れる、ちぢ.らす|縮む e 縮める formam par; 短縮 fornece シュク; demais formas cobrem redução e encrespamento.|ちぢれる e ちぢらす são menos frequentes e ligadas a encrespar; revisar prioridade.|縮まる ocorre em distância ou diferença que diminui; não é simplesmente variante de conjugação de 縮む.
+署|N2|repartição; assinar|ショ|—|警察署 e 署名 cobrem repartição e assinatura.|—|—
+翌|N2|seguinte|ヨク|—|翌日 e 翌年 são os usos principais.|—|—
+聖|N2|sagrado; santo|セイ|—|聖書 e 神聖 são os usos centrais.|—|ひじり é leitura histórica ou literária, preservada como complementar.
+肺|N2|pulmão|ハイ|—|肺 e 肺炎 são os usos principais.|—|—
+背|N3|costas; altura; contrariar|ハイ|せ、せい、そむ.く、そむ.ける|背中 e 背が高い são cotidianos; 背景 fornece ハイ; 背く e 背ける acrescentam oposição e desvio.|せい é contextual e os verbos são menos básicos; revisar prioridade na introdução.|背, せい, aparece ao falar de estatura; 背丈 lê-se せたけ, não exemplifica せい.
+胸|N2|peito; tórax; íntimo|キョウ|むね、むな|胸 e 胸部 são centrais; 胸元 exige むな.|—|胸元 lê-se むなもと; colo era tradução estreita demais.
+脳|N2|cérebro|ノウ|—|脳 e 頭脳 são os usos principais.|—|—
+腹|N3|barriga; abdômen|フク|はら|腹 e 腹痛 são os usos centrais.|—|お腹, おなか, é leitura da palavra e deve ser preservada nas notas, não como なか isolado prioritário.
+臓|N2|órgão interno; vísceras|ゾウ|—|心臓 e 内臓 são os usos principais.|—|—
+臨|N2|comparecer; enfrentar; temporário|リン|のぞ.む|臨時 e 臨む são centrais.|—|臨む pode ser enfrentar uma ocasião ou dar vista para algo; não confundir com 望む, desejar.
+至|N2|chegar a; extremo|シ|いた.る|至る e 至急 são os usos principais.|—|Clímax era estreito demais; 至る destaca chegar a um ponto, estado ou conclusão.
+若|N3|jovem|ジャク、ニャク|わか.い|若い é cotidiano; 若干 usa ジャク; 老若 exige ニャク.|ニャク é contextual; revisar prioridade.|老若男女 lê-se ろうにゃくなんにょ. もしくは em 若しくは é leitura contextual geralmente em kana.
+著|N2|escrever uma obra; notável|チョ|あらわ.す、いちじる.しい|著者 e 著しい são centrais; 著す refere-se a escrever ou publicar obra.|—|—
+蒸|N2|cozinhar no vapor; abafado|ジョウ|む.す、む.れる、む.らす|蒸す e 蒸気 são centrais; incluir 蒸れる e 蒸らす.|—|蒸らす é deixar o vapor ou calor completar o cozimento ou infusão; não é simplesmente ferver.
+蔵|N2|armazém; guardar|ゾウ|くら|冷蔵庫 e 蔵 são os usos principais.|—|—
+蚕|N1|bicho-da-seda|サン|かいこ|養蚕 fornece サン, ausente; 蚕 é termo de produção de seda.|Fronteira N2/N1: concreto, mas especializado; proponho N1 pela baixa frequência cotidiana.|—
+衆|N2|multidão; público; grupo de pessoas|シュウ、シュ|—|大衆 e 群衆 usam シュウ; 衆生 usa シュ.|シュ é contextual e religioso; revisar prioridade.|衆生 lê-se しゅじょう.
+裁|N2|julgar; cortar tecido|サイ|さば.く、た.つ|裁判 e 裁く cobrem julgamento; 裁つ é cortar tecido.|—|Não significa a pessoa alfaiate; 裁縫 é costura.
+装|N2|vestir; equipar; fingir|ソウ、ショウ|よそお.う|服装 usa ソウ; 衣装 usa ショウ; 装う inclui vestir-se e simular.|—|—
+裏|N2|verso; lado de trás; oculto|リ|うら|裏 e 裏表 são centrais; 裏面 fornece リ.|—|—
+補|N2|complementar; compensar|ホ|おぎな.う|補う e 補助 são os usos principais.|—|—
+視|N2|ver; observar; considerar|シ|—|視力 e 無視 são centrais.|みる em 視る é possível, mas 見る é a grafia básica; revisar prioridade e manter como complementar.|無視 significa ignorar; não se traduz literalmente como não ver em todo contexto.
+覧|N2|ver; examinar|ラン|—|一覧 e ご覧 são os usos principais.|—|ご覧になる é expressão respeitosa para ver; não é kunyomi.
+討|N2|discutir; examinar; atacar|トウ|う.つ|検討 e 討論 cobrem exame e debate; 討つ é atacar ou derrotar.|—|Castidade não tem relação com o núcleo de 討.
+訪|N3|visitar; chegar|ホウ|たず.ねる、おとず.れる|訪ねる e 訪れる são centrais; 訪問 fornece ホウ.|—|訪れる também pode ser a chegada de uma estação ou oportunidade. 尋ねる é perguntar ou procurar.
+訳|N3|traduzir; razão; circunstância|ヤク|わけ|翻訳 e 訳 são usos frequentes no estudo e em explicações.|—|訳す, やくす, utiliza on.
+詞|N2|palavra; letra de música; classe de palavras|シ|—|歌詞 e 動詞 são os usos principais.|ことば é possível nesta grafia, mas 言葉 é a forma básica; revisar prioridade, preservando nas notas.|—
+誌|N3|revista; registro escrito|シ|—|雑誌 é frequente; 日誌 amplia para registro.|Fronteira N3/N2; proponho N3 por 雑誌.|—
+認|N3|reconhecer; admitir; aprovar|ニン|みと.める|確認 e 認める são centrais.|—|したためる em 認める é leitura contextual para redigir, geralmente em kana; fica como complementar.
+誕|N4|nascer; nascimento|タン|—|誕生日 é vocabulário básico frequente.|Fronteira N4/N3: proponho N4 para 誕生日, sem exigir compostos menos frequentes.|—
+誠|N2|sinceridade; verdade|セイ|まこと|誠実 e 誠 são os usos principais.|—|誠に, まことに, ocorre em expressões formais de agradecimento e desculpa.
+誤|N3|errar; incorreto|ゴ|あやま.る|誤る e 誤解 são os usos principais.|—|誤る é cometer erro; 謝る é pedir desculpas.
+論|N3|argumento; discussão; teoria|ロン|—|議論 e 論文 são os usos principais.|—|—
+諸|N2|vários; diversos|ショ|もろ|諸問題 e 諸国 usam ショ; 諸々 fornece もろ.|もろ é contextual; revisar prioridade na lista básica.|諸々 lê-se もろもろ; もろ também aparece em 諸刃, もろは.
+警|N3|alertar; vigiar|ケイ|—|警察 e 警告 são os usos principais.|—|—
+貴|N2|precioso; nobre; estimado|キ|たっと.い、とうと.い、たっと.ぶ、とうと.ぶ|貴重 e 貴族 são centrais; as formas nativas indicam valor elevado.|As formas nativas são menos usuais nesta grafia e se sobrepõem a 尊; revisar prioridade.|貴い e 貴ぶ enfatizam valor ou estima; não aplicar mecanicamente a toda ocorrência de 尊い/尊ぶ.
+賃|N2|aluguel; tarifa; remuneração|チン|—|家賃 e 運賃 são centrais.|—|Tributo não resume aluguel ou tarifa.
+遺|N2|deixar após si; legar; remanescente|イ、ユイ|—|遺産 usa イ; 遺言 pode usar ユイ.|—|遺言 lê-se ゆいごん no uso geral e いごん em contexto jurídico. のこす em 遺す é leitura complementar; 残す é a grafia geral.
+郵|N4|correio; postal|ユウ|—|郵便局 e 郵便 são vocabulário básico de serviços.|Fronteira N4/N3; proponho N4 pela utilidade de 郵便局.|—
+郷|N2|terra natal; região rural|キョウ、ゴウ|—|故郷, こきょう, e 郷土 usam キョウ; 郷, ごう, aparece em nomes de localidades e unidades históricas.|ゴウ é contextual; revisar prioridade na lista básica.|故郷 também se lê ふるさと, leitura do conjunto. ゴウ é on, não kun.
+針|N2|agulha; ponteiro; orientação|シン|はり|針 e 方針 cobrem objeto e direção de ação.|—|—
+鋼|N2|aço|コウ|はがね|鋼 e 鉄鋼 são os usos principais.|Fronteira N2/N1 pela temática industrial; proponho N2 como material comum.|—
+閉|N3|fechar|ヘイ|し.まる、し.める、と.じる、と.ざす|閉まる e 閉める formam par; 閉じる e 閉ざす cobrem outras formas de fechamento.|—|閉じる pode ser transitivo ou intransitivo conforme uso; não equiparar todos os verbos sem contexto.
+閣|N2|gabinete de governo; pavilhão|カク|—|内閣 é o uso principal; 閣 também aparece em edifícios.|—|—
+降|N3|descer; cair; desembarcar|コウ|お.りる、お.ろす、ふ.る|降りる e 降る são cotidianos; incluir 降ろす; 降水 fornece コウ.|—|ふる é usado para chuva e neve; おりる para descer ou desembarcar.
+陛|N1|majestade; degraus do trono|ヘイ|—|陛下 concentra o uso atual.|Fronteira N2/N1: expressão reconhecível, mas muito restrita; proponho N1.|陛下 é tratamento de majestade; não é termo geral para qualquer autoridade.
+除|N3|retirar; excluir|ジョ、ジ|のぞ.く|除く e 掃除 são frequentes; 掃除 exige ジ, 排除 usa ジョ.|—|掃除 lê-se そうじ; não omitir essa leitura cotidiana.
+障|N2|impedir; obstáculo; interferir|ショウ|さわ.る|故障 e 障害 são centrais; 障る indica prejudicar ou interferir.|—|さわる em 障る não é tocar, 触る. Machucar era uma tradução inadequadamente estreita.
+難|N3|difícil; dificuldade|ナン|むずか.しい、かた.い|難しい e 困難 são centrais; 難い aparece em formas como 理解し難い.|—|がたい em compostos é sonorização de かたい. むつかしい é variante de むずかしい, complementar.
+革|N2|couro; reformar|カク|かわ|革 e 改革 cobrem material e transformação.|—|皮 é pele ou revestimento; 革 destaca couro processado, com diferenças lexicais.
+頂|N3|receber humildemente; topo|チョウ|いただ.く、いただき|頂く é frequente no registro polido; 頂上 fornece チョウ; 頂 é cume.|—|いただく como auxiliar costuma ser escrito em kana; いただき é substantivo.
+骨|N2|osso; estrutura essencial|コツ|ほね|骨 e 骨折 são os usos principais.|—|コツ também aparece em 骨, macete ou jeito de fazer, frequentemente em katakana; continua sendo on.

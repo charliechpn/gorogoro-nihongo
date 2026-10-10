@@ -1,0 +1,208 @@
+/* Light stays the default. Dark colors are shared by the home and all trainers. */
+html { color-scheme: light; }
+.theme-art-dark { display: none; }
+html[data-theme='dark'] .theme-art-light { display: none; }
+html[data-theme='dark'] .theme-art-dark { display: block; }
+html[data-theme='dark'] .theme-art-dark[data-scenery='garden'] { opacity: .3; }
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 14px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 35px;
+  padding: 5px 11px;
+  border: 1px solid rgba(18, 55, 100, .2);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, .75);
+  color: #123764;
+  font: 600 11px/1 var(--sans);
+  cursor: pointer;
+}
+.theme-toggle:hover { border-color: #5878a2; }
+.theme-toggle-icon { width: 15px; font-size: 19px; line-height: 1; text-align: center; }
+.theme-toggle:focus-visible { outline: 3px solid #a2bcd7; outline-offset: 3px; }
+.language-toggle { display: inline-flex; align-items: center; padding: 2px; border: 1px solid rgba(18,55,100,.2); border-radius: 999px; background: rgba(255,253,247,.75); }
+.language-toggle button { min-width: 31px; min-height: 29px; padding: 4px 6px; border: 0; border-radius: 999px; background: transparent; color: #486584; font: 700 10px/1 var(--sans); cursor: pointer; }
+.language-toggle button[aria-pressed='true'] { background: #123e69; color: #fffaf0; }
+.language-toggle button:focus-visible { outline: 3px solid #a2bcd7; outline-offset: 3px; }
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --home-texture: url('/home-assets/bg.png');
+  --white: #202d3b;
+  --ivory: #192430;
+  --ink: #e8e2d7;
+  --ink-soft: #a8bdd0;
+  --red: #d99886;
+  --theme-backdrop: #242424;
+  --theme-paper: #343a44;
+  --theme-panel: #253549;
+  --theme-panel-soft: #202f40;
+  --theme-line: #61778e55;
+  --theme-muted: #abbccc;
+  --theme-action: #385d80;
+  --theme-action-hover: #4b7296;
+  --theme-error: #f1a297;
+  --theme-success: #a9d6b9;
+}
+
+html[data-theme='dark'],
+html[data-theme='dark'] body {
+  background-color: var(--theme-backdrop);
+  color: var(--ink);
+}
+html[data-theme='dark'] body {
+  background-image: var(--home-texture);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html[data-theme='dark'] .page-shell {
+  background: #111;
+  box-shadow: none;
+}
+html[data-theme='dark'] .theme-toggle {
+  border-color: var(--theme-line);
+  background: var(--theme-panel);
+  color: var(--ink);
+}
+html[data-theme='dark'] .theme-toggle:hover { background: #30445b; }
+html[data-theme='dark'] .language-toggle { border-color: var(--theme-line); background: var(--theme-panel); }
+html[data-theme='dark'] .language-toggle button { color: var(--theme-muted); }
+html[data-theme='dark'] .language-toggle button[aria-pressed='true'] { background: #4b7296; color: #fffaf0; }
+html[data-theme='dark'] .cat-mark img { filter: brightness(0) saturate(100%) invert(86%) sepia(8%) saturate(633%) hue-rotate(168deg); }
+
+html[data-theme='dark'] .headline-accent,
+html[data-theme='dark'] .training-home-link,
+html[data-theme='dark'] .training-reading-separator,
+html[data-theme='dark'] .kanji-level-count,
+html[data-theme='dark'] .kanji-picker-reading-label { color: var(--theme-muted); }
+html[data-theme='dark'] .training-home-link:hover { color: var(--ink); }
+html[data-theme='dark'] .primary-action,
+html[data-theme='dark'] .start-training,
+html[data-theme='dark'] .kanji-begin,
+html[data-theme='dark'] .correct-answer,
+html[data-theme='dark'] .kanji-group-switch button[aria-pressed='true'] {
+  border-color: #57799b;
+  background: var(--theme-action);
+  color: #f7f2e8;
+  box-shadow: 0 6px 16px #07111c55;
+}
+html[data-theme='dark'] .primary-action:hover,
+html[data-theme='dark'] .start-training:hover,
+html[data-theme='dark'] .kanji-begin:not(:disabled):hover { background: var(--theme-action-hover); }
+
+html[data-theme='dark'] .kanji-selection-page,
+html[data-theme='dark'] .trainer-page,
+html[data-theme='dark'] .kanji-trainer-page,
+html[data-theme='dark'] .vocabulary-page,
+html[data-theme='dark'] .word-game-page,
+html[data-theme='dark'] .onomatopoeia-page,
+html[data-theme='dark'] .transitivity-page {
+  background-color: var(--theme-paper);
+  color: var(--ink);
+}
+html[data-theme='dark'] main:not(.page-shell) {
+  background-image: var(--home-texture);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html[data-theme='dark'] .kanji-selection-description,
+html[data-theme='dark'] .kanji-level-selection > p { color: var(--theme-muted); }
+html[data-theme='dark'] .kanji-group-switch,
+html[data-theme='dark'] .grouping-tabs {
+  border-color: var(--theme-line);
+  background: #243446d9;
+}
+html[data-theme='dark'] .kanji-group-switch button:not([aria-pressed='true']):hover,
+html[data-theme='dark'] .grouping-tabs button:not(.is-active):hover { background: #334960; }
+html[data-theme='dark'] .kanji-art-card[aria-pressed='true'] { outline-color: #92b3d1; }
+html[data-theme='dark'] .kanji-selection-check { border-color: var(--theme-paper); background: #50799c; }
+html[data-theme='dark'] .kanji-selection-page .advanced-picker,
+html[data-theme='dark'] .advanced-picker,
+html[data-theme='dark'] .resume-session-banner,
+html[data-theme='dark'] .kanji-picker-cell,
+html[data-theme='dark'] .level-grid button,
+html[data-theme='dark'] .trainer-header,
+html[data-theme='dark'] .session-stats span,
+html[data-theme='dark'] .study-card,
+html[data-theme='dark'] .kanji-table-wrap {
+  border-color: var(--theme-line);
+  background: var(--theme-panel-soft);
+  color: var(--ink);
+  box-shadow: 0 5px 20px #08121c30;
+}
+html[data-theme='dark'] .kanji-picker-cell:has(input:checked),
+html[data-theme='dark'] .level-grid button.is-selected { border-color: #94b4d0; background: #304760; }
+html[data-theme='dark'] .kanji-picker-meaning { border-color: var(--theme-line); }
+html[data-theme='dark'] .advanced-heading input,
+html[data-theme='dark'] .advanced-picker input,
+html[data-theme='dark'] .kanji-picker-table th {
+  border-color: var(--theme-line);
+  background: #182634;
+  color: var(--ink);
+}
+html[data-theme='dark'] .kanji-picker-table td { border-color: var(--theme-line); }
+html[data-theme='dark'] .training-change-set {
+  border-color: var(--theme-line);
+  background: var(--theme-panel-soft);
+  color: var(--ink-soft);
+}
+html[data-theme='dark'] .training-change-set:hover { border-color: #96b5d0; color: var(--ink); }
+html[data-theme='dark'] .resume-session-banner button { background: var(--theme-action); color: #f7f2e8; }
+html[data-theme='dark'] .kanji-selection-page .advanced-picker { background: var(--theme-panel-soft); }
+html[data-theme='dark'] .saved-kanji-lists { border-color: var(--theme-line); background: var(--theme-panel-soft); }
+html[data-theme='dark'] .saved-kanji-lists li { border-color: var(--theme-line); background: var(--theme-panel); }
+html[data-theme='dark'] .saved-kanji-delete, html[data-theme='dark'] .saved-kanji-editor { border-color: var(--theme-line); }
+html[data-theme='dark'] .saved-kanji-editor input { border-color: var(--theme-line); background: #182634; }
+html[data-theme='dark'] .saved-kanji-editor button { background: var(--theme-action); }
+html[data-theme='dark'] .saved-kanji-open:not(:disabled):hover, html[data-theme='dark'] .saved-kanji-delete:hover { background: #344a60; }
+html[data-theme='dark'] .graded-answer,
+html[data-theme='dark'] .possible-words-list span { border-color: var(--theme-line); background: var(--theme-panel); color: var(--ink); }
+html[data-theme='dark'] .graded-answer.is-correct { border-color: #6b9d83; background: #25443e; color: var(--theme-success); }
+html[data-theme='dark'] .graded-answer.is-not-in-base { border-color: #a68d66; background: #3e3a31; color: #e9c99a; }
+html[data-theme='dark'] .graded-answer.is-missing-kanji { border-color: #a96a68; background: #473136; color: var(--theme-error); }
+html[data-theme='dark'] .trainer-error { color: var(--theme-error); }
+html[data-theme='dark'] .wrong-answer { background: #46343b; color: var(--theme-error); border-color: #ae7370; }
+
+/* Legacy trainer surfaces still used by answer and review states. */
+html[data-theme='dark'] :is(.word-answer-form, .word-result, .word-game-finish, .hard-answer-form, .onomatopoeia-reveal, .verb-reveal, .verb-examples article, .meaning-choices button, .classification-actions button, .directions button, .transitivity-card, .onomatopoeia-card) {
+  border-color: var(--theme-line);
+  background-color: var(--theme-panel-soft);
+  color: var(--ink);
+}
+html[data-theme='dark'] :is(.word-answer-form, .hard-answer-form) textarea {
+  border-color: var(--theme-line);
+  background: #172533;
+  color: var(--ink);
+  caret-color: var(--ink);
+}
+html[data-theme='dark'] textarea::placeholder,
+html[data-theme='dark'] input::placeholder { color: #93a5b5; }
+html[data-theme='dark'] :is(.meaning-choices button.is-correct, .classification-actions button.is-correct, .verb-result.is-correct) {
+  border-color: #6b9d83;
+  background: #25443e;
+  color: var(--theme-success);
+}
+html[data-theme='dark'] :is(.meaning-choices button.is-wrong, .classification-actions button.is-wrong, .verb-result.is-wrong) {
+  border-color: #a96a68;
+  background: #473136;
+  color: var(--theme-error);
+}
+
+@media (max-width: 600px) {
+  .header-actions { gap: 7px; }
+  .theme-toggle { width: 35px; min-width: 35px; padding-inline: 0; }
+  .theme-toggle-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .header-actions .profile-mark { width: 32px; height: 32px; }
+}

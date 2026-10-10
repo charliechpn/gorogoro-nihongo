@@ -62,7 +62,7 @@ export async function submitVocabularyAnswer(input: AnswerVocabularySessionInput
 export async function closeVocabularySession(sessionId: string) {
   await requestJson<{ closed: boolean }>(
     `/api/vocabulary/session?sessionId=${encodeURIComponent(sessionId)}`,
-    { method: 'DELETE' },
+    { method: 'DELETE', keepalive: true },
   );
 }
 

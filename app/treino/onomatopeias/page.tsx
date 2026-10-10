@@ -1,7 +1,14 @@
 'use client';
 
+import TrainingFlow from '../training-flow';
+import SiteHeader from '@/app/site-header';
+import ThemeArt from '@/app/theme-art';
+import { useLanguage, useText } from '@/app/language';
+
+
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
-import Link from 'next/link';
+import styles from './selection.module.css';
+import practice from './practice.module.css';
 import {
   answerKanji,
   createDeckSession,
@@ -49,6 +56,8 @@ function saveProgress(session: DeckSession) {
 }
 
 export default function OnomatopoeiaTrainerPage() {
+  const t = useText();
+  const language = useLanguage();
   const [entries, setEntries] = useState<OnomatopoeiaEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
@@ -68,14 +77,12 @@ export default function OnomatopoeiaTrainerPage() {
         return response.json() as Promise<OnomatopoeiaData>;
       })
       .then((payload) => setEntries(payload.onomatopoeia))
-      .catch(() => setLoadError('Não foi possível carregar o banco de onomatopeias.'))
+      .catch(() => setLoadError('catalog'))
       .finally(() => setLoading(false));
   }, []);
 
-  const current = useMemo(
-    () => entries.find((entry) => entry.id === currentId) ?? null,
-    [currentId, entries],
-  );
+  const entryById = useMemo(() => new Map(entries.map((entry) => [entry.id, entry])), [entries]);
+  const current = currentId === null ? null : entryById.get(currentId) ?? null;
 
   const choices = useMemo(
     () => currentId === null || difficulty !== 'easy'
@@ -148,58 +155,71 @@ export default function OnomatopoeiaTrainerPage() {
     ? selectedChoice !== null
     : selectedChoice !== null;
 
-  return (
-    <main className="trainer-page onomatopoeia-page">
-      <header className="trainer-header">
-        <Link href="/">← Início</Link>
-        <strong>Onomatopeias</strong>
-        {difficulty ? <button type="button" onClick={leaveSession}>Trocar modo</button> : <span />}
-      </header>
-
-      {!difficulty ? (
-        <section className="trainer-selector onomatopoeia-selector">
-          <p className="trainer-eyebrow">SOM, ESTADO E SENSAÇÃO</p>
-          <h1>Como você quer apanhar hoje?</h1>
-          <p>
-            Nos dois modos, as onomatopeias erradas ganham cópias no baralho e voltam mais.
-            As dominadas aparecem menos, mas nunca somem.
-          </p>
-
-          {loading && <p className="trainer-loading">Carregando o barulho organizado…</p>}
-          {loadError && <p className="trainer-error">{loadError}</p>}
-
-          {!loading && !loadError && (
-            <div className="difficulty-grid">
-              <button type="button" onClick={() => startTraining('easy')}>
-                <span>FÁCIL</span>
-                <strong>Escolha o significado</strong>
-                <p>Uma resposta correta e duas distrações tiradas do banco completo.</p>
-                <i>3 opções · correção automática</i>
-              </button>
-              <button type="button" onClick={() => startTraining('hard')}>
-                <span>DIFÍCIL</span>
-                <strong>Escreva o que lembra</strong>
-                <p>Você escreve em português, confere as definições e julga a própria resposta.</p>
-                <i>Resposta livre · sem juiz robótico</i>
-              </button>
+  if (!difficulty) {
+    return (
+      <main className="kanji-selection-page">
+        <ThemeArt className="kanji-corner-tree" src="/kanji-assets/tree.webp" darkSrc="/kanji-assets/tree-dark.webp" alt="" aria-hidden="true" />
+        <SiteHeader homeLink /><TrainingFlow step={session ? currentId ?? 'selection' : 'selection'} revealed={revealed} />
+        <div className="kanji-selection-content">
+          <section className="kanji-selection-hero" aria-labelledby="onomatopoeia-title">
+            <div className="kanji-selection-copy">
+              <p className="eyebrow">{t('SOM, ESTADO E SENSAÇÃO', 'SOUND, STATE, AND SENSATION')}</p>
+              <h1 id="onomatopoeia-title">{t('Onomatopeias', 'Onomatopoeia')}</h1>
+              <p className="kanji-selection-description">{t('Explore os sons e as sensações do japonês.', 'Explore Japanese sounds and sensations.')}<br />{t('Escolha como praticar no seu ritmo.', 'Choose how you want to practice.')}</p>
             </div>
-          )}
-        </section>
-      ) : current && session ? (
-        <section className="onomatopoeia-session">
-          <div className="onomatopoeia-stats" aria-label="Progresso da sessão">
-            <span>RODADAS<strong>{answered}</strong></span>
-            <span>ACERTOS<strong>{correct}</strong></span>
-            <span>CÓPIAS<strong>{session.entries[current.id].copies}</strong></span>
+          </section>
+          <section className="kanji-level-selection" aria-labelledby="onomatopoeia-mode-title">
+            <h2 id="onomatopoeia-mode-title">{t('Escolha o modo de treino', 'Choose a practice mode')}</h2>
+            <p>{t('Reconheça o significado ou escreva o que você lembra.', 'Recognize the meaning or write what you remember.')}</p>
+            {loading && <p className="kanji-selection-status" role="status">{t('Carregando as onomatopeias…', 'Loading onomatopoeia…')}</p>}
+            {loadError && <p className="trainer-error" role="alert">{t('Não foi possível carregar o banco de onomatopeias.', 'Could not load the onomatopoeia database.')}</p>}
+            {!loading && !loadError && (
+              <div className={styles.modes}>
+                <button className={styles.mode} type="button" onClick={() => startTraining('easy')}>
+                  <span className={styles.difficulty}>{t('FÁCIL', 'EASY')}</span>
+                  <strong>{t('Escolha o significado', 'Choose the meaning')}</strong>
+                  <span className={styles.description}>{t('Leia a onomatopeia e escolha o significado entre três opções.', 'Read the onomatopoeia and choose its meaning from three options.')}</span>
+                  <span className={styles.details}>{t('3 opções · correção automática', '3 choices · automatic grading')}</span>
+                  <span className={styles.action}>{t('Começar treino', 'Start practice')} <span aria-hidden="true">→</span></span>
+                </button>
+                <button className={styles.mode} type="button" onClick={() => startTraining('hard')}>
+                  <span className={styles.difficulty}>{t('DIFÍCIL', 'HARD')}</span>
+                  <strong>{t('Escreva o que lembra', 'Write what you remember')}</strong>
+                  <span className={styles.description}>{t('Escreva o significado em português, confira a definição e avalie sua resposta.', 'Write the meaning in English, check the definition, and grade your answer.')}</span>
+                  <span className={styles.details}>{t('Resposta livre · autoavaliação', 'Free response · self-assessment')}</span>
+                  <span className={styles.action}>{t('Começar treino', 'Start practice')} <span aria-hidden="true">→</span></span>
+                </button>
+              </div>
+            )}
+            <p className={styles.note}>{t('Nos dois modos, as palavras que você erra aparecem com mais frequência para reforçar a revisão.', 'In both modes, missed words appear more often for review.')}</p>
+          </section>
+        </div>
+      </main>
+    );
+  }
+
+  return (
+    <main className={practice.page}>
+      <div className={practice.scenery} aria-hidden="true"><ThemeArt className={practice.garden} data-scenery="garden" src="/kanji-assets/practice-garden.png" darkSrc="/kanji-assets/practice-garden-dark.webp" alt="" /><ThemeArt className={practice.mountains} src="/kanji-assets/practice-mountains.png" darkSrc="/kanji-assets/practice-mountains-dark.webp" alt="" /><ThemeArt className={practice.brush} src="/kanji-assets/practice-brush.png" darkSrc="/kanji-assets/practice-brush-dark.webp" alt="" /></div>
+      <SiteHeader homeLink onChangeSet={leaveSession} changeSetLabel={t('Trocar modo', 'Change mode')} /><TrainingFlow step={session ? currentId ?? 'selection' : 'selection'} revealed={revealed} />
+
+      {current && session ? (
+        <section className="onomatopoeia-session" aria-label={t('Treino de onomatopeias', 'Onomatopoeia practice')}>
+
+          <h1 className={practice.heading}>{t('Onomatopeias', 'Onomatopoeia')}</h1>
+          <p className={practice.context}>{difficulty === 'easy' ? t('Fácil · escolha o significado', 'Easy · choose the meaning') : t('Difícil · escreva o significado', 'Hard · write the meaning')}</p>
+          <div className="onomatopoeia-stats" aria-label={t('Progresso da sessão', 'Session progress')}>
+            <span>{t('RODADAS', 'ROUNDS')}<strong>{answered}</strong></span>
+            <span>{t('ACERTOS', 'CORRECT')}<strong>{correct}</strong></span>
           </div>
 
           <article className="onomatopoeia-card">
             <div className="onomatopoeia-prompt">
-              <p>{difficulty === 'easy' ? 'Qual é o significado?' : 'O que isso significa?'}</p>
-              <h1>{current.term}</h1>
+              <p>{difficulty === 'easy' ? t('Qual é o significado?', 'What does it mean?') : t('O que isso significa?', 'What does it mean?')}</p>
+              <h2 lang="ja">{current.term}</h2>
               <div className="onomatopoeia-categories">
                 {current.categories.map((category) => (
-                  <span key={category}>{CATEGORY_LABELS[category] ?? category}</span>
+                  <span key={category} lang="ja">{CATEGORY_LABELS[category] ?? category}</span>
                 ))}
               </div>
             </div>
@@ -222,30 +242,30 @@ export default function OnomatopoeiaTrainerPage() {
                       onClick={() => chooseAnswer(choice.id)}
                       key={choice.id}
                     >
-                      {choice.text}
+                      <span lang={language === 'pt' ? 'pt-BR' : 'en'}>{language === 'pt' ? choice.text : entryById.get(choice.id)?.meaningEn}</span>
                     </button>
                   );
                 })}
               </div>
             ) : (
               <form className="hard-answer-form" onSubmit={revealHardAnswer}>
-                <label htmlFor="onomatopoeia-answer">Seu significado em português</label>
+                <label htmlFor="onomatopoeia-answer">{t('Seu significado em português', 'Your meaning in English')}</label>
                 <textarea
                   id="onomatopoeia-answer"
                   value={typedAnswer}
                   disabled={revealed}
                   onChange={(event) => setTypedAnswer(event.target.value)}
-                  placeholder="Escreva o que você lembra…"
+                  placeholder={t('Escreva o que você lembra…', 'Write what you remember…')}
                 />
-                {!revealed && <button type="submit">Conferir resposta</button>}
+                {!revealed && <button type="submit">{t('Conferir resposta', 'Check answer')}</button>}
               </form>
             )}
 
             {revealed && (
-              <section className="onomatopoeia-reveal" aria-live="polite">
+              <section className="onomatopoeia-reveal" data-training-answer aria-live="polite">
                 <div>
-                  <span>PORTUGUÊS</span>
-                  <p>{current.meaningPt}</p>
+                  <span>{t('PORTUGUÊS', 'ENGLISH')}</span>
+                  <p lang={language === 'pt' ? 'pt-BR' : 'en'}>{language === 'pt' ? current.meaningPt : current.meaningEn}</p>
                 </div>
                 <div lang="ja">
                   <span>日本語</span>
@@ -255,17 +275,17 @@ export default function OnomatopoeiaTrainerPage() {
                 {difficulty === 'hard' && selectedChoice === null && (
                   <div className="self-grade-actions">
                     <button type="button" className="wrong-answer" onClick={() => gradeHardAnswer('wrong')}>
-                      Errei
+                      {t('Errei', 'Missed it')}
                     </button>
                     <button type="button" className="correct-answer" onClick={() => gradeHardAnswer('correct')}>
-                      Acertei
+                      {t('Acertei', 'Got it')}
                     </button>
                   </div>
                 )}
 
                 {roundFinished && (
                   <button type="button" className="next-onomatopoeia" onClick={nextEntry}>
-                    Próxima onomatopeia
+                    {t('Próxima onomatopeia', 'Next onomatopoeia')}
                   </button>
                 )}
               </section>

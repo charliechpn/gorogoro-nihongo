@@ -1,0 +1,6 @@
+.levels { margin-bottom: 28px; }
+.level { min-width: 0; text-align: center; }
+.count { display: block; margin-top: 12px; font: 13px/1.5 var(--sans); color: #486584; }
+
+:global(html[data-theme='dark']) .count { color: var(--theme-muted); }
+.level button:focus-visible { outline: 3px solid #174c7b; outline-offset: 5px; }

@@ -62,7 +62,7 @@ export async function submitKanjiAnswer(input: AnswerKanjiSessionInput) {
 export async function closeKanjiSession(sessionId: string) {
   await requestJson<{ closed: boolean }>(
     `/api/kanji/session?sessionId=${encodeURIComponent(sessionId)}`,
-    { method: 'DELETE' },
+    { method: 'DELETE', keepalive: true },
   );
 }
 

@@ -10,6 +10,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from transitivity_english import apply_english
+
 
 LEVELS = ("N5", "N4", "N3", "N2", "N1")
 CLASSIFICATIONS = {"transitive", "intransitive", "depends"}
@@ -86,6 +88,7 @@ def main() -> int:
         )
 
     by_level = Counter(verb["jlptLevel"] for verb in verbs)
+    apply_english(verbs)
     payload = {
         "version": 1,
         "count": len(verbs),

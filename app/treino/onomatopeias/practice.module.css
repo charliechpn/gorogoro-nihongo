@@ -1,0 +1,62 @@
+.page { position: relative; display: flex; flex-direction: column; isolation: isolate; min-height: 100svh; overflow: clip; color: #09345f; background: var(--ivory) var(--home-texture) center top / 100% auto; }
+.scenery { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.garden { position: absolute; top: 300px; left: -100px; width: clamp(260px,29vw,410px); opacity: .6; }
+.mountains { position: absolute; top: 35px; right: -95px; width: clamp(230px,29vw,400px); opacity: .55; }
+.brush { position: absolute; top: 570px; right: -65px; width: 270px; opacity: .6; }
+.changeSet { display: block; margin: 0 auto 20px; padding: 9px 16px; border: 1px solid #12376425; border-radius: 24px; background: #fbf8f080; color: #486584; font: 14px var(--sans); cursor: pointer; }
+.heading { margin: 0; text-align: center; font: 500 23px/1.4 var(--serif); }
+.context { margin: 7px 0 18px; text-align: center; color: #486584; font: 14px/1.6 var(--serif); }
+.page :global(.onomatopoeia-session) { position: relative; display: flex; flex: 1; flex-direction: column; justify-content: center; width: min(860px,calc(100% - 32px)); margin: 0 auto; padding: 24px 0; }
+.page :global(.onomatopoeia-stats) { display: flex; justify-content: center; gap: 24px; margin: 0 0 25px; }
+.page :global(.onomatopoeia-stats span) { min-height: 0; flex-direction: row; gap: 7px; border: 0; background: none; font: 11px/1.5 var(--sans); letter-spacing: .035em; color: #486584; }
+.page :global(.onomatopoeia-stats strong) { margin: 0; color: #09345f; font-size: 13px; }
+.page :global(.onomatopoeia-card) { display: grid; grid-template-columns: minmax(0,340px) minmax(0,1fr); gap: 28px; align-items: start; overflow: visible; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.page :global(.onomatopoeia-prompt) { width: 100%; min-height: 350px; padding: 38px 35px 65px; border: 0; background: url('/kanji-assets/practice-card.png') center / 100% 100% no-repeat; filter: drop-shadow(0 8px 8px #55442c20); text-align: center; }
+.page :global(.onomatopoeia-prompt > p) { color: #486584; font-size: 15px; }
+.page :global(.onomatopoeia-prompt h2) { width: 100%; margin: 22px 0 0; font: 500 clamp(30px,4vw,44px)/1.6 var(--serif); overflow-wrap: anywhere; text-wrap: balance; }
+.page :global(.onomatopoeia-categories span) { font-size: 12px; color: #486584; background: #fbf8f070; }
+.page :global(.meaning-choices) { padding: 0; gap: 14px; }
+.page :global(.meaning-choices button) { min-height: 98px; padding: 20px 24px; border-radius: 18px; background: #fbf8f0ed; font: 500 19px/1.65 var(--serif); overflow-wrap: anywhere; }
+.page :global(.meaning-choices button:not(:disabled):hover) { border-color: #164771; background: #eaf0f2; }
+.page :global(.meaning-choices button.is-correct) { border-color: #164771; background: linear-gradient(120deg,#164771,#082f59); color: #fff9ed; }
+.page :global(.meaning-choices button.is-wrong) { border-color: #b86759; background: #faeee6; color: #973a2e; }
+.page :global(.hard-answer-form) { padding: 25px; gap: 16px; border: 1px solid #12376420; border-radius: 20px; background: #fbf8f0ed; }
+.page :global(.hard-answer-form label) { text-transform: none; letter-spacing: 0; font: 600 21px/1.4 var(--serif); }
+.page :global(.hard-answer-form textarea) { min-height: 155px; background: #fffdf780; font: 19px/1.7 var(--serif); }
+.page :global(.hard-answer-form textarea:disabled) { opacity: 1; color: #486584; }
+.page :global(.hard-answer-form > button), .page :global(.next-onomatopoeia), .page :global(.self-grade-actions button) { min-height: 52px; padding: 12px 24px; border-radius: 30px; font: 600 17px/1.5 var(--serif); }
+.page :global(.hard-answer-form > button), .page :global(.next-onomatopoeia), .page :global(.self-grade-actions .correct-answer) { background: linear-gradient(120deg,#164771,#082f59); color: #fff9ed; }
+.page :global(.onomatopoeia-reveal) { grid-column: 1 / -1; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; padding: 26px; border: 1px solid #12376420; border-radius: 20px; background: #fbf8f0f5; }
+.page :global(.onomatopoeia-reveal > div:not(.self-grade-actions)) { padding: 0; border: 0; background: none; }
+.page :global(.onomatopoeia-reveal span) { color: #486584; font: 600 11px/1.5 var(--sans); letter-spacing: .08em; }
+.page :global(.onomatopoeia-reveal p) { font: 500 21px/1.75 var(--serif); margin: 10px 0 0; overflow-wrap: anywhere; }
+.page :global(.self-grade-actions) { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.page :global(.self-grade-actions button) { min-width: 0; width: 100%; padding-inline: 12px; }
+.page :global(.self-grade-actions .wrong-answer) { color: #973a2e; background: #f6eee2; border: 1px solid #bcb4a4; }
+.page :global(.next-onomatopoeia) { grid-column: 1 / -1; justify-self: center; width: min(300px,100%); }
+@media(max-width:700px) { .page :global(.onomatopoeia-session) { max-width: 540px; } .page :global(.onomatopoeia-card), .page :global(.onomatopoeia-reveal) { grid-template-columns: 1fr; } .page :global(.onomatopoeia-prompt) { max-width: 330px; margin: auto; min-height: 325px; } .page :global(.meaning-choices button) { min-height: 70px; padding: 16px 20px; font-size: 17px; } .page :global(.onomatopoeia-reveal) { padding: 22px; } .garden { left: -165px; opacity: .25; } .mountains { right: -170px; opacity: .25; } .brush { right: -120px; opacity: .25; } }
+
+.page :global(.onomatopoeia-card > *), .page :global(.onomatopoeia-reveal > *), .page :global(.hard-answer-form textarea) { min-width: 0; max-width: 100%; }
+.page :global(.onomatopoeia-stats) { flex-wrap: wrap; gap: 12px 24px; }
+
+:global(html[data-theme='dark']) .page { background-color: var(--theme-paper); color: var(--ink); }
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-prompt) { background-image: url('/kanji-assets/practice-card-dark.webp'); }
+:global(html[data-theme='dark']) .changeSet,
+:global(html[data-theme='dark']) .page :global(.meaning-choices button),
+:global(html[data-theme='dark']) .page :global(.hard-answer-form),
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-reveal) { border-color: var(--theme-line); background: var(--theme-panel-soft); color: var(--ink); }
+:global(html[data-theme='dark']) .context,
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-stats span),
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-prompt > p),
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-reveal span) { color: var(--theme-muted); }
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-stats strong) { color: var(--ink); }
+:global(html[data-theme='dark']) .page :global(.onomatopoeia-categories span) { background: #33485d; color: var(--ink-soft); }
+:global(html[data-theme='dark']) .page :global(.meaning-choices button:not(:disabled):hover) { border-color: #8aacc9; background: var(--theme-panel); }
+:global(html[data-theme='dark']) .page :global(.meaning-choices button.is-correct),
+:global(html[data-theme='dark']) .page :global(.self-grade-actions .correct-answer) { border-color: #6b9d83; background: #25443e; color: var(--theme-success); }
+:global(html[data-theme='dark']) .page :global(.meaning-choices button.is-wrong),
+:global(html[data-theme='dark']) .page :global(.self-grade-actions .wrong-answer) { border-color: #a96a68; background: #473136; color: var(--theme-error); }
+:global(html[data-theme='dark']) .page :global(.hard-answer-form textarea) { border-color: var(--theme-line); background: #172533; color: var(--ink); }
+:global(html[data-theme='dark']) .page :global(.hard-answer-form textarea:disabled) { color: var(--theme-muted); }
+:global(html[data-theme='dark']) .page :global(.hard-answer-form > button),
+:global(html[data-theme='dark']) .page :global(.next-onomatopoeia) { background: var(--theme-action); color: #f7f2e8; }

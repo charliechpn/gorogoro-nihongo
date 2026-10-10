@@ -1,0 +1,21 @@
+.modes { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; max-width: 960px; margin: 28px auto 0; }
+.mode { display: flex; flex-direction: column; align-items: flex-start; text-align: left; min-width: 0; padding: 32px 34px; border: 1px solid #12376430; border-radius: 20px; background: #faf6ecb0; color: #09345f; box-shadow: 0 5px 15px #55442c12; cursor: pointer; transition: transform .18s, border-color .18s, box-shadow .18s; }
+.mode:hover { transform: none; border-color: #174c7b; box-shadow: 0 8px 20px #12376420; }
+.mode:focus-visible { outline: 3px solid #174c7b; outline-offset: 5px; }
+.difficulty { padding: 6px 12px; border: 1px solid #12376430; border-radius: 20px; font: 500 11px/1.4 var(--sans); letter-spacing: .12em; }
+.mode > strong { margin-top: 20px; font: 500 clamp(24px,2.5vw,32px)/1.25 var(--serif); }
+.description { margin: 14px 0 22px; font: 17px/1.65 var(--serif); color: #486584; }
+.details { margin-top: auto; padding-top: 16px; width: 100%; border-top: 1px solid #12376420; font: 12px/1.6 var(--sans); color: #486584; }
+.action { display: inline-flex; align-items: center; justify-content: center; gap: 20px; margin-top: 22px; padding: 13px 24px; border-radius: 28px; background: linear-gradient(120deg,#164771,#082f59); color: #fff9ed; font: 600 17px/1.5 var(--serif); }
+.note { max-width: 650px; margin: 24px auto 0; text-align: center; color: #486584; font: 13px/1.7 var(--sans); }
+@media(max-width:650px) { .modes { grid-template-columns: 1fr; gap: 18px; } .mode { padding: 26px; } .mode > strong { font-size: 27px; } }
+@media(prefers-reduced-motion:reduce) { .mode { transition: none; } }
+
+:global(html[data-theme='dark']) .mode { border-color: var(--theme-line); background: var(--theme-panel-soft); color: var(--ink); box-shadow: 0 5px 20px #08121c30; }
+:global(html[data-theme='dark']) .mode:hover { border-color: #8aacc9; box-shadow: 0 8px 22px #08121c50; }
+:global(html[data-theme='dark']) .difficulty,
+:global(html[data-theme='dark']) .details { border-color: var(--theme-line); }
+:global(html[data-theme='dark']) .description,
+:global(html[data-theme='dark']) .details,
+:global(html[data-theme='dark']) .note { color: var(--theme-muted); }
+:global(html[data-theme='dark']) .action { background: var(--theme-action); color: #f7f2e8; }

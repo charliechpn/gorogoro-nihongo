@@ -8,6 +8,8 @@ export type VocabularyRecord = {
   reading: string;
   promptPt: string | null;
   meaningsPt: string[];
+  promptEn: string | null;
+  meaningsEn: string[];
   jlpt: string;
 };
 

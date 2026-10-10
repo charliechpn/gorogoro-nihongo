@@ -1,6 +1,13 @@
 'use client';
 
-import Link from 'next/link';
+import TrainingFlow from '../training-flow';
+import SiteHeader from '@/app/site-header';
+import ThemeArt from '@/app/theme-art';
+import { useLanguage, useText } from '@/app/language';
+
+
+import styles from './selection.module.css';
+import practice from './practice.module.css';
 import { useEffect, useMemo, useState } from 'react';
 import {
   answerKanji,
@@ -29,6 +36,11 @@ type TransitivityData = {
 
 const LEVELS: JlptLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
 const ANSWERS: TransitivityClassification[] = ['transitive', 'intransitive', 'depends'];
+const ENGLISH_CLASSIFICATION_LABELS: Record<TransitivityClassification, string> = {
+  transitive: 'Transitive',
+  intransitive: 'Intransitive',
+  depends: 'Depends',
+};
 const STORAGE_KEY = 'nihongo-transitivity-progress-v1';
 
 function loadProgress(): Record<number, PersistedKanjiProgress> {
@@ -48,6 +60,9 @@ function saveProgress(session: DeckSession) {
 }
 
 export default function TransitivityTrainerPage() {
+  const language = useLanguage();
+  const t = useText();
+  const classificationLabel = (value: TransitivityClassification) => t(CLASSIFICATION_LABELS[value], ENGLISH_CLASSIFICATION_LABELS[value]);
   const [data, setData] = useState<TransitivityData | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
@@ -67,7 +82,7 @@ export default function TransitivityTrainerPage() {
         return response.json() as Promise<TransitivityData>;
       })
       .then(setData)
-      .catch(() => setLoadError('Não foi possível carregar o banco de verbos.'))
+      .catch(() => setLoadError('catalog'))
       .finally(() => setLoading(false));
   }, []);
 
@@ -75,6 +90,7 @@ export default function TransitivityTrainerPage() {
     () => data?.verbs.find((verb) => verb.id === currentId) ?? null,
     [currentId, data],
   );
+  const hasEnglishContent = language === 'en' && Boolean(current?.meaningEn);
 
   function startTraining() {
     if (!data || !selectedLevel) return;
@@ -120,70 +136,74 @@ export default function TransitivityTrainerPage() {
     setWasCorrect(null);
   }
 
-  return (
-    <main className="trainer-page transitivity-page">
-      <header className="trainer-header">
-        <Link href="/">← Início</Link>
-        <strong>Transitivo × intransitivo</strong>
-        {activeLevel ? <button type="button" onClick={leaveSession}>Trocar nível</button> : <span />}
-      </header>
-
-      {!activeLevel ? (
-        <section className="trainer-selector transitivity-selector">
-          <p className="trainer-eyebrow">VERBO, OBJETO E A EMBOSCADA OCASIONAL</p>
-          <h1>Escolha o nível JLPT</h1>
-          <p>
-            Diga se o verbo é transitivo, intransitivo ou se depende do uso.
-            Depois da resposta, você recebe o significado e exemplos em português e japonês.
-          </p>
-
-          {loading && <p className="trainer-message">Abrindo o dicionário sem acordar os gramáticos…</p>}
-          {loadError && <p className="trainer-error">{loadError}</p>}
-
-          {data && !loadError && (
-            <>
-              <div className="verb-level-grid" aria-label="Níveis JLPT">
+  if (!activeLevel) {
+    return (
+      <main className="kanji-selection-page">
+        <ThemeArt className="kanji-corner-tree" src="/kanji-assets/tree.webp" darkSrc="/kanji-assets/tree-dark.webp" alt="" aria-hidden="true" />
+        <SiteHeader homeLink /><TrainingFlow step={session ? currentId ?? 'selection' : 'selection'} revealed={answer !== null} />
+        <div className="kanji-selection-content">
+          <section className="kanji-selection-hero" aria-labelledby="verbs-title">
+            <div className="kanji-selection-copy">
+              <p className="eyebrow">{t('TRANSITIVO × INTRANSITIVO', 'TRANSITIVE × INTRANSITIVE')}</p>
+              <h1 id="verbs-title">{t('Verbos em pares', 'Verb pairs')}</h1>
+              <p className="kanji-selection-description">{t('Escolha um nível e pratique os verbos.', 'Choose a level and practice classifying verbs.')}<br />{t('Transitivo, intransitivo ou depende do uso?', 'Transitive, intransitive, or does it depend on context?')}</p>
+            </div>
+          </section>
+          <section className="kanji-level-selection" aria-labelledby="verbs-level-title">
+            <h2 id="verbs-level-title">{t('Por JLPT', 'By JLPT')}</h2>
+            <p>{t('Escolha o conjunto de verbos para praticar.', 'Choose a verb set to practice.')}</p>
+            {loading && <p className="kanji-selection-status" role="status">{t('Carregando os verbos…', 'Loading verbs…')}</p>}
+            {loadError && <p className="trainer-error" role="alert">{t('Não foi possível carregar o banco de verbos.', 'Could not load the verb database.')}</p>}
+            {data && !loadError && <>
+              <div className={'kanji-art-grid kanji-art-grid--jlpt ' + styles.levels} role="group" aria-label={t('Níveis JLPT', 'JLPT levels')}>
                 {LEVELS.map((level) => (
-                  <button
-                    type="button"
-                    className={selectedLevel === level ? 'is-selected' : ''}
-                    aria-pressed={selectedLevel === level}
-                    onClick={() => setSelectedLevel(level)}
-                    key={level}
-                  >
-                    <span>JLPT</span>
-                    <strong>{level}</strong>
-                    <i>{data.byLevel[level]} verbos</i>
-                  </button>
+                  <div className={styles.level} key={level}>
+                    <button className="kanji-art-card" type="button" aria-pressed={selectedLevel === level}
+                      aria-label={t(level + ', ' + data.byLevel[level] + ' verbos', level + ', ' + data.byLevel[level] + ' verbs')} onClick={() => setSelectedLevel(level)}>
+                      <ThemeArt src={'/kanji-assets/jlpt-' + level + '.webp'} darkSrc={'/kanji-assets/jlpt-' + level + '-dark.webp'} alt="" />
+                      {selectedLevel === level && <span className="kanji-selection-check" aria-hidden="true">✓</span>}
+                    </button>
+                    <span className={styles.count}>{t(data.byLevel[level] + ' verbos', data.byLevel[level] + ' verbs')}</span>
+                  </div>
                 ))}
               </div>
-              <div className="verb-level-action">
-                <button type="button" disabled={!selectedLevel} onClick={startTraining}>
-                  {selectedLevel ? `Começar ${selectedLevel}` : 'Escolha um nível'}
+              <div className="kanji-selection-actions">
+                <button className="kanji-begin" type="button" disabled={!selectedLevel} onClick={startTraining}>
+                  {selectedLevel ? t('Começar ' + selectedLevel, 'Start ' + selectedLevel) : t('Escolha um nível', 'Choose a level')} <span aria-hidden="true">→</span>
                 </button>
-                <span>O progresso fica salvo neste dispositivo.</span>
+                <p className={styles.note}>{t('O progresso fica salvo neste dispositivo.', 'Progress is saved on this device.')}</p>
               </div>
-            </>
-          )}
-        </section>
-      ) : current && session ? (
-        <section className="transitivity-session">
-          <div className="transitivity-stats" aria-label="Progresso da sessão">
-            <span>NÍVEL<strong>{activeLevel}</strong></span>
-            <span>RODADAS<strong>{answered}</strong></span>
-            <span>ACERTOS<strong>{correct}</strong></span>
-            <span>CÓPIAS<strong>{session.entries[current.id].copies}</strong></span>
+            </>}
+          </section>
+        </div>
+      </main>
+    );
+  }
+
+  return (
+    <main className={practice.page}>
+      <div className={practice.scenery} aria-hidden="true"><ThemeArt className={practice.garden} data-scenery="garden" src="/kanji-assets/practice-garden.png" darkSrc="/kanji-assets/practice-garden-dark.webp" alt="" /><ThemeArt className={practice.mountains} src="/kanji-assets/practice-mountains.png" darkSrc="/kanji-assets/practice-mountains-dark.webp" alt="" /><ThemeArt className={practice.brush} src="/kanji-assets/practice-brush.png" darkSrc="/kanji-assets/practice-brush-dark.webp" alt="" /></div>
+      <SiteHeader homeLink onChangeSet={leaveSession} /><TrainingFlow step={session ? currentId ?? 'selection' : 'selection'} revealed={answer !== null} />
+
+      {current && session ? (
+        <section className="transitivity-session" aria-label={t('Treino de verbos em pares', 'Verb pair practice')}>
+
+          <h1 className={practice.heading}>{t('Verbos em pares', 'Verb pairs')}</h1>
+          <div className="transitivity-stats" aria-label={t('Progresso da sessão', 'Session progress')}>
+            <span>{t('NÍVEL', 'LEVEL')}<strong>{activeLevel}</strong></span>
+            <span>{t('RODADAS', 'ROUNDS')}<strong>{answered}</strong></span>
+            <span>{t('ACERTOS', 'CORRECT')}<strong>{correct}</strong></span>
           </div>
 
-          <article className="transitivity-card">
+          <article className={`transitivity-card${answer !== null ? ' is-revealed' : ''}`}>
             <div className="verb-prompt">
-              <p>Este verbo é…</p>
-              <h1 lang="ja">{current.word}</h1>
+              <p>{t('Este verbo é…', 'This verb is…')}</p>
+              <h2 lang="ja">{current.word}</h2>
               <strong lang="ja">{current.reading}</strong>
               <span>{current.jlptLevel}</span>
             </div>
 
-            <div className="classification-actions" aria-label="Escolha a classificação">
+            <div className="classification-actions" aria-label={t('Escolha a classificação', 'Choose a classification')}>
               {ANSWERS.map((choice, index) => {
                 const className = answer === null
                   ? ''
@@ -201,7 +221,7 @@ export default function TransitivityTrainerPage() {
                     key={choice}
                   >
                     <small>{index + 1}</small>
-                    {CLASSIFICATION_LABELS[choice]}
+                    {classificationLabel(choice)}
                   </button>
                 );
               })}
@@ -209,16 +229,20 @@ export default function TransitivityTrainerPage() {
 
             {answer !== null && wasCorrect !== null && (
               <section className="verb-reveal" aria-live="polite">
-                <div className={`verb-result${wasCorrect ? ' is-correct' : ' is-wrong'}`}>
-                  <span>{wasCorrect ? 'ACERTOU' : 'NÃO FOI DESSA VEZ'}</span>
-                  <strong>{CLASSIFICATION_LABELS[current.classification]}</strong>
+                <div data-training-answer className={`verb-result${wasCorrect ? ' is-correct' : ' is-wrong'}`}>
+                  <span>{wasCorrect ? t('ACERTOU', 'CORRECT') : t('NÃO FOI DESSA VEZ', 'NOT THIS TIME')}</span>
+                  <strong>{classificationLabel(current.classification)}</strong>
                 </div>
+
+                <button type="button" className="next-verb" onClick={nextVerb}>
+                  {t('Próximo verbo', 'Next verb')}
+                </button>
 
                 <div className="verb-meanings">
                   <div>
-                    <span>PORTUGUÊS</span>
-                    <p>{current.meaningPt}</p>
-                    <small>{current.explanationPt}</small>
+                    <span>{hasEnglishContent ? 'ENGLISH' : t('PORTUGUÊS', 'PORTUGUESE')}</span>
+                    <p lang={hasEnglishContent ? 'en' : 'pt-BR'}>{hasEnglishContent ? current.meaningEn : current.meaningPt}</p>
+                    <small lang={hasEnglishContent ? 'en' : 'pt-BR'}>{hasEnglishContent ? current.explanationEn : current.explanationPt}</small>
                   </div>
                   <div lang="ja">
                     <span>日本語</span>
@@ -228,19 +252,17 @@ export default function TransitivityTrainerPage() {
                 </div>
 
                 <div className="verb-examples">
-                  <h2>{current.examples.length > 1 ? 'Exemplos de uso' : 'Exemplo de uso'}</h2>
+                  <h2>{current.examples.length > 1 ? t('Exemplos de uso', 'Usage examples') : t('Exemplo de uso', 'Usage example')}</h2>
                   {current.examples.map((example, index) => (
                     <article key={`${example.role}-${index}`}>
-                      <span>{CLASSIFICATION_LABELS[example.role]}</span>
+                      <span>{classificationLabel(example.role)}</span>
                       <p lang="ja">{example.ja}</p>
-                      <small>{example.pt}</small>
+                      <small lang={hasEnglishContent ? 'en' : 'pt-BR'}>{hasEnglishContent ? example.en : example.pt}</small>
                     </article>
                   ))}
                 </div>
 
-                <button type="button" className="next-verb" onClick={nextVerb}>
-                  Próximo verbo
-                </button>
+
               </section>
             )}
           </article>

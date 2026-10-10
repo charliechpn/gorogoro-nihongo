@@ -1,0 +1,37 @@
+{
+  "status": "applied_local",
+  "total": 1006,
+  "flagged": 301,
+  "sourceJsonSha256": "0949400e3e3b1320462885207d34894f9d286d658805369655ff12bbacd663ad",
+  "reviews": [
+    {
+      "path": "content/kanji-review/grade-1/primeiro-ano-revisao.json",
+      "sha256": "637d8603accba493572b4930226c20a9ced2a4a765db9d1db01fb463b6579faf"
+    },
+    {
+      "path": "content/kanji-review/grade-2/segundo-ano-revisao.json",
+      "sha256": "bc94a6a1fded0afee54467d25f37b728a5096152def7cde597092bf52d296127"
+    },
+    {
+      "path": "content/kanji-review/grade-3/terceiro-ano-revisao.json",
+      "sha256": "53d610b7f7dbc7bfbd9e1b0de30e0ea718d309fc9a1629d53ffaeecb2a4d1a99"
+    },
+    {
+      "path": "content/kanji-review/grade-4/quarto-ano-revisao.json",
+      "sha256": "76abf355775056e54c9350d4844c679d8c2a31a7b9d37f93e2a1bbaa57f9e19b"
+    },
+    {
+      "path": "content/kanji-review/grade-5/quinto-ano-revisao.json",
+      "sha256": "089342e23051e4226e6c35da6f4a092bcbbfaa15a319bcb32f749985261dfca2"
+    },
+    {
+      "path": "content/kanji-review/grade-6/sexto-ano-revisao.json",
+      "sha256": "f9b2b818557b422a0c79c408c05611ebc9998fd304bae354a6f9e827fb3a1107"
+    }
+  ],
+  "appliedAt": "2026-09-08T10:29:37.456Z",
+  "migrations": [
+    "0003_kanji_manual_review.sql",
+    "0004_kanji_curated_data.sql"
+  ]
+}

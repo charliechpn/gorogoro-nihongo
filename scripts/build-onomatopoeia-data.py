@@ -77,6 +77,28 @@ def choose_portuguese_meaning(term: str, meanings: list[str]) -> str:
     return min(unique, key=noise_score)
 
 
+def load_english_curations(directory: Path) -> dict[int, tuple[str, str]]:
+    files = sorted(directory.glob("*.json"))
+    if len(files) != 4:
+        raise RuntimeError("São necessários os quatro blocos ingleses de onomatopeias")
+    translations: dict[int, tuple[str, str]] = {}
+    for file in files:
+        document = json.loads(file.read_text(encoding="utf-8"))
+        first_id, last_id = document["range"]
+        if document["version"] != 1 or document["schema"] != ["id", "term", "meaningEn"]:
+            raise RuntimeError(f"Formato de curadoria inválido: {file}")
+        if len(document["entries"]) != last_id - first_id + 1:
+            raise RuntimeError(f"Bloco inglês incompleto: {file}")
+        for expected_id, row in zip(range(first_id, last_id + 1), document["entries"]):
+            entry_id, term, meaning_en = row
+            if entry_id != expected_id or entry_id in translations or not meaning_en.strip():
+                raise RuntimeError(f"Entrada inglesa inválida: {file}, ID {entry_id}")
+            translations[entry_id] = (term, meaning_en)
+    if len(translations) != 189:
+        raise RuntimeError("A curadoria inglesa não cobre as 189 onomatopeias")
+    return translations
+
+
 def build(
     database_source: Path,
     database_output: Path,
@@ -84,10 +106,12 @@ def build(
     japanese_definitions: Path,
     json_output: Path,
     report_output: Path,
+    english_curation: Path,
 ) -> None:
     source_data = json.loads(notion_source.read_text(encoding="utf-8"))
     ja_by_term = json.loads(japanese_definitions.read_text(encoding="utf-8"))
     entries = source_data["entries"]
+    english_by_id = load_english_curations(english_curation)
     terms = [entry["term"] for entry in entries]
 
     if len(entries) != 189 or source_data["raw_entry_count"] != 305:
@@ -103,6 +127,9 @@ def build(
     for index, entry in enumerate(entries, start=1):
         term = entry["term"].strip()
         meaning_ja = ja_by_term[term].strip()
+        english_term, meaning_en = english_by_id[index]
+        if english_term != term:
+            raise RuntimeError(f"Termo inglês divergente no ID {index}: {english_term}")
         if not term or not meaning_ja:
             raise RuntimeError(f"Entrada incompleta: {term!r}")
         curated_entries.append(
@@ -110,6 +137,7 @@ def build(
                 "id": index,
                 "term": term,
                 "meaningPt": choose_portuguese_meaning(term, entry["meanings_pt"]),
+                "meaningEn": meaning_en,
                 "meaningJa": meaning_ja,
                 "romaji": entry["romaji_variants"],
                 "categories": entry["categories"],
@@ -145,6 +173,7 @@ def build(
             id INTEGER PRIMARY KEY,
             term TEXT NOT NULL UNIQUE,
             meaning_pt TEXT NOT NULL,
+            meaning_en TEXT NOT NULL,
             meaning_ja TEXT NOT NULL,
             romaji_variants TEXT NOT NULL DEFAULT '[]' CHECK (json_valid(romaji_variants)),
             categories TEXT NOT NULL DEFAULT '[]' CHECK (json_valid(categories)),
@@ -155,14 +184,15 @@ def build(
     connection.executemany(
         """
         INSERT INTO onomatopoeia (
-            id, term, meaning_pt, meaning_ja, romaji_variants, categories, source_pages
-        ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            id, term, meaning_pt, meaning_en, meaning_ja, romaji_variants, categories, source_pages
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
         [
             (
                 entry["id"],
                 entry["term"],
                 entry["meaningPt"],
+                entry["meaningEn"],
                 entry["meaningJa"],
                 json.dumps(entry["romaji"], ensure_ascii=False, separators=(",", ":")),
                 json.dumps(entry["categories"], ensure_ascii=False, separators=(",", ":")),
@@ -204,13 +234,14 @@ def build(
     json_output.write_text(
         json.dumps(
             {
-                "version": 1,
+                "version": 2,
                 "count": len(curated_entries),
                 "onomatopoeia": [
                     {
                         "id": entry["id"],
                         "term": entry["term"],
                         "meaningPt": entry["meaningPt"],
+                        "meaningEn": entry["meaningEn"],
                         "meaningJa": entry["meaningJa"],
                         "categories": entry["categories"],
                     }
@@ -241,6 +272,7 @@ def build(
             len(entry["categories"]) > 1 for entry in curated_entries
         ),
         "portuguese_definitions": len(curated_entries),
+        "english_definitions": len(curated_entries),
         "japanese_definitions": len(curated_entries),
         "integrity_check": integrity_check,
         "existing_tables_preserved": True,
@@ -262,6 +294,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--japanese-definitions", type=Path, required=True)
     parser.add_argument("--json-output", type=Path, required=True)
     parser.add_argument("--report-output", type=Path, required=True)
+    parser.add_argument("--english-curation", type=Path, default=Path("content/onomatopoeia/en"))
     return parser.parse_args()
 
 
@@ -275,4 +308,5 @@ if __name__ == "__main__":
         japanese_definitions=args.japanese_definitions,
         json_output=args.json_output,
         report_output=args.report_output,
+        english_curation=args.english_curation,
     )

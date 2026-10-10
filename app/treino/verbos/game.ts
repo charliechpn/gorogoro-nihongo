@@ -5,6 +5,7 @@ export type VerbExample = {
   role: Exclude<TransitivityClassification, 'depends'>;
   ja: string;
   pt: string;
+  en?: string;
 };
 
 export type TransitivityVerb = {
@@ -15,8 +16,10 @@ export type TransitivityVerb = {
   jlptLevel: JlptLevel;
   classification: TransitivityClassification;
   meaningPt: string;
+  meaningEn?: string;
   meaningJa: string;
   explanationPt: string;
+  explanationEn?: string;
   explanationJa: string;
   examples: VerbExample[];
 };

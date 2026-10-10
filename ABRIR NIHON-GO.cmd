@@ -1,13 +1,13 @@
 @echo off
 setlocal EnableExtensions
-title Nihongo Study - Inicializador
+title GoroGoro Nihongo - Inicializador
 
 cd /d "%~dp0"
 if errorlevel 1 goto PROJECT_ERROR
 
 set "SITE_URL=http://localhost:3000/"
 set "HEALTH_URL=http://localhost:3000/api/vocabulary/catalog"
-set "SERVER_TITLE=Nihongo Study - Servidor local"
+set "SERVER_TITLE=GoroGoro Nihongo - Servidor local"
 
 if /i "%~1"=="--check" goto CHECK_ONLY
 
@@ -33,7 +33,7 @@ if not exist ".wrangler\state\v3\d1\miniflare-D1DatabaseObject\metadata.sqlite" 
   if errorlevel 1 goto DATABASE_ERROR
 )
 
-echo Iniciando o Nihongo Study...
+echo Iniciando o GoroGoro Nihongo...
 start "%SERVER_TITLE%" /min /D "%~dp0" cmd.exe /d /k "npm.cmd run dev"
 
 set /a WAIT_COUNT=0
@@ -53,10 +53,10 @@ exit /b 0
 :CHECK_ONLY
 call :SITE_READY
 if errorlevel 1 (
-  echo O servidor do Nihongo Study nao esta respondendo corretamente.
+  echo O servidor do GoroGoro Nihongo nao esta respondendo corretamente.
   exit /b 1
 )
-echo O servidor do Nihongo Study esta respondendo corretamente.
+echo O servidor do GoroGoro Nihongo esta respondendo corretamente.
 exit /b 0
 
 :SITE_READY
@@ -85,7 +85,7 @@ echo [ERRO] Nao consegui acessar a pasta do projeto.
 goto FAILURE
 
 :PORT_BUSY
-echo [ERRO] A porta 3000 esta ocupada por outro programa, mas nao e o Nihongo Study.
+echo [ERRO] A porta 3000 esta ocupada por outro programa, mas nao e o GoroGoro Nihongo.
 echo Feche o programa que está usando essa porta e tente novamente.
 goto FAILURE
 
@@ -101,7 +101,7 @@ goto FAILURE
 
 :NODE_OLD
 echo [ERRO] A versao do Node.js e antiga demais.
-echo O Nihongo Study exige Node.js 22.13 ou mais recente.
+echo O GoroGoro Nihongo exige Node.js 22.13 ou mais recente.
 goto FAILURE
 
 :DEPENDENCIES_MISSING

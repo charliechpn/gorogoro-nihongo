@@ -45,5 +45,8 @@ next-env.d.ts
 # local research corpora and generated database artifacts
 /artifacts/
 /data/
+# original artwork source files; runtime images live under public/
+/assets/
+/img/
 __pycache__/
 *.py[cod]

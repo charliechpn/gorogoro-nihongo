@@ -22,6 +22,90 @@
       "when": 1788310869359,
       "tag": "0002_glorious_supernaut",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1788863237107,
+      "tag": "0003_kanji_manual_review",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1788863315515,
+      "tag": "0004_kanji_curated_data",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790461943081,
+      "tag": "0005_kanji_english_pilot",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1790463186127,
+      "tag": "0006_kanji_english_review",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1790463895739,
+      "tag": "0007_kanji_english_grade1_completion",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1790465205659,
+      "tag": "0008_kanji_english_grade2_081_120",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1790468095748,
+      "tag": "0009_kanji_english_grade2_completion",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1790472222408,
+      "tag": "0010_kanji_english_grade3",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1790472694296,
+      "tag": "0011_kanji_english_grade4",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1790474417728,
+      "tag": "0012_kanji_english_grade5",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1790476386173,
+      "tag": "0013_kanji_english_grade6",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "6",
+      "when": 1790480876752,
+      "tag": "0014_kanji_english_editorial_review",
+      "breakpoints": true
     }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "905": {
+    "meaningPt": "assar sobre o fogo; tostar",
+    "meaningJa": "火にかざして焼く。",
+    "examples": [{"ja": "魚を火で炙った。", "pt": "Assei o peixe sobre o fogo."}]
+  },
+  "1040": {
+    "meaningPt": "envolver; embrulhar",
+    "meaningJa": "布や紙などで包む。",
+    "examples": [{"ja": "赤ん坊を毛布でくるんだ。", "pt": "Enrolei o bebê em um cobertor."}]
+  },
+  "1052": {
+    "meaningPt": "congelar; solidificar",
+    "meaningJa": "液体を冷やして固める。"
+  },
+  "1069": {
+    "word": "遡る",
+    "display": "遡る（さかのぼる）",
+    "meaningPt": "subir o curso de um rio; remontar no tempo",
+    "meaningJa": "流れを上流へ進む。過去にさかのぼる。"
+  },
+  "1111": {
+    "meaningJa": "文字に書き留める。",
+    "examples": [{"ja": "太郎は新しい英単語をノートに記した。", "pt": "Taro anotou as palavras novas em inglês no caderno."}]
+  },
+  "1124": {
+    "meaningPt": "deslocar-se; sair do lugar; desviar-se",
+    "meaningJa": "位置や時刻が本来のところから外れる。",
+    "examples": [{"ja": "会議の時間が一時間ずれた。", "pt": "O horário da reunião mudou em uma hora."}]
+  },
+  "1135": {
+    "examples": [{"ja": "彼は世間の悪風に染まった。", "pt": "Ele foi influenciado pelos maus hábitos da sociedade."}]
+  },
+  "1156": {
+    "examples": [
+      {"pt": "Quanto mais cheio o arrozal, mais baixo se curva o talo."},
+      {"pt": "A água está pingando da toalha molhada."}
+    ]
+  },
+  "1168": {
+    "meaningPt": "esgotar; empregar todos os meios; dedicar-se",
+    "meaningJa": "残らず使う。また、ある目的のために力を注ぐ。",
+    "examples": [
+      {"ja": "あらゆる手を尽くした。", "pt": "Tentamos todos os meios possíveis."},
+      {}
+    ]
+  },
+  "1203": {
+    "meaningPt": "ser interrompido; cessar temporariamente",
+    "meaningJa": "続いていたものが途中で切れる。",
+    "examples": [{"ja": "交通の流れは一度も跡切れなかった。", "pt": "O fluxo do trânsito não parou nenhuma vez."}]
+  },
+  "1205": {
+    "examples": [{"ja": "父は包丁を研いだ。", "pt": "Meu pai afiou a faca de cozinha."}]
+  },
+  "1252": {
+    "meaningPt": "torcer-se; ficar distorcido",
+    "meaningJa": "ねじったように曲がる。",
+    "examples": [{"pt": "A luz fraca transforma minha visão distorcida numa ilusão."}]
+  },
+  "1267": {
+    "meaningPt": "consultar; submeter à opinião de alguém",
+    "meaningJa": "意見を求めるために相談する。",
+    "examples": [{"ja": "決定する前に委員会に諮った。", "pt": "Consultamos a comissão antes de tomar uma decisão."}]
+  },
+  "1357": {
+    "meaningPt": "comer; vestir; agradar (honorífico)",
+    "meaningJa": "「食べる」「着る」などの尊敬語。気に入る意にも使う。",
+    "examples": [
+      {"ja": "今日は着物をお召しください。", "pt": "Por favor, vista um quimono hoje."},
+      {}
+    ]
+  },
+  "1390": {
+    "meaningPt": "chamar alguém para fazê-lo parar",
+    "meaningJa": "声をかけて、相手を立ち止まらせる。",
+    "examples": [{"pt": "O viajante parou quando o soldado o chamou."}]
+  },
+  "1366": {
+    "meaningPt": "ser popular; atrair interesse amoroso",
+    "meaningJa": "異性などから人気がある。",
+    "examples": [{"ja": "彼はクラスでとてももてる。", "pt": "Ele é muito popular entre os colegas da turma."}]
+  }
+}

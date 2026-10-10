@@ -10,13 +10,13 @@ import {
   calculateAnsweredProgress,
   drawWeightedCandidate,
   KanjiApiError,
-  type WeightedCandidate,
 } from './logic';
 
 type KanjiRow = {
   id: number;
   character: string;
   meaning_pt: string;
+  meaning_en: string | null;
   onyomi: string | null;
   kunyomi: string | null;
   grade: number;
@@ -58,6 +58,7 @@ function mapKanji(row: KanjiRow): KanjiRecord {
     id: row.id,
     kanji: row.character,
     meaning: row.meaning_pt,
+    meaningEn: row.meaning_en,
     onyomi: row.onyomi,
     kunyomi: row.kunyomi,
     grade: row.grade,
@@ -88,13 +89,13 @@ function mapSession(row: SessionRow): KanjiSessionView {
 export async function loadKanjiCatalog(): Promise<KanjiCatalogResponse> {
   const database = getDatabase();
   const result = await database.prepare(`
-    SELECT id, character, meaning_pt, onyomi, kunyomi, grade, jlpt_level
+    SELECT id, character, meaning_pt, meaning_en, onyomi, kunyomi, grade, jlpt_level
     FROM kanji_catalog
     ORDER BY id
   `).all<KanjiRow>();
 
   return {
-    version: 2,
+    version: 3,
     count: result.results.length,
     kanji: result.results.map(mapKanji),
   };

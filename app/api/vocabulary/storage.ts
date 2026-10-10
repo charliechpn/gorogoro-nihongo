@@ -6,6 +6,11 @@ import type {
   VocabularyRecord,
   VocabularySessionView,
 } from '@/app/treino/vocabulario/contracts';
+import n5English from '@/content/vocabulary/n5.en.json';
+import n4English from '@/content/vocabulary/n4.en.json';
+import n3English from '@/content/vocabulary/n3.en.json';
+import n2English from '@/content/vocabulary/n2.en.json';
+import n1English from '@/content/vocabulary/n1.en.json';
 import {
   calculateAnsweredProgress,
   drawWeightedCandidate,
@@ -39,6 +44,21 @@ type SessionRow = CandidateRow & VocabularyRow & {
   current_vocabulary_id: number;
 };
 
+type EnglishEntry = [id: number, promptEn: string, meaningsEn: string[]];
+function indexEnglish(entries: EnglishEntry[]) {
+  return new Map(entries.map(([id, promptEn, meaningsEn]) => [
+    id,
+    { promptEn, meaningsEn },
+  ]));
+}
+const englishByLevel = {
+  N5: indexEnglish(n5English.entries as EnglishEntry[]),
+  N4: indexEnglish(n4English.entries as EnglishEntry[]),
+  N3: indexEnglish(n3English.entries as EnglishEntry[]),
+  N2: indexEnglish(n2English.entries as EnglishEntry[]),
+  N1: indexEnglish(n1English.entries as EnglishEntry[]),
+};
+
 function getDatabase() {
   const database = (env as unknown as { DB?: D1Database }).DB;
   if (!database) throw new KanjiApiError(503, 'database_unavailable', 'O banco do treino não está disponível.');
@@ -46,12 +66,15 @@ function getDatabase() {
 }
 
 function mapVocabulary(row: VocabularyRow): VocabularyRecord {
+  const english = englishByLevel[row.jlpt_level as keyof typeof englishByLevel]?.get(Number(row.id));
   return {
     id: Number(row.id),
     word: row.word,
     reading: row.reading,
     promptPt: row.prompt_pt,
     meaningsPt: JSON.parse(row.meanings_pt_json) as string[],
+    promptEn: english?.promptEn ?? null,
+    meaningsEn: english?.meaningsEn ?? [],
     jlpt: row.jlpt_level,
   };
 }

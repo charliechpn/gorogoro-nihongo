@@ -1,0 +1,105 @@
+# Kanji | significado básico PT | onyomi comuns | kunyomi comuns | decisão individual | dúvidas / revisão | leituras ou usos adicionais preservados em nota
+一|um|イチ、イツ|ひと、ひと.つ|Base da contagem; イチ é prioritária e イツ aparece em 唯一（ユイイツ）.|—|ひと aparece em 一人; a leitura da palavra inteira deve ser ensinada separadamente.
+二|dois|ニ|ふた、ふた.つ|Número básico; incluir ふた, usado em 二人（ふたり）.|—|Não decompor a leitura irregular de 二人 como uma regra geral para 人.
+三|três|サン|み、みっ.つ|Número básico; incluir a base み presente em 三日（みっか）.|—|A geminação de 三日 é da palavra; não acrescentar uma leitura autônoma みっ.
+四|quatro|シ|よ、よん、よっ.つ|Número básico; completar よ, necessário para reconhecer 四時（よじ）.|—|四日（よっか） deve constar como leitura da palavra.
+五|cinco|ゴ|いつ、いつ.つ|Número básico; incluir いつ, relacionado a 五日（いつか）.|—|五日 deve ser aprendido como palavra completa.
+六|seis|ロク|む、むっ.つ|Número básico; incluir む, como em 六日（むいか）.|—|六日 tem leitura própria; não generalizar むい como leitura isolada do kanji.
+七|sete|シチ|なな、なな.つ、なの|Número básico; なな é uma leitura principal, não apenas parte de ななつ.|—|なの é restrito a formas como 七日（なのか）.
+八|oito|ハチ|や、やっ.つ、よう|Corrigir a forma principal do contador de objetos: やっつ, com っ.|—|よう é restrito a 八日（ようか）; や.つ também existe, mas não substitui やっ.つ como forma inicial.
+九|nove|キュウ、ク|ここの、ここの.つ|Número básico; manter as duas onyomi, necessárias em usos como 九時.|—|九日（ここのか） usa a base ここの.
+十|dez|ジュウ|とお、と|Corrigir とう para とお; と ocorre em formas como 十重（とえ）.|—|ジッ/ジュッ são formas usadas em contadores, como 十分（じっぷん／じゅっぷん）. 十日（とおか） deve ser aprendido como palavra completa.
+百|cem|ヒャク|—|Número básico; a carta principal não deve apresentar もも como leitura cotidiana de cem.|—|もも existe em usos tradicionais e nomes; preservar como leitura adicional, fora do conjunto comum. ビャク/ピャク são alterações em compostos como 三百/六百.
+千|mil|セン|—|Número básico; セン é a leitura central para contagem.|—|ち existe em compostos tradicionais e nomes, como 千代; preservar fora das leituras prioritárias de contagem.
+上|acima; em cima; subir|ジョウ|うえ、うわ、かみ、あ.がる、あ.げる、のぼ.る|Completar leituras frequentes que faltavam, especialmente 上げる e 上がる.|—|ショウ é menos prioritária, como em 上人. のぼ.す e のぼ.せる ficam como complementares.
+下|abaixo; embaixo; descer|カ、ゲ|した、しも、もと、さ.がる、さ.げる、くだ.る、くだ.す、お.りる、お.ろす|A resposta antiga tinha apenas した; conservar o conjunto de leituras produtivas nos verbos comuns.|—|くだ.さる também é relevante, como em 下さる; normalmente aparece em kana e pode entrar numa expansão posterior.
+左|esquerda|サ|ひだり|Manter o núcleo correto e padronizar onyomi em katakana.|—|—
+右|direita|ウ、ユウ|みぎ|Manter as duas onyomi, como em 右折 e 左右.|—|—
+中|meio; dentro; centro|チュウ、ジュウ|なか|Adicionar ジュウ, frequente em 一日中 e 世界中.|—|Não misturar o sentido de dentro com uma tradução fixa da preposição portuguesa em.
+大|grande|ダイ、タイ|おお、おお.きい、おお.いに|Adicionar タイ, essencial para 大切 e 大変; remover largo como significado principal.|—|おお.いに significa grandemente/muito, não muitos, que corresponde a 多い.
+小|pequeno|ショウ|ちい.さい、こ、お|Completar お, presente em 小川 e 小野, e manter こ produtivo em 小鳥.|—|お tem uso mais restrito; não é leitura livre de todo composto com 小.
+月|lua; mês|ゲツ、ガツ|つき|Manter as duas onyomi para dias da semana e meses.|—|—
+日|dia; sol|ニチ、ジツ|ひ、か|Adicionar ジツ e か; a resposta antiga era insuficiente para 日曜日/休日 e datas.|—|Datas têm leituras de palavra, como 一日（ついたち）; não atribuir ついたち ao kanji isolado.
+年|ano|ネン|とし|Núcleo correto; simplificar a tradução para ano.|—|—
+木|árvore; madeira|モク、ボク|き、こ|Adicionar ボク, como em 木刀, e こ, como em 木陰.|—|こ é usado em certos compostos; não substituir き indiscriminadamente.
+山|montanha|サン|やま|Núcleo correto; manter N5 pela utilidade e simplicidade.|—|サン pode sofrer vozeamento em compostos; não listar cada alteração fonética como leitura independente.
+川|rio|セン|かわ|Núcleo correto; fluxo é desnecessário como tradução básica.|—|がわ ocorre por vozeamento em compostos e nomes.
+土|terra; solo|ド、ト|つち|Adicionar ト, como em 土地; manter N5 também pelo dia 土曜日.|—|—
+天|céu|テン|あま|Reduzir a tradução ao sentido básico; 天気 e 天国 sustentam a utilidade inicial.|—|あめ é leitura existente de uso literário/tradicional, como 天地（あめつち）; preservar fora das prioritárias.
+生|vida; nascer; viver|セイ、ショウ|い.きる、い.かす、い.ける、う.まれる、う.む、は.える、は.やす、なま|Completar as leituras comuns; 生 também aparece como cru/fresco em なま.|—|き é leitura restrita a compostos como 生地（きじ）; お.う e outras leituras ficam como adicionais. O nível do kanji não significa dominar todos os seus usos no N5.
+人|pessoa|ジン、ニン|ひと|Núcleo correto; fundamental em pessoas e nacionalidades.|—|一人 e 二人 têm leituras de palavra; não criar kunyomi り a partir delas.
+名|nome|メイ、ミョウ|な|Corrigir みよ para ミョウ, como em 名字（みょうじ）; limpar a tradução principal.|—|—
+女|mulher|ジョ、ニョ|おんな、め|Manter ジョ e ニョ; adicionar め, produtivo em pares como 女神.|—|ニョ é menos frequente que ジョ, mas útil em 女房 e 天女; ニョウ é rara e não prioritária.
+男|homem|ダン、ナン|おとこ|Adicionar ナン, como em 長男 e 次男.|—|お é restrita a certos compostos e nomes; não priorizar como leitura livre.
+子|criança; filho/filha|シ、ス|こ|Remover horário e signo do zodíaco da tradução básica; preservar 子 como criança/descendente.|—|ね pertence ao uso zodiacal, não à leitura comum de criança.
+見|ver|ケン|み.る、み.える、み.せる|Completar ver, ser visível e mostrar; retirar esperança da tradução principal.|—|—
+気|ânimo; disposição; ar|キ、ケ|—|Não oferecer いき como kunyomi cotidiana; 元気/天気 justificam N5.|—|いき consta no registro anterior; preservar no histórico como uso não prioritário a verificar se for incluído numa camada de leituras raras.
+円|iene; círculo; redondo|エン|まる.い|Dar a forma adjetival completa 円い, sem confundir com 丸い; corrigir acento de círculo.|Política pedagógica: 円い é leitura válida, mas 丸い é mais usual em muitos usos cotidianos; confirmar se deve ficar no conjunto principal.|まる aparece no registro anterior; pode ser preservado como base, sem afirmar que 円 é a grafia preferida para o substantivo cotidiano círculo.
+入|entrar; colocar dentro|ニュウ|はい.る、い.る、い.れる|Adicionar 入れる, ausente no registro atual.|—|—
+出|sair; tirar para fora|シュツ|で.る、だ.す|Adicionar 出す; não reduzir 出 a sair.|—|スイ ocorre em 出納（すいとう） e fica fora das leituras comuns.
+休|descansar; descanso; folga|キュウ|やす.む、やす.まる、やす.める|Conservar os verbos produtivos da família de descanso.|—|—
+先|antes; à frente; adiante|セン|さき|Dar uma tradução que acomode anterioridade e o que vem adiante, sem tratar futuro como sentido único.|—|—
+本|livro; origem; principal|ホン|もと|Manter os sentidos básicos com leitura もと.|—|Também contador de objetos compridos/cilíndricos; explicar essa função em nota, não numa lista longa de traduções.
+学|estudar; aprender|ガク|まな.ぶ|Manter a leitura correta e simplificar o significado para a ação central.|—|—
+校|escola|コウ|—|Kunyomi comum ausente é legítima aqui; não preencher por obrigação.|—|Revisão/correção aparece em compostos como 校正, mas não precisa dominar o significado básico.
+水|água|スイ|みず|Manter o núcleo correto.|—|—
+火|fogo|カ|ひ|Manter ひ como leitura prioritária para o uso básico de fogo.|—|ほ existe em compostos como 火影（ほかげ）; preservar como complementar, sem tornar uma leitura restrita a resposta principal.
+車|carro; veículo|シャ|くるま|Acrescentar carro ao sentido genérico veículo para a tradução inicial.|—|—
+金|ouro; dinheiro; metal|キン|かね、かな|Priorizar キン e completar かな, como em 金物.|—|コン existe, como em 金色（こんじき）; guardar como complementar. かね cobre dinheiro/metal; ouro isoladamente costuma ser きん.
+雨|chuva|ウ|あめ、あま|Manter as duas kunyomi; あま ocorre em compostos como 雨戸.|—|—
+白|branco|ハク|しろ、しら、しろ.い|Adicionar a forma 白い; manter しら de compostos como 白髪（しらが）.|—|ビャク existe em palavras como 白夜（びゃくや）; guardar como complementar.
+万|dez mil|マン、バン|—|Corrigir dez, mil para dez mil; adicionar バン, como em 万歳.|—|よろず existe, mas é tradicional/literária e aparece em nomes/expressões; preservar como adicional, não como leitura comum de 10.000.
+半|metade; meio|ハン|なか.ば|Manter なかば, padronizando a separação de okurigana em 半ば.|—|—
+長|longo; chefe|チョウ|なが.い|Trocar extenso por longo e incluir chefe, frequente em 社長/校長.|—|おさ existe como leitura de chefe/líder, mas não é prioritária para este conjunto.
+高|alto; caro|コウ|たか、たか.い、たか.まる、たか.める|Adicionar caro, sentido cotidiano essencial de 高い; incluir os verbos produtivos.|—|たか aparece em usos de valor/quantidade; não confundir com a leitura da palavra inteira.
+母|mãe|ボ|はは、かあ|Manter はは e a leitura de お母さん（おかあさん）.|—|かあ está vinculada a formas familiares como お母さん; não deve ser ensinada como leitura livre de qualquer composto.
+父|pai|フ|ちち、とう|Manter ちち e a leitura de お父さん（おとうさん）.|—|とう está vinculada a formas familiares como お父さん; não generalizar a qualquer composto.
+友|amigo|ユウ|とも|Núcleo correto; manter.|—|—
+時|tempo; hora|ジ|とき|Acrescentar hora, indispensável para dizer o horário.|—|—
+今|agora|コン|いま|Manter a leitura principal de agora e コン de 今回/今週.|—|キン é restrita, como em 今上, e fica fora do conjunto comum. 今日（きょう） é leitura da palavra completa.
+間|intervalo; entre; espaço|カン、ケン|あいだ、ま|Manter ambas as onyomi, incluindo ケン de 人間; ampliar o significado básico.|—|—
+北|norte|ホク|きた|Núcleo correto; manter.|—|—
+南|sul|ナン|みなみ|Núcleo correto; manter ナン como principal.|—|ナ ocorre em expressões específicas como 南無; não priorizar.
+東|leste|トウ|ひがし|Priorizar a leitura cotidiana ひがし.|—|あずま existe em usos históricos, nomes e certos compostos; preservar como adicional.
+西|oeste|セイ、サイ|にし|Manter as duas onyomi, necessárias em 西洋 e 関西.|—|—
+前|antes; à frente|ゼン|まえ|Substituir defronte por uma formulação corrente.|—|—
+後|depois; atrás|ゴ、コウ|あと、うしろ、のち、おく.れる|Manter as leituras produtivas e reorganizar pela utilidade cotidiana.|—|—
+外|fora; exterior|ガイ、ゲ|そと、ほか、はず.す、はず.れる|Completar 外れる, sem apagar 外す.|—|—
+国|país|コク|くに|Núcleo correto; manter.|—|—
+話|falar; conversa; história|ワ|はな.す、はなし|Adicionar 話す, ausente apesar de a tradução antiga ser falar.|—|—
+聞|ouvir; perguntar|ブン、モン|き.く、き.こえる|Adicionar 聞こえる e o sentido perguntar, frequente em 聞く.|—|新聞 exemplifica ブン; não usar uma tradução única para todos os usos de 聞く.
+語|língua; palavra; contar/narrar|ゴ|かた.る|Manter 語る; destacar língua em 日本語.|—|かた.らう, de 語らう, é uma leitura válida e fica na camada complementar.
+読|ler|ドク|よ.む|Manter ドク/よむ como núcleo comum e distinguir as onyomi restritas.|—|トク, de 読本（とくほん）, e トウ, de 読点（とうてん）, ficam como complementares; não são leituras intercambiáveis de qualquer composto.
+書|escrever; escrita|ショ|か.く|Núcleo correto; manter e ampliar brevemente o significado.|—|—
+食|comer; alimento|ショク|た.べる、く.う、く.らう|Conservar leituras comuns de comer, distinguindo usos mais coloquiais de 食う/食らう.|—|ジキ aparece em usos específicos como 断食（だんじき）; preservar como complementar.
+来|vir|ライ|く.る、きた.る、きた.す|Manter くる e os usos estabelecidos 来る（きたる）/来す（きたす）.|—|き e こ são formas flexionadas de くる em 来ます/来ない, não novas leituras básicas a listar sem contexto.
+行|ir; realizar|コウ、ギョウ|い.く、ゆ.く、おこな.う|Acrescentar realizar; conservar as duas onyomi principais e as três kunyomi produtivas.|—|アン existe em 行脚（あんぎゃ）; preservar como complementar.
+午|meio-dia|ゴ|—|Manter 午前/午後 como base; não apresentar うま como leitura cotidiana de meio-dia.|—|うま corresponde ao uso zodiacal do cavalo; preservar como adicional, distinguindo 午 de 馬.
+電|eletricidade|デン|—|Kunyomi comum ausente é legítima; manter a resposta sem inventar preenchimento.|—|—
+毎|cada; todo|マイ|ごと|Manter マイ e incluir ごと, como em 日毎（ひごと） e 毎に（ごとに）.|Política de grafia: ごと é frequentemente escrito em kana; decidir se deve ser leitura principal ou complementar.|Não confundir com a partícula ほど nem aplicar ごと a todo composto com 毎.
+何|o que; qual; quantos|カ|なに、なん|Manter as duas kunyomi e cobrir perguntas de identidade/quantidade.|—|カ aparece em 幾何（きか）, palavra de estudo posterior; なに/なん são as prioridades para o iniciante.
+分|minuto; parte; dividir; entender|ブン、フン、ブ|わ.ける、わ.かれる、わ.かる|Promover de sem nível para N5: minutos e 分かる são fundamentos do iniciante.|—|プン é alteração de フン em contadores; não eliminar a distinção entre 分ける e 分かる.
+多|muito; numeroso|タ|おお.い|Propor N5 pelo uso inicial de 多い em quantidade.|Nível limítrofe N5/N4: proposta pedagógica N5; aprovar antes de mudar a tag.|—
+少|pouco|ショウ|すく.ない、すこ.し|Corrigir すこ.しい para すこ.し; propor N5 para o par 少ない/少し, frequente desde o começo.|Nível limítrofe N5/N4: proposta pedagógica N5.|—
+古|antigo; velho|コ|ふる.い、ふる.す|Propor N5 para o contraste cotidiano 古い/新しい.|—|ふる.す, como em 使い古す, é menos prioritária que ふる.い.
+新|novo|シン|あたら.しい、あら.た、にい|Propor N5 pela utilidade de 新しい e 新聞.|—|にい aparece em certos compostos e nomes, como 新潟; não é leitura livre para qualquer palavra.
+安|barato; tranquilo; seguro|アン|やす.い|Propor N5 por 安い; manter sentidos de tranquilidade/segurança sem confundi-los com o adjetivo barato.|—|やす.らか e やす.んじる são complementares, não prioridades iniciais.
+店|loja|テン|みせ|Propor N5 para o vocabulário inicial de compras e lugares.|—|たな é restrita a usos tradicionais; preservar se houver uma camada ampla de leituras.
+買|comprar|バイ|か.う|Propor N5: verbo cotidiano central, diretamente ligado a compras.|—|—
+駅|estação ferroviária|エキ|—|Propor N5 pelo uso central em deslocamentos; kunyomi comum ausente é legítima.|—|—
+飲|beber|イン|の.む|Propor N5 como par básico de 食べる.|—|の.ます/の.ませる podem ser formas causativas; não multiplicar leituras por flexão verbal.
+道|caminho; rua; via|ドウ、トウ|みち|Propor N5 para みち e orientação espacial; トウ ocorre em 神道.|Nível limítrofe N5/N4: o uso inicial sustenta N5, mas os compostos se expandem nos níveis seguintes.|—
+会|encontrar-se; reunião|カイ、エ|あ.う|Propor N5 por 会う e 会社; manter エ de 会釈 como leitura delimitada.|Nível limítrofe N5/N4: proposta de N5 centrada em 会う/会社.|—
+社|empresa; santuário xintoísta|シャ|やしろ|Propor N5 para completar 会社; preservar やしろ em vez de fingir ausência de kunyomi.|Nível limítrofe N5/N4; やしろ é leitura estabelecida, mas seu vocabulário pode ficar para depois.|—
+言|dizer; palavra|ゲン、ゴン|い.う、こと|Propor N5 por 言う; conservar ゴン e こと.|—|こと ocorre em compostos como 言葉, cuja leitura deve ser registrada como palavra completa.
+立|ficar de pé; erguer|リツ|た.つ、た.てる|Propor N5 para os verbos básicos 立つ/立てる.|Nível limítrofe N5/N4; proposta de N5 pela utilidade dos verbos.|リュウ aparece em 建立（こんりゅう） e fica como complementar.
+目|olho; item; ordem|モク|め、ま|Propor N5 para partes do corpo e o uso ordinal de 目; incluir ま de 目蓋（まぶた）.|—|ボク existe em 面目（めんぼく） e fica como complementar.
+耳|orelha; ouvido|ジ|みみ|Propor N5 para partes básicas do corpo; a simplicidade do uso pesa mais que os compostos técnicos.|Nível limítrofe N5/N4: proposta pedagógica N5; a tag N3 atual parece alta para o uso básico.|—
+手|mão; meio; habilidade|シュ|て、た|Propor N5 pelo uso básico de mão e de 手紙; た aparece em 手綱.|—|上手/下手 têm leituras de palavra que não devem ser decompostas mecanicamente.
+足|pé; perna; ser suficiente|ソク|あし、た.りる、た.る、た.す|Propor N5 pelo sentido corporal e manter a família verbal ligada a suficiência/adição.|Nível limítrofe N5/N4: sentido corporal inicial; verbos podem exigir estudo posterior.|—
+力|força; capacidade|リョク、リキ|ちから|Propor N5 pelo conceito básico de força e pela utilidade de ちから.|Nível limítrofe N5/N4; proposta de currículo, não correção factual obrigatória.|—
+私|eu; particular; privado|シ|わたし、わたくし|Propor N5 por わたし, central desde a apresentação pessoal.|—|わたくし é uma forma mais formal; não deve substituir わたし como prioridade.
+早|cedo; rápido|ソウ、サッ|はや.い、はや.まる、はや.める|Propor N5 pelo uso cotidiano de 早い; サッ aparece em 早速.|Nível limítrofe N5/N4; diferenciar cedo/pronto de velocidade, frequentemente escrita com 速い.|—
+売|vender|バイ|う.る、う.れる|Propor N5 como contraparte de 買う, preservando 売れる.|Nível limítrofe N5/N4; pode permanecer N4 se o núcleo inicial for mais enxuto.|—
+好|gostar; agradável; favorável|コウ|この.む、す.く、この.ましい|Propor N5 pelo uso inicial de 好き/大好き, apesar da tag N3 atual.|Nível limítrofe N5/N4: 好き é básico, mas isso não obriga todos os usos de 好 a serem N5.|好き（すき） precisa aparecer como exemplo; す.く não é intercambiável livremente com 好きです.
+口|boca; abertura|コウ、ク|くち|Propor N5 para uma parte básica do corpo e para entradas/saídas em 入口/出口; ク aparece em 口調.|—|ぐち é vozeamento em compostos, não uma leitura independente a generalizar.

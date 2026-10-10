@@ -3,10 +3,10 @@ import test from 'node:test';
 import { createMeaningChoices, type OnomatopoeiaEntry } from './game.ts';
 
 const entries: OnomatopoeiaEntry[] = [
-  { id: 1, term: 'ドキドキ', meaningPt: 'Coração acelerado.', meaningJa: '胸が高鳴る様子。', categories: ['gijougo'] },
-  { id: 2, term: 'ワンワン', meaningPt: 'Latido de cachorro.', meaningJa: '犬がほえる声。', categories: ['giseigo'] },
-  { id: 3, term: 'ザーザー', meaningPt: 'Som de chuva forte.', meaningJa: '雨が激しく降る音。', categories: ['giongo'] },
-  { id: 4, term: 'キラキラ', meaningPt: 'Brilho cintilante.', meaningJa: '光が輝く様子。', categories: ['gitaigo'] },
+  { id: 1, term: 'ドキドキ', meaningPt: 'Coração acelerado.', meaningEn: 'A racing heartbeat.', meaningJa: '胸が高鳴る様子。', categories: ['gijougo'] },
+  { id: 2, term: 'ワンワン', meaningPt: 'Latido de cachorro.', meaningEn: 'A dog barking.', meaningJa: '犬がほえる声。', categories: ['giseigo'] },
+  { id: 3, term: 'ザーザー', meaningPt: 'Som de chuva forte.', meaningEn: 'Heavy rain.', meaningJa: '雨が激しく降る音。', categories: ['giongo'] },
+  { id: 4, term: 'キラキラ', meaningPt: 'Brilho cintilante.', meaningEn: 'Sparkling light.', meaningJa: '光が輝く様子。', categories: ['gitaigo'] },
 ];
 
 test('o modo fácil cria uma opção correta e dois distratores do banco completo', () => {
@@ -31,4 +31,23 @@ test('o modo fácil exige três definições diferentes', () => {
     () => createMeaningChoices(entries.slice(0, 2), 1, () => 0),
     /pelo menos três definições diferentes/,
   );
+});
+
+test('alternativas não repetem o mesmo significado inglês', () => {
+  const withCollision = [
+    ...entries,
+    { ...entries[3], id: 5, term: 'ピカピカ', meaningPt: 'Algo reluzente.', meaningEn: entries[3].meaningEn },
+  ];
+  const choices = createMeaningChoices(withCollision, 1, () => 0);
+  const english = choices.map((choice) => withCollision.find((entry) => entry.id === choice.id)?.meaningEn);
+  assert.equal(new Set(english).size, 3);
+});
+
+test('a forma com verbo não disputa com a mesma onomatopeia isolada', () => {
+  const related = [
+    ...entries,
+    { ...entries[3], id: 5, term: 'ドキドキする', meaningPt: 'Sentir o coração disparar.', meaningEn: 'Feel your heart race.' },
+  ];
+  const choices = createMeaningChoices(related, 1, () => 0);
+  assert.ok(!choices.some((choice) => choice.id === 5));
 });

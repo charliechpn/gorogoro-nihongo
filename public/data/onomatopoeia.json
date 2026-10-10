@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "count": 189,
   "onomatopoeia": [
     {
@@ -10,7 +10,8 @@
       "categories": [
         "giongo_verb",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Feel your heart race with nerves or excitement."
     },
     {
       "id": 2,
@@ -19,7 +20,8 @@
       "meaningJa": "慌ただしく動き回ったり、大きな音を立てたりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Rush about in a flurry, making a commotion."
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "meaningJa": "物が激しく揺れたり、安定せず音を立てたりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Rattle or shake unsteadily."
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "meaningJa": "家で何もせず、のんびり寝転がって過ごす。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Laze around, lying about at home."
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "meaningJa": "物を非常に硬い状態にする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Make something rock hard."
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "meaningJa": "炭酸などが細かい泡を立てる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Fizz with fine bubbles."
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "meaningJa": "外国語などを流暢に、またはよどみなく話す。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Speak fluently without hesitation."
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "meaningJa": "軽く浮いているように揺れたり、気持ちが落ち着かなかったりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Float lightly or feel ungrounded."
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "meaningJa": "勢いよく精力的に働く。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Work energetically and intensely."
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "meaningJa": "気持ちや考えが晴れず、すっきりしない。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Feel mentally clouded and unsettled."
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@
       "meaningJa": "紙や布などをしわだらけにする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Crumple something into wrinkles."
     },
     {
       "id": 12,
@@ -109,7 +120,8 @@
       "meaningJa": "針で刺されるような細かい痛みや刺激を感じる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Feel repeated tiny pricks or stings."
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "meaningJa": "鋭い刺激を感じたり、緊張して神経が張り詰めたりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Feel a sharp sting or tense nerves."
     },
     {
       "id": 14,
@@ -127,7 +140,8 @@
       "meaningJa": "硬い物を強くこすったり、引っかいたりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Scratch or scrape a hard surface forcefully."
     },
     {
       "id": 15,
@@ -136,7 +150,8 @@
       "meaningJa": "柔らかく毛の多い物に触れて、その感触を楽しむ。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Touch and enjoy something soft and furry."
     },
     {
       "id": 16,
@@ -145,7 +160,8 @@
       "meaningJa": "まとまった物を別々にしたり、細かく分解したりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Scatter or break something into separate pieces."
     },
     {
       "id": 17,
@@ -154,7 +170,8 @@
       "meaningJa": "抵抗や問題がなく、滑らかに進む。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Move forward smoothly without obstacles."
     },
     {
       "id": 18,
@@ -163,7 +180,8 @@
       "meaningJa": "相手に気づかれないよう、何度も少しずつ見る。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Steal repeated quick glances."
     },
     {
       "id": 19,
@@ -172,7 +190,8 @@
       "meaningJa": "目的や行き先がはっきりしないまま歩き回る。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Wander around without a clear destination."
     },
     {
       "id": 20,
@@ -181,7 +200,8 @@
       "meaningJa": "大きな足音を立てて重そうに歩く。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Walk with loud, heavy footsteps."
     },
     {
       "id": 21,
@@ -190,7 +210,8 @@
       "meaningJa": "乾いた感じの明るく大きな声で笑う。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Laugh loudly with a dry, bright sound."
     },
     {
       "id": 22,
@@ -199,7 +220,8 @@
       "meaningJa": "周囲が騒がしくなったり、胸が落ち着かなくなったりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Grow noisy or feel inwardly restless."
     },
     {
       "id": 23,
@@ -208,7 +230,8 @@
       "meaningJa": "大勢の人が一斉に話して騒がしくなる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Make a hubbub as many people talk at once."
     },
     {
       "id": 24,
@@ -217,7 +240,8 @@
       "meaningJa": "手や物を左右に繰り返し振る。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Shake or wave something back and forth."
     },
     {
       "id": 25,
@@ -226,7 +250,8 @@
       "meaningJa": "強い日差しで焼けるように感じたり、焦れて落ち着かなくなったりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Feel scorched by the sun or simmer with impatience."
     },
     {
       "id": 26,
@@ -235,7 +260,8 @@
       "meaningJa": "汗や液体が途切れずゆっくり流れ続ける。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Trickle down continuously in a slow stream."
     },
     {
       "id": 27,
@@ -244,7 +270,8 @@
       "meaningJa": "軽く勢いよく何度も跳ぶ。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Hop lightly again and again."
     },
     {
       "id": 28,
@@ -253,7 +280,8 @@
       "meaningJa": "口いっぱいに入れて、勢いよく食べる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Munch eagerly with a mouthful of food."
     },
     {
       "id": 29,
@@ -262,7 +290,8 @@
       "meaningJa": "食べ物を次々と勢いよく食べる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Gobble food rapidly, one bite after another."
     },
     {
       "id": 30,
@@ -271,7 +300,8 @@
       "meaningJa": "厚みがあって、ふくらんだ柔らかい状態になる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Puff up into a thick, soft mass."
     },
     {
       "id": 31,
@@ -280,7 +310,8 @@
       "meaningJa": "泡が次々と出る状態で煮込む。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Simmer vigorously with steady bubbling."
     },
     {
       "id": 32,
@@ -289,7 +320,8 @@
       "meaningJa": "液体が一滴ずつ続けて落ちる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Drip repeatedly, one drop at a time."
     },
     {
       "id": 33,
@@ -298,7 +330,8 @@
       "meaningJa": "物を乱雑に動かして、硬い物同士がぶつかる音を立てる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Clatter as hard objects are moved roughly."
     },
     {
       "id": 34,
@@ -307,7 +340,8 @@
       "meaningJa": "うれしいことを期待して、心が弾む。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Feel buoyant with happy anticipation."
     },
     {
       "id": 35,
@@ -316,7 +350,8 @@
       "meaningJa": "小さく軽い動きで何度も跳ねる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Make repeated small, jaunty hops."
     },
     {
       "id": 36,
@@ -325,7 +360,8 @@
       "meaningJa": "強い力で繰り返し打ったり叩いたりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Strike or pound repeatedly with force."
     },
     {
       "id": 37,
@@ -334,7 +370,8 @@
       "meaningJa": "不満を繰り返し口にして文句を言う。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Grumble and complain repeatedly."
     },
     {
       "id": 38,
@@ -343,7 +380,8 @@
       "meaningJa": "細い口やストローなどで繰り返し吸う。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Suck repeatedly through a small opening or straw."
     },
     {
       "id": 39,
@@ -352,7 +390,8 @@
       "meaningJa": "軽くリズミカルに何度も叩く。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Pat lightly in a steady rhythm."
     },
     {
       "id": 40,
@@ -361,7 +400,8 @@
       "meaningJa": "細かい光を美しく反射して輝く。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Sparkle with many small, beautiful flashes."
     },
     {
       "id": 41,
@@ -370,7 +410,8 @@
       "meaningJa": "勢いを保ったまま、次々と前へ進む。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Keep advancing rapidly with momentum."
     },
     {
       "id": 42,
@@ -379,7 +420,8 @@
       "meaningJa": "硬い物が小刻みに触れ合って軽い音を立てる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Make a light, rapid rattling sound."
     },
     {
       "id": 43,
@@ -388,7 +430,8 @@
       "meaningJa": "中身が少なくなり、隙間の多い状態になる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Become sparse and full of gaps."
     },
     {
       "id": 44,
@@ -397,7 +440,8 @@
       "meaningJa": "明るい光を繰り返し放ったり反射したりする。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Shine or flash brightly over and over."
     },
     {
       "id": 45,
@@ -406,7 +450,8 @@
       "meaningJa": "物が焼けたり細かく触れ合ったりして、かすかな音を立てる。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Make a faint sizzling or crackling sound."
     },
     {
       "id": 46,
@@ -415,7 +460,8 @@
       "meaningJa": "うれしそうな表情で、にこやかに笑う。",
       "categories": [
         "giongo_verb"
-      ]
+      ],
+      "meaningEn": "Smile warmly and cheerfully."
     },
     {
       "id": 47,
@@ -428,7 +474,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A rumbling or rolling sound, like thunder."
     },
     {
       "id": 48,
@@ -439,7 +486,8 @@
         "giseijougo",
         "gijougo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "A noisy flurry of repeated movement."
     },
     {
       "id": 49,
@@ -450,7 +498,8 @@
         "giseijougo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "The rushing sound of heavy rain or water."
     },
     {
       "id": 50,
@@ -462,7 +511,8 @@
         "gijougo",
         "gitaigo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "A racing heartbeat from nerves or excitement."
     },
     {
       "id": 51,
@@ -474,7 +524,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Delicate, repeated sparkles, like starlight."
     },
     {
       "id": 52,
@@ -487,7 +538,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Brightly shining or gleaming clean and new."
     },
     {
       "id": 53,
@@ -499,7 +551,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Loud rattling from hard objects shaking."
     },
     {
       "id": 54,
@@ -509,7 +562,8 @@
       "categories": [
         "giseijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Restless, rustling movement all around."
     },
     {
       "id": 55,
@@ -522,7 +576,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Lightly floating, or soft and fluffy to the touch."
     },
     {
       "id": 56,
@@ -534,7 +589,8 @@
         "gijougo",
         "gitaigo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Repeated light, lively hops."
     },
     {
       "id": 57,
@@ -545,7 +601,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "A dry crunch, or a state of irritation."
     },
     {
       "id": 58,
@@ -554,7 +611,8 @@
       "meaningJa": "多くの物が入り混じり、乱雑で整理されていない様子。",
       "categories": [
         "giseijougo"
-      ]
+      ],
+      "meaningEn": "A jumble of mixed-up, disorganized things."
     },
     {
       "id": 59,
@@ -567,7 +625,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A hazy, unresolved feeling or a clouded scene."
     },
     {
       "id": 60,
@@ -578,7 +637,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Badly worn and falling apart; utterly exhausted."
     },
     {
       "id": 61,
@@ -590,7 +650,8 @@
         "gijougo",
         "gitaigo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Repeated heavy thuds, or rapid, forceful progress."
     },
     {
       "id": 62,
@@ -600,7 +661,8 @@
       "categories": [
         "giseijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Walking steadily along without rushing."
     },
     {
       "id": 63,
@@ -613,7 +675,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A loud crunch or tear; vigorous activity."
     },
     {
       "id": 64,
@@ -623,7 +686,8 @@
       "categories": [
         "giseijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Speaking, reading, or writing smoothly without pauses."
     },
     {
       "id": 65,
@@ -636,7 +700,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Scorching heat, or mounting impatience."
     },
     {
       "id": 66,
@@ -646,7 +711,8 @@
       "categories": [
         "giseijougo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Intermittent flickers or repeated quick glances."
     },
     {
       "id": 67,
@@ -657,7 +723,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "A heavy, gloomy mood or atmosphere."
     },
     {
       "id": 68,
@@ -668,7 +735,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Swaying unsteadily, dizzy, or wandering aimlessly."
     },
     {
       "id": 69,
@@ -679,7 +747,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Unpleasant dampness or a gloomy atmosphere."
     },
     {
       "id": 70,
@@ -688,7 +757,8 @@
       "meaningJa": "物が続けてはじけたり、強く打ち上がったりする音。",
       "categories": [
         "giseijougo"
-      ]
+      ],
+      "meaningEn": "Repeated loud pops or bursts."
     },
     {
       "id": 71,
@@ -698,7 +768,8 @@
       "categories": [
         "giseijougo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Repeated forceful bangs, or doing something vigorously."
     },
     {
       "id": 72,
@@ -709,7 +780,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Quiet sobbing, or a persistent mild stomachache."
     },
     {
       "id": 73,
@@ -720,7 +792,8 @@
         "giseijougo",
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Completely worn out from exertion."
     },
     {
       "id": 74,
@@ -730,7 +803,8 @@
       "categories": [
         "giseijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Rigidly hard, or stiff with tension."
     },
     {
       "id": 75,
@@ -741,7 +815,8 @@
         "giseijougo",
         "gitaigo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Noisy clattering as hard objects collide."
     },
     {
       "id": 76,
@@ -751,7 +826,8 @@
       "categories": [
         "giseijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Repeated supple, twisting movements."
     },
     {
       "id": 77,
@@ -760,7 +836,8 @@
       "meaningJa": "思いどおりにならず、焦ったり腹を立てたりする様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Irritation and restless frustration."
     },
     {
       "id": 78,
@@ -770,7 +847,8 @@
       "categories": [
         "gijougo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Eager excitement about something to come."
     },
     {
       "id": 79,
@@ -780,7 +858,8 @@
       "categories": [
         "gijougo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Buoyant happiness and anticipation."
     },
     {
       "id": 80,
@@ -789,7 +868,8 @@
       "meaningJa": "期待が外れて、気力を失い落ち込む様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Disappointment after hopes are dashed."
     },
     {
       "id": 81,
@@ -800,7 +880,8 @@
         "gijougo",
         "gitaigo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Anxious suspense while watching something risky."
     },
     {
       "id": 82,
@@ -809,7 +890,8 @@
       "meaningJa": "寒さや恐怖、強い興奮で背筋に震えが走る様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Shivers from cold, fear, or strong excitement."
     },
     {
       "id": 83,
@@ -818,7 +900,8 @@
       "meaningJa": "心配がなくなり、短く息をついて安心する様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "A brief sigh of relief."
     },
     {
       "id": 84,
@@ -827,7 +910,8 @@
       "meaningJa": "弱々しく、いつまでも泣き続ける様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Weak, prolonged weeping."
     },
     {
       "id": 85,
@@ -837,7 +921,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Being absentminded or mentally foggy."
     },
     {
       "id": 86,
@@ -846,7 +931,8 @@
       "meaningJa": "恐怖や寒さ、疲れなどで体や膝が大きく震える様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Strong shaking of the body or knees from fear, cold, or fatigue."
     },
     {
       "id": 87,
@@ -856,7 +942,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Just barely within a limit, with no room to spare."
     },
     {
       "id": 88,
@@ -866,7 +953,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "A queasy stomach or rising anger."
     },
     {
       "id": 89,
@@ -876,7 +964,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Smiling happily and continuously."
     },
     {
       "id": 90,
@@ -886,7 +975,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "A knowing or smug, silent grin."
     },
     {
       "id": 91,
@@ -895,7 +985,8 @@
       "meaningJa": "余計なものや不快感がなくなり、爽快で明快な様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Feeling refreshed, clear, and free of discomfort."
     },
     {
       "id": 92,
@@ -904,7 +995,8 @@
       "meaningJa": "人に知られないよう、隠れて静かに行動する様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Acting quietly and furtively to avoid notice."
     },
     {
       "id": 93,
@@ -913,7 +1005,8 @@
       "meaningJa": "風などで葉や髪が軽く触れ合って揺れる様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Soft rustling as leaves or hair brush together."
     },
     {
       "id": 94,
@@ -922,7 +1015,8 @@
       "meaningJa": "怒りや暑さで、頭や体が熱くなる様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Burning up with anger or heat."
     },
     {
       "id": 95,
@@ -933,7 +1027,8 @@
         "gijougo",
         "gitaigo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "A sharp stinging feeling or a tense atmosphere."
     },
     {
       "id": 96,
@@ -942,7 +1037,8 @@
       "meaningJa": "相手の勢いに圧倒され、ひるんで対応できない様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Flustered and at a loss under someone's pressure."
     },
     {
       "id": 97,
@@ -951,7 +1047,8 @@
       "meaningJa": "曖昧さがなく、明確で分かりやすい様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Clear and unambiguous, as in a statement or answer."
     },
     {
       "id": 98,
@@ -960,7 +1057,8 @@
       "meaningJa": "うれしい予定などのため、心を弾ませて急いで行動する様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Hurrying eagerly toward something pleasant."
     },
     {
       "id": 99,
@@ -969,7 +1067,8 @@
       "meaningJa": "柔らかく、弾力があって粘りのある食感や感触。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Soft, springy, and pleasantly chewy."
     },
     {
       "id": 100,
@@ -979,7 +1078,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Constantly trembling with fear or apprehension."
     },
     {
       "id": 101,
@@ -988,7 +1088,8 @@
       "meaningJa": "かゆみなどで落ち着かない様子。また、何かをしたくてじっとできない様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "A nagging itch or restless urge to do something."
     },
     {
       "id": 102,
@@ -1000,7 +1101,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Pacing or wandering around without a plan."
     },
     {
       "id": 103,
@@ -1010,7 +1112,8 @@
       "categories": [
         "gijougo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Flustered and unsure what to do."
     },
     {
       "id": 104,
@@ -1019,7 +1122,8 @@
       "meaningJa": "食欲旺盛にたくさん食べる様子。また、力や意欲がわく様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "Eating heartily, or brimming with energy."
     },
     {
       "id": 105,
@@ -1030,7 +1134,8 @@
         "gijougo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "The noisy chatter of many people at once."
     },
     {
       "id": 106,
@@ -1040,7 +1145,8 @@
       "categories": [
         "gijougo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "A slow continuous trickle, or dragging on aimlessly."
     },
     {
       "id": 107,
@@ -1049,7 +1155,8 @@
       "meaningJa": "秩序がなく、ひどく乱れたり壊れたりしている様子。",
       "categories": [
         "gijougo"
-      ]
+      ],
+      "meaningEn": "In complete disorder or badly wrecked."
     },
     {
       "id": 108,
@@ -1059,7 +1166,8 @@
       "categories": [
         "gijougo",
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Packed or squeezed tightly with no space left."
     },
     {
       "id": 109,
@@ -1070,7 +1178,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Scattered light drops or the rustle of flipping pages."
     },
     {
       "id": 110,
@@ -1079,7 +1188,8 @@
       "meaningJa": "疲れ切って力が抜けた様子、または物事が締まりなく乱れた様子。",
       "categories": [
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Limp with exhaustion, or dragging along without order."
     },
     {
       "id": 111,
@@ -1088,7 +1198,8 @@
       "meaningJa": "扉などを軽く規則的に叩く音。また、物事が順調に進む様子。",
       "categories": [
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Light, regular taps, or steady progress."
     },
     {
       "id": 112,
@@ -1098,7 +1209,8 @@
       "categories": [
         "gitaigo",
         "giongo"
-      ]
+      ],
+      "meaningEn": "Sticky and clinging, or overly affectionate."
     },
     {
       "id": 113,
@@ -1109,7 +1221,8 @@
         "gitaigo",
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Scattered, separate, or broken into pieces."
     },
     {
       "id": 114,
@@ -1118,7 +1231,8 @@
       "meaningJa": "動作や進み方が非常に遅い様子。",
       "categories": [
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Moving at a sluggish pace."
     },
     {
       "id": 115,
@@ -1127,7 +1241,8 @@
       "meaningJa": "乾いて滑らかな手触り。また、水などが軽やかに流れる音。",
       "categories": [
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Dry and silky-smooth, or water flowing lightly."
     },
     {
       "id": 116,
@@ -1137,7 +1252,8 @@
       "categories": [
         "gitaigo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "An electric jolt or the sound of a forceful tear."
     },
     {
       "id": 117,
@@ -1146,7 +1262,8 @@
       "meaningJa": "緊張感なく怠けて過ごす様子。また、液体が絶えず流れる様子。",
       "categories": [
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Idling lazily, or liquid flowing without stopping."
     },
     {
       "id": 118,
@@ -1155,7 +1272,8 @@
       "meaningJa": "涙や小さな粒が次々とこぼれ落ちる様子。",
       "categories": [
         "gitaigo"
-      ]
+      ],
+      "meaningEn": "Tears or small bits falling one after another."
     },
     {
       "id": 119,
@@ -1165,7 +1283,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Repeated loud dog barks."
     },
     {
       "id": 120,
@@ -1175,7 +1294,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Repeated cat meows."
     },
     {
       "id": 121,
@@ -1184,7 +1304,8 @@
       "meaningJa": "毛などが豊かで、柔らかくふかふかしている感触。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Soft, thick, fluffy fur to the touch."
     },
     {
       "id": 122,
@@ -1193,7 +1314,8 @@
       "meaningJa": "針などで繰り返し刺されるような細かい痛みや刺激。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Repeated little needlelike stings."
     },
     {
       "id": 123,
@@ -1203,7 +1325,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Repeated claps or small crackling sparks."
     },
     {
       "id": 124,
@@ -1213,7 +1336,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Crumpled and covered in wrinkles."
     },
     {
       "id": 125,
@@ -1222,7 +1346,8 @@
       "meaningJa": "乾いた硬い物が軽く触れ合う音。また、水分がなく乾き切った様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "A light dry rattle, or completely dried out."
     },
     {
       "id": 126,
@@ -1232,7 +1357,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A hard, uneven, knobby surface."
     },
     {
       "id": 127,
@@ -1241,7 +1367,8 @@
       "meaningJa": "笛や機械が高い音を繰り返し出す様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Repeated high-pitched beeps or whistles."
     },
     {
       "id": 128,
@@ -1251,7 +1378,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Drops of liquid falling one after another."
     },
     {
       "id": 129,
@@ -1260,7 +1388,8 @@
       "meaningJa": "重い物がぶつかったり落ちたりする大きな音。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "A single loud thud from a heavy impact."
     },
     {
       "id": 130,
@@ -1269,7 +1398,8 @@
       "meaningJa": "硬い物を強くかいたり削ったりする音。また、非常に痩せた様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Harsh scraping or scratching; extremely skinny."
     },
     {
       "id": 131,
@@ -1278,7 +1408,8 @@
       "meaningJa": "手や物を左右に繰り返し振る様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Repeatedly waving or shaking from side to side."
     },
     {
       "id": 132,
@@ -1287,7 +1418,8 @@
       "meaningJa": "炭酸などの細かい泡が次々とはじける音や感触。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "The fine fizz of bursting bubbles."
     },
     {
       "id": 133,
@@ -1296,7 +1428,8 @@
       "meaningJa": "水中や物事の中を、妨げなく軽快に進む様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Moving lightly and smoothly without resistance."
     },
     {
       "id": 134,
@@ -1305,7 +1438,8 @@
       "meaningJa": "外国語を流暢に話す様子。また、薄い物が軽く動く様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Fluent speech, or thin material fluttering."
     },
     {
       "id": 135,
@@ -1314,7 +1448,8 @@
       "meaningJa": "中身が少なく、隙間が多い様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Sparse, hollow, and full of empty spaces."
     },
     {
       "id": 136,
@@ -1323,7 +1458,8 @@
       "meaningJa": "大きく重い足音を立てて慌ただしく動く様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Loud, heavy footsteps made in a rush."
     },
     {
       "id": 137,
@@ -1332,7 +1468,8 @@
       "meaningJa": "勢いよく食べる様子。また、心臓が激しく打つ様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Gobbling food, or a heart pounding hard."
     },
     {
       "id": 138,
@@ -1341,7 +1478,8 @@
       "meaningJa": "元気がよく、生き生きしている様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Full of life and energy."
     },
     {
       "id": 139,
@@ -1350,7 +1488,8 @@
       "meaningJa": "厚くふくらみ、柔らかく盛り上がっている様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Thick, soft, and puffed up."
     },
     {
       "id": 140,
@@ -1359,7 +1498,8 @@
       "meaningJa": "煮物などが激しく泡を立てて煮える音や様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Vigorous bubbling as food simmers."
     },
     {
       "id": 141,
@@ -1368,7 +1508,8 @@
       "meaningJa": "多くの人や物が立てる小さく騒がしい音。また、不安で落ち着かない様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Restless murmuring or an uneasy stir."
     },
     {
       "id": 142,
@@ -1377,7 +1518,8 @@
       "meaningJa": "表面が非常に滑らかで、滑りやすい様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Very smooth and slippery to the touch."
     },
     {
       "id": 143,
@@ -1387,7 +1529,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A tight squeak, or being painfully short of room."
     },
     {
       "id": 144,
@@ -1396,7 +1539,8 @@
       "meaningJa": "硬い物を軽く繰り返し叩く音。また、地道に努力を続ける様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Steady, persistent effort, or light repeated taps."
     },
     {
       "id": 145,
@@ -1406,7 +1550,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A mouse's squeak or the sound of sucking liquid."
     },
     {
       "id": 146,
@@ -1415,7 +1560,8 @@
       "meaningJa": "食べ物を口いっぱいに入れ、勢いよく食べる様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Munching heartily with a full mouth."
     },
     {
       "id": 147,
@@ -1424,7 +1570,8 @@
       "meaningJa": "先が鋭くとがった様子。また、冷たくよそよそしい態度。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Pointed and sharp, or cold and aloof."
     },
     {
       "id": 148,
@@ -1433,7 +1580,8 @@
       "meaningJa": "粘り気が強く、物にまとわりつく様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Thick, sticky, and viscous."
     },
     {
       "id": 149,
@@ -1443,7 +1591,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Light repeated pats or things popping out."
     },
     {
       "id": 150,
@@ -1452,7 +1601,8 @@
       "meaningJa": "物が大きくゆっくり左右に揺れ続ける様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Swaying slowly and gently from side to side."
     },
     {
       "id": 151,
@@ -1461,7 +1611,8 @@
       "meaningJa": "小さな物や動物が軽く何度も跳ねる様子。",
       "categories": [
         "giongo"
-      ]
+      ],
+      "meaningEn": "Small, playful hops made over and over."
     },
     {
       "id": 152,
@@ -1471,7 +1622,8 @@
       "categories": [
         "giongo",
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A pig's grunt, a horn's honk, or repeated complaints."
     },
     {
       "id": 153,
@@ -1480,7 +1632,8 @@
       "meaningJa": "牛が鳴く声。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A cow's moo."
     },
     {
       "id": 154,
@@ -1489,7 +1642,8 @@
       "meaningJa": "雄鶏が朝などに鳴く声。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A rooster's crow."
     },
     {
       "id": 155,
@@ -1498,7 +1652,8 @@
       "meaningJa": "ひよこなどの小鳥が鳴く高く弱い声。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "The faint, high-pitched chirps of a chick."
     },
     {
       "id": 156,
@@ -1507,7 +1662,8 @@
       "meaningJa": "ライオンなどの大型動物がほえる声。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A lion's roar."
     },
     {
       "id": 157,
@@ -1516,7 +1672,8 @@
       "meaningJa": "馬が高い声でいななく声。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A horse's neigh."
     },
     {
       "id": 158,
@@ -1525,7 +1682,8 @@
       "meaningJa": "からすが鳴く声。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A crow's caw."
     },
     {
       "id": 159,
@@ -1534,7 +1692,8 @@
       "meaningJa": "口の中に物を入れたまま、はっきりしない声で話す様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Muffled, unclear speech with a full mouth."
     },
     {
       "id": 160,
@@ -1543,7 +1702,8 @@
       "meaningJa": "魚などが元気よく跳ねる様子。また、若く生き生きした様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A fish flopping energetically, or youthful vitality."
     },
     {
       "id": 161,
@@ -1552,7 +1712,8 @@
       "meaningJa": "爆発や大きな衝突で生じる非常に大きな音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A huge boom from an explosion or collision."
     },
     {
       "id": 162,
@@ -1561,7 +1722,8 @@
       "meaningJa": "蒸気や空気が細い所から勢いよく出る音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A continuous hiss of escaping steam or air."
     },
     {
       "id": 163,
@@ -1570,7 +1732,8 @@
       "meaningJa": "時計の針が規則正しく動く音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "The regular ticking of a clock."
     },
     {
       "id": 164,
@@ -1579,7 +1742,8 @@
       "meaningJa": "硬い物同士が小さく繰り返しぶつかる音。また、非常に硬い様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Small hard clicks repeated, or a rock-hard state."
     },
     {
       "id": 165,
@@ -1588,7 +1752,8 @@
       "meaningJa": "扉などが勢いよく閉まる大きな音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A door slamming shut with a bang."
     },
     {
       "id": 166,
@@ -1597,7 +1762,8 @@
       "meaningJa": "扉や機械などがきしむ高く不快な音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A high, unpleasant creak from a door or machine."
     },
     {
       "id": 167,
@@ -1606,7 +1772,8 @@
       "meaningJa": "物が焼けたり、細い物同士が触れたりして立つ小さな音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A faint sizzling or crackling from heat or friction."
     },
     {
       "id": 168,
@@ -1615,7 +1782,8 @@
       "meaningJa": "蜂や機械などが回転して立てる低い連続音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A low continuous buzz from wings or machinery."
     },
     {
       "id": 169,
@@ -1624,7 +1792,8 @@
       "meaningJa": "人や小動物が軽く素早く走る足音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Light, rapid running footsteps."
     },
     {
       "id": 170,
@@ -1633,7 +1802,8 @@
       "meaningJa": "声を抑えて小さく笑う音や様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Quiet, stifled giggles."
     },
     {
       "id": 171,
@@ -1642,7 +1812,8 @@
       "meaningJa": "小さく不明瞭な声で話す様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Low, indistinct muttering."
     },
     {
       "id": 172,
@@ -1651,7 +1822,8 @@
       "meaningJa": "寝息や、狭い所を風が通る静かな音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Quiet breathing or a soft draft through a gap."
     },
     {
       "id": 173,
@@ -1660,7 +1832,8 @@
       "meaningJa": "はさみで続けて物を切る音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Repeated snips of scissors."
     },
     {
       "id": 174,
@@ -1669,7 +1842,8 @@
       "meaningJa": "小さな物が次々と切れたり、はじけたりする音や様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A series of tiny snaps or pops."
     },
     {
       "id": 175,
@@ -1678,7 +1852,8 @@
       "meaningJa": "せみや電気機器などが出す連続した音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A cicada's drone or an electrical buzz."
     },
     {
       "id": 176,
@@ -1687,7 +1862,8 @@
       "meaningJa": "顔や目を動かして、落ち着きなく周囲を見回す様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Looking around repeatedly and restlessly."
     },
     {
       "id": 177,
@@ -1696,7 +1872,8 @@
       "meaningJa": "玄関の呼び鈴などが鳴る音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "The chime of a doorbell."
     },
     {
       "id": 178,
@@ -1705,7 +1882,8 @@
       "meaningJa": "勢いよく、目に見えて進んだり成長したりする様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Rapid, noticeable progress or growth."
     },
     {
       "id": 179,
@@ -1714,7 +1892,8 @@
       "meaningJa": "小さく丸い物が軽く転がる音や様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A small round object rolling lightly."
     },
     {
       "id": 180,
@@ -1723,7 +1902,8 @@
       "meaningJa": "金属など硬い物が激しくぶつかり合う騒がしい音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Loud metallic clattering from hard objects colliding."
     },
     {
       "id": 181,
@@ -1732,7 +1912,8 @@
       "meaningJa": "車や飛行機などが高速で進むことを表す音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A whooshing zoom as a vehicle speeds past."
     },
     {
       "id": 182,
@@ -1741,7 +1922,8 @@
       "meaningJa": "やけどや擦り傷などが、焼けるように痛む様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A mild burning sting from a scrape or burn."
     },
     {
       "id": 183,
@@ -1750,7 +1932,8 @@
       "meaningJa": "物を強くこすったり締めつけたりするときの高い音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "High squeaks from rubbing or tightening something."
     },
     {
       "id": 184,
@@ -1759,7 +1942,8 @@
       "meaningJa": "硬い物が大きく転がったり崩れたりする音。また、声がかれた様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Loud clattering or a hoarse, rattling voice."
     },
     {
       "id": 185,
@@ -1768,7 +1952,8 @@
       "meaningJa": "人や物が非常に速く連続して進む大きな音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "A loud, rapid succession of running steps."
     },
     {
       "id": 186,
@@ -1777,7 +1962,8 @@
       "meaningJa": "物が力を受けてきしむ音。また、能力が急速に伸びる様子。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Straining creaks, or skills improving rapidly."
     },
     {
       "id": 187,
@@ -1786,7 +1972,8 @@
       "meaningJa": "水や空気が大きな泡となって続けて出る音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Deep, continuous gurgling of water or air."
     },
     {
       "id": 188,
@@ -1795,7 +1982,8 @@
       "meaningJa": "小さな物を軽く叩く音や、泡が次々と出る音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Small, light knocks or bubbles popping up."
     },
     {
       "id": 189,
@@ -1804,7 +1992,8 @@
       "meaningJa": "動作を手早く次々と行う様子。また、軽くはたく音。",
       "categories": [
         "giseigo"
-      ]
+      ],
+      "meaningEn": "Quick successive actions or light, brisk pats."
     }
   ]
 }

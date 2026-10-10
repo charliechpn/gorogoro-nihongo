@@ -4,6 +4,7 @@ export type KanjiRecord = {
   id: number;
   kanji: string;
   meaning: string;
+  meaningEn: string | null;
   onyomi: string | null;
   kunyomi: string | null;
   grade: number;

@@ -2,6 +2,7 @@ export type OnomatopoeiaEntry = {
   id: number;
   term: string;
   meaningPt: string;
+  meaningEn: string;
   meaningJa: string;
   categories: string[];
 };
@@ -34,13 +35,18 @@ export function createMeaningChoices(
   const current = entries.find((entry) => entry.id === currentId);
   if (!current) throw new Error(`Onomatopeia ${currentId} não encontrada.`);
 
-  const seenMeanings = new Set([current.meaningPt]);
+  const seenPortuguese = new Set([current.meaningPt]);
+  const seenEnglish = new Set([current.meaningEn]);
+  const selectedTerms = [current.term];
   const distractors = shuffled(
     entries.filter((entry) => entry.id !== currentId),
     random,
   ).filter((entry) => {
-    if (seenMeanings.has(entry.meaningPt)) return false;
-    seenMeanings.add(entry.meaningPt);
+    if (seenPortuguese.has(entry.meaningPt) || seenEnglish.has(entry.meaningEn)
+      || selectedTerms.some((term) => term.startsWith(entry.term) || entry.term.startsWith(term))) return false;
+    seenPortuguese.add(entry.meaningPt);
+    seenEnglish.add(entry.meaningEn);
+    selectedTerms.push(entry.term);
     return true;
   });
 

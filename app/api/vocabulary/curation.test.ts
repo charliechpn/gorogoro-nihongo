@@ -13,6 +13,21 @@ type CuratedEntry = [
 const n5Curation = JSON.parse(
   fs.readFileSync('content/vocabulary/n5.pt.json', 'utf8'),
 ) as { level: string; entries: CuratedEntry[] };
+const n5English = JSON.parse(
+  fs.readFileSync('content/vocabulary/n5.en.json', 'utf8'),
+) as { level: string; entries: [number, string, string[]][] };
+const n4English = JSON.parse(
+  fs.readFileSync('content/vocabulary/n4.en.json', 'utf8'),
+) as { level: string; entries: [number, string, string[]][] };
+const n3English = JSON.parse(
+  fs.readFileSync('content/vocabulary/n3.en.json', 'utf8'),
+) as { level: string; entries: [number, string, string[]][] };
+const n2English = JSON.parse(
+  fs.readFileSync('content/vocabulary/n2.en.json', 'utf8'),
+) as { level: string; entries: [number, string, string[]][] };
+const n1English = JSON.parse(
+  fs.readFileSync('content/vocabulary/n1.en.json', 'utf8'),
+) as { level: string; entries: [number, string, string[]][] };
 const n4Curation = JSON.parse(
   fs.readFileSync('content/vocabulary/n4.pt.json', 'utf8'),
 ) as { level: string; entries: CuratedEntry[] };
@@ -70,9 +85,49 @@ test('a curadoria cobre exatamente as 459 entradas N5', () => {
   assertCurationIntegrity(n5Curation, rangeIds(1, 459));
 });
 
+test('as pistas inglesas N5 cobrem a fonte sem ambiguidades ou lacunas', () => {
+  assert.equal(n5English.level, 'N5');
+  assert.deepEqual(
+    n5English.entries.map(([id]) => id),
+    n5Curation.entries.map(([id]) => id),
+  );
+  const prompts = n5English.entries.map(([, prompt]) => prompt.toLocaleLowerCase('en-US').trim());
+  assert.equal(new Set(prompts).size, prompts.length);
+  for (const [id, prompt, meanings] of n5English.entries) {
+    assert.ok(prompt.trim(), `empty English prompt for ${id}`);
+    assert.ok(meanings.length > 0, `empty English meanings for ${id}`);
+    assert.equal(
+      new Set(meanings.map((meaning) => meaning.toLocaleLowerCase('en-US').trim())).size,
+      meanings.length,
+      `duplicate English meaning for ${id}`,
+    );
+    assert.ok(meanings.every((meaning) => meaning.trim()), `blank English meaning for ${id}`);
+  }
+});
+
 test('a curadoria cobre exatamente as 432 entradas N4', () => {
   assert.equal(n4Curation.level, 'N4');
   assertCurationIntegrity(n4Curation, rangeIds(460, 891));
+});
+
+test('as pistas inglesas N4 cobrem a fonte sem ambiguidades ou lacunas', () => {
+  assert.equal(n4English.level, 'N4');
+  assert.deepEqual(
+    n4English.entries.map(([id]) => id),
+    n4Curation.entries.map(([id]) => id),
+  );
+  const prompts = n4English.entries.map(([, prompt]) => prompt.toLocaleLowerCase('en-US').trim());
+  assert.equal(new Set(prompts).size, prompts.length);
+  for (const [id, prompt, meanings] of n4English.entries) {
+    assert.ok(prompt.trim(), `empty English prompt for ${id}`);
+    assert.ok(meanings.length > 0, `empty English meanings for ${id}`);
+    assert.equal(
+      new Set(meanings.map((meaning) => meaning.toLocaleLowerCase('en-US').trim())).size,
+      meanings.length,
+      `duplicate English meaning for ${id}`,
+    );
+    assert.ok(meanings.every((meaning) => meaning.trim()), `blank English meaning for ${id}`);
+  }
 });
 
 test('a curadoria cobre exatamente as 1.304 entradas únicas N3', () => {
@@ -84,11 +139,51 @@ test('a curadoria cobre exatamente as 1.304 entradas únicas N3', () => {
   ]));
 });
 
+test('as pistas inglesas N3 cobrem a fonte sem ambiguidades ou lacunas', () => {
+  assert.equal(n3English.level, 'N3');
+  assert.deepEqual(
+    n3English.entries.map(([id]) => id),
+    n3Curation.entries.map(([id]) => id),
+  );
+  const prompts = n3English.entries.map(([, prompt]) => prompt.toLocaleLowerCase('en-US').trim());
+  assert.equal(new Set(prompts).size, prompts.length);
+  for (const [id, prompt, meanings] of n3English.entries) {
+    assert.ok(prompt.trim(), `empty English prompt for ${id}`);
+    assert.ok(meanings.length > 0, `empty English meanings for ${id}`);
+    assert.equal(
+      new Set(meanings.map((meaning) => meaning.toLocaleLowerCase('en-US').trim())).size,
+      meanings.length,
+      `duplicate English meaning for ${id}`,
+    );
+    assert.ok(meanings.every((meaning) => meaning.trim()), `blank English meaning for ${id}`);
+  }
+});
+
 test('a curadoria cobre exatamente as 1.201 entradas únicas N2', () => {
   assert.equal(n2Curation.level, 'N2');
   assertCurationIntegrity(n2Curation, rangeIds(2224, 3434, [
     2523, 2530, 2555, 2602, 2603, 2604, 2983, 3179, 3245, 3326,
   ]));
+});
+
+test('as pistas inglesas N2 cobrem a fonte sem ambiguidades ou lacunas', () => {
+  assert.equal(n2English.level, 'N2');
+  assert.deepEqual(
+    n2English.entries.map(([id]) => id),
+    n2Curation.entries.map(([id]) => id),
+  );
+  const prompts = n2English.entries.map(([, prompt]) => prompt.toLocaleLowerCase('en-US').trim());
+  assert.equal(new Set(prompts).size, prompts.length);
+  for (const [id, prompt, meanings] of n2English.entries) {
+    assert.ok(prompt.trim(), `empty English prompt for ${id}`);
+    assert.ok(meanings.length > 0, `empty English meanings for ${id}`);
+    assert.equal(
+      new Set(meanings.map((meaning) => meaning.toLocaleLowerCase('en-US').trim())).size,
+      meanings.length,
+      `duplicate English meaning for ${id}`,
+    );
+    assert.ok(meanings.every((meaning) => meaning.trim()), `blank English meaning for ${id}`);
+  }
 });
 
 test('a curadoria cobre exatamente as 2.552 entradas únicas N1', () => {
@@ -99,6 +194,26 @@ test('a curadoria cobre exatamente as 2.552 entradas únicas N1', () => {
     5029, 5058, 5083, 5102, 5157, 5199, 5315, 5342, 5418, 5440, 5487, 5590,
     5592, 5620, 5822, 5931, 5935, 5952, 6018,
   ]));
+});
+
+test('as pistas inglesas N1 cobrem a fonte sem ambiguidades ou lacunas', () => {
+  assert.equal(n1English.level, 'N1');
+  assert.deepEqual(
+    n1English.entries.map(([id]) => id),
+    n1Curation.entries.map(([id]) => id),
+  );
+  const prompts = n1English.entries.map(([, prompt]) => prompt.toLocaleLowerCase('en-US').trim());
+  assert.equal(new Set(prompts).size, prompts.length);
+  for (const [id, prompt, meanings] of n1English.entries) {
+    assert.ok(prompt.trim(), `empty English prompt for ${id}`);
+    assert.ok(meanings.length > 0, `empty English meanings for ${id}`);
+    assert.equal(
+      new Set(meanings.map((meaning) => meaning.toLocaleLowerCase('en-US').trim())).size,
+      meanings.length,
+      `duplicate English meaning for ${id}`,
+    );
+    assert.ok(meanings.every((meaning) => meaning.trim()), `blank English meaning for ${id}`);
+  }
 });
 
 test('as curadorias não repetem palavra/leitura entre níveis', () => {
